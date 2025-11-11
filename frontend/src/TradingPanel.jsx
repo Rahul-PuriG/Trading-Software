@@ -312,81 +312,81 @@ async function cancelOrder(id) {
       </div>
 
       <div style={styles.row}>
-        <div style={{ ...styles.card, flex: 1 }}>
-          <h3>Orders</h3>
-          <table style={styles.table}>
-            <thead>
-            <tr>
-                <th>ID</th>
-                <th>Time</th>
-                <th>Side</th>
-                <th>Type</th>
-                <th>Qty</th>
-                <th>Price</th>
-                <th>Status</th>
-                <th>Action</th> {/* 👈 add this */}
-            </tr>
-            </thead>
+<div style={{ ...styles.scrollCard, flex: 1 }}>
+  <h3>Orders</h3>
+  <div style={styles.tableWrapper}>
+    <table style={styles.tableWide}>
+      <thead>
+        <tr>
+          <th>ID</th><th>Time</th><th>Side</th><th>Type</th>
+          <th>Qty</th><th>Price</th><th>Status</th><th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {orders.map((o) => (
+          <tr key={o.id}>
+            <td>{o.id}</td>
+            <td>{new Date(o.createdAt).toLocaleTimeString()}</td>
+            <td>{o.side}</td>
+            <td>{o.type}</td>
+            <td>{o.quantity}</td>
+            <td>{o.price ?? "-"}</td>
+            <td>{o.status}</td>
+            <td>
+              {o.status === "OPEN" && (
+                <button
+                  style={{
+                    background: "#ef4444",
+                    color: "#fff",
+                    border: "none",
+                    padding: "4px 8px",
+                    borderRadius: 6,
+                    cursor: "pointer",
+                  }}
+                  onClick={() => cancelOrder(o.id)}
+                >
+                  Cancel
+                </button>
+              )}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</div>
 
-            <tbody>
-            {orders.map((o) => (
-                <tr key={o.id}>
-                <td>{o.id}</td>
-                <td>{new Date(o.createdAt).toLocaleTimeString()}</td>
-                <td>{o.side}</td>
-                <td>{o.type}</td>
-                <td>{o.quantity}</td>
-                <td>{o.price ?? "-"}</td>
-                <td>{o.status}</td>
-                <td>
-                    {o.status === "OPEN" && (
-                    <button
-                        style={{
-                        background: "#ef4444",
-                        color: "#fff",
-                        border: "none",
-                        padding: "4px 8px",
-                        borderRadius: 6,
-                        cursor: "pointer",
-                        }}
-                        onClick={() => cancelOrder(o.id)}
-                    >
-                        Cancel
-                    </button>
-                    )}
-                </td>
-                </tr>
-            ))}
-            </tbody>
 
-          </table>
-        </div>
 
-        <div style={{ ...styles.card, flex: 1 }}>
-          <h3>Trades</h3>
-          <table style={styles.table}>
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Order</th>
-                <th>Time</th>
-                <th>Price</th>
-                <th>Qty</th>
-              </tr>
-            </thead>
-            <tbody>
-              {trades.map((t) => (
-                <tr key={t.id}>
-                  <td>{t.id}</td>
-                  <td>{t.orderId}</td>
-                  <td>{new Date(t.timestamp).toLocaleTimeString()}</td>
-                  <td>{t.executedPrice}</td>
-                  <td>{t.executedQty}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+<div style={{ ...styles.scrollCard, flex: 1 }}>
+  <h3>Trades</h3>
+  <div style={styles.tableWrapper}>
+    <table style={styles.tableWide}>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Order</th>
+          <th>Time</th>
+          <th>Price</th>
+          <th>Qty</th>
+        </tr>
+      </thead>
+      <tbody>
+        {trades.map((t) => (
+          <tr key={t.id}>
+            <td>{t.id}</td>
+            <td>{t.orderId}</td>
+            <td>{new Date(t.timestamp).toLocaleTimeString()}</td>
+            <td>{t.executedPrice}</td>
+            <td>{t.executedQty}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
       </div>
 
       <div style={styles.card}>
@@ -456,31 +456,70 @@ async function cancelOrder(id) {
 
 // ---- Styles ----
 const styles = {
-wrap: {
-  fontFamily: "Inter, Arial, sans-serif",
-  width: "100%",
-  minHeight: "100vh",
-  margin: 0,
-  padding: "16px 24px",
-  boxSizing: "border-box",
-  backgroundColor: "#0b0d12",
-  color: "#fff",
-},
+  wrap: {
+    fontFamily: "Inter, Arial, sans-serif",
+    width: "100%",
+    maxWidth: "100vw",
+    margin: 0,
+    padding: "20px",
+    color: "#fff",
+    boxSizing: "border-box",
+  },
 
-  row: { display: "flex", gap: 16, marginBottom: 16, flexWrap: "wrap" },
+  row: {
+    display: "flex",
+    gap: 16,
+    marginBottom: 16,
+    flexWrap: "wrap",
+    width: "100%",
+    justifyContent: "space-between",
+  },
+
   card: {
     background: "#181a1f",
     border: "1px solid #2a2d34",
     borderRadius: 12,
     padding: 16,
+    flex: 1,
     minWidth: 300,
+    boxSizing: "border-box",
   },
+
+tableWrapper: {
+  overflowX: "auto",      // ✅ horizontal scroll
+  overflowY: "auto",      // ✅ vertical scroll
+  width: "100%",
+  maxHeight: "300px",     // ✅ adjust height as needed (try 250–400px)
+  boxSizing: "border-box",
+},
+
+tableWide: {
+  minWidth: "1000px",     // ✅ triggers horizontal scroll
+  borderCollapse: "collapse",
+  color: "#fff",
+},
+
+scrollCard: {
+  background: "#181a1f",
+  border: "1px solid #2a2d34",
+  borderRadius: 12,
+  padding: 16,
+  minWidth: 300,
+  flex: 1,
+  boxSizing: "border-box",
+  display: "flex",
+  flexDirection: "column",
+  height: "400px",         // ✅ container height
+},
+
+
   formRow: {
     display: "flex",
     gap: 12,
     alignItems: "center",
     flexWrap: "wrap",
   },
+
   input: {
     background: "#0f1115",
     border: "1px solid #2a2d34",
@@ -489,7 +528,9 @@ wrap: {
     borderRadius: 8,
     minWidth: 120,
   },
+
   btnRow: { display: "flex", gap: 8 },
+
   btn: {
     padding: "8px 12px",
     borderRadius: 8,
@@ -498,6 +539,7 @@ wrap: {
     color: "#fff",
     cursor: "pointer",
   },
+
   btnOutline: {
     padding: "8px 12px",
     borderRadius: 8,
@@ -506,6 +548,7 @@ wrap: {
     color: "#3b82f6",
     cursor: "pointer",
   },
+
   buyBtn: {
     padding: "10px 14px",
     borderRadius: 8,
@@ -514,5 +557,5 @@ wrap: {
     fontWeight: 700,
     cursor: "pointer",
   },
-  table: { width: "100%", borderCollapse: "collapse" },
 };
+

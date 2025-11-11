@@ -62,14 +62,14 @@ private UserAccount ensureDemoUser() {
   public PlaceOrderResponse placeOrder(PlaceOrderRequest req) {
     UserAccount user = ensureDemoUser();
 
-    var order = new OrderEntity();
+    var trade = new OrderEntity();
     order.setUserId(user.getId());
     order.setSymbol(req.getSymbol());
     order.setSide(req.getSide().toUpperCase());
     order.setType(req.getType().toUpperCase());
     order.setQuantity(req.getQuantity());
     order.setPrice(req.getPrice());
-    order.setStatus("NEW");
+    order.setStatus("OPEN");
     order = orderRepo.save(order);
 
     // Simulated execution:

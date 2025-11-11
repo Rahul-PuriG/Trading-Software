@@ -20,5 +20,8 @@ public class TradeEntity {
   @Column(precision = 30, scale = 8)
   private BigDecimal executedQty;
 
+  @Column(nullable = false)
+  private String status = "OPEN";
+
   private Instant timestamp = Instant.now();
 }
