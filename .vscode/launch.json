@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-BackendTraderApplication<app>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.trader.backendtrader.BackendTraderApplication",
+            "projectName": "app",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
