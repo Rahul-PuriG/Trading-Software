@@ -62,7 +62,7 @@ private UserAccount ensureDemoUser() {
   public PlaceOrderResponse placeOrder(PlaceOrderRequest req) {
     UserAccount user = ensureDemoUser();
 
-    var trade = new OrderEntity();
+    var order = new OrderEntity();
     order.setUserId(user.getId());
     order.setSymbol(req.getSymbol());
     order.setSide(req.getSide().toUpperCase());
@@ -148,14 +148,18 @@ private UserAccount ensureDemoUser() {
                 .divide(newSize, 8, java.math.RoundingMode.HALF_UP);
         pos.setSize(newSize);
         pos.setAvgPrice(newAvg);
-    } else {
-        // SELL
-        BigDecimal newSize = size.subtract(execQty);
-        // realized PnL = (sell_price - avg) * qty
-        BigDecimal realized = execPrice.subtract(avg).multiply(execQty);
-        pos.setRealizedPnl(pos.getRealizedPnl().add(realized));
-        pos.setSize(newSize.max(BigDecimal.ZERO)); // prevent negatives for now
-    }
+} else {
+    // SELL decreases size (creates short if below zero)
+    BigDecimal newSize = size.subtract(execQty);
+    
+    // realized PnL for closed portion
+    BigDecimal realized = execPrice.subtract(avg).multiply(execQty).negate();
+    
+    pos.setRealizedPnl(pos.getRealizedPnl().add(realized));
+    pos.setSize(newSize);  // <-- allow negative for shorts
+}
+
+
 
     // update unrealized pnl
     BigDecimal lastPrice = priceCache.getLast(symbol);

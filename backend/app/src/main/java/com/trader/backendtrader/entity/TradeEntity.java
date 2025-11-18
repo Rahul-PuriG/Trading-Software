@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 import java.math.BigDecimal;
 import java.time.Instant;
+import java.util.List;
 
 @Entity @Table(name = "trade")
 @Data
@@ -24,4 +25,7 @@ public class TradeEntity {
   private String status = "OPEN";
 
   private Instant timestamp = Instant.now();
+
+  
+
 }

@@ -13,6 +13,50 @@ import {
   getTrades,
 } from "./api";
 
+// ---------------- HEDGING MODE UNREALIZED PNL ------------------
+function calculateHedgedPosition(openTrades, livePrice) {
+  if (!livePrice) {
+    return { size: 0, avgPrice: 0, upnl: 0 };
+  }
+
+  let size = 0;
+  let weightedValue = 0;
+  let upnl = 0;
+
+  for (const t of openTrades) {
+    if (t.pending) continue; // skip pending limit orders
+
+    const entry = Number(t.executedPrice);
+    const qty = Number(t.executedQty);
+    const side = t.side;
+
+    // hedging mode size
+    size += side === "BUY" ? qty : -qty;
+
+    // for avg price display (optional)
+    weightedValue += side === "BUY" ? entry * qty : -entry * qty;
+
+    // individual UN-PNL
+    if (side === "BUY") {
+      upnl += (livePrice - entry) * qty;
+    } else {
+      upnl += (entry - livePrice) * qty;
+    }
+  }
+
+  let avgPrice = 0;
+  if (size !== 0) {
+    avgPrice = weightedValue / size;
+  }
+
+  return {
+    size,
+    avgPrice,
+    upnl,
+  };
+}
+
+
 const SYMBOL = "BTC-USD";
 
 export default function TradingPanel() {
@@ -42,25 +86,56 @@ export default function TradingPanel() {
     });
   }
 
-  const refreshAll = async () => {
-    try {
-      const [b, q, o, t, p] = await Promise.all([
-        getBalance(),
-        getQuote(SYMBOL),
-        getOrders(),
-        getTrades(),
-        axios.get("http://localhost:8080/api/virtual/positions"),
-      ]);
-      setBalance(b.data);
-      setPrice(q.data?.lastPrice ?? null);
-      setOrders(o.data);
-      setTrades(t.data);
-      setPositions(p.data);
-    } catch (e) {
-      console.error(e);
-      setNote("⚠️ Could not refresh data. Check backend connection.");
-    }
-  };
+const refreshAll = async () => {
+  try {
+    const [b, q, allOrders, openTrades, p] = await Promise.all([
+      getBalance(),
+      getQuote(SYMBOL),
+      getOrders(), // we'll filter here
+      axios.get("http://localhost:8080/api/virtual/trades/open"),
+      axios.get("http://localhost:8080/api/virtual/positions"),
+    ]);
+
+    setBalance(b.data);
+    setPrice(q.data?.lastPrice ?? null);
+    setPositions(p.data);
+
+    // Orders table shows only FILLED orders (your rule)
+    const filledOrders = allOrders.data.filter(o => o.status === "FILLED");
+    setOrders(filledOrders);
+
+    // Trades table shows:
+    //  - OPEN filled trades (from /trades/open)
+    //  - OPEN LIMIT orders (pending), shown as "Pending"
+    const pendingLimitAsTrades = allOrders.data
+      .filter(o => o.status === "OPEN" && o.type === "LIMIT")
+      .map(o => ({
+        // Map to trade-like shape for UI
+        id: `PENDING-${o.id}`,
+        orderId: o.id,
+        timestamp: o.createdAt,
+        executedPrice: null,            // not filled
+        executedQty: o.quantity,
+        side: o.side,
+        symbol: o.symbol,
+        pending: true,                  // custom flag
+        type: "LIMIT",
+      }));
+
+    const openExecutedTrades = openTrades.data.map(t => ({
+      ...t,
+      pending: false,
+      type: "MARKET_OR_FILLED_LIMIT",
+    }));
+
+    setTrades([...openExecutedTrades, ...pendingLimitAsTrades]);
+  } catch (e) {
+    console.error(e);
+    setNote("⚠️ Could not refresh data. Check backend connection.");
+  }
+};
+
+
 
   useEffect(() => {
     refreshAll();
@@ -127,17 +202,32 @@ useEffect(() => {
 }, []);
 
 
+async function closeTrade(id) {
+  try {
+    const res = await axios.post(`http://localhost:8080/api/virtual/trade/${id}/close`);
+    alert(
+      `Closed. PnL: $${Number(res.data.realizedPnl).toFixed(2)} | New Balance: $${Number(res.data.newBalance).toFixed(2)}`
+    );
+    await refreshAll();
+  } catch (err) {
+    alert("Close error: " + (err.response?.data || err.message));
+  }
+}
+
 async function cancelOrder(id) {
   try {
     const res = await axios.delete(`http://localhost:8080/api/virtual/order/${id}/cancel`);
     alert(res.data || `Order ${id} cancelled`);
     await refreshAll();
   } catch (err) {
-    console.error("Cancel error:", err);
-    const msg = err.response?.data || err.message || "Unknown error";
-    alert("Error cancelling order: " + msg);
+    alert("Cancel error: " + (err.response?.data || err.message));
   }
 }
+
+
+
+
+
 
 
 
@@ -199,6 +289,8 @@ async function cancelOrder(id) {
       setLoading(false);
     }
   };
+
+
 
   return (
     <div style={styles.wrap}>
@@ -319,7 +411,7 @@ async function cancelOrder(id) {
       <thead>
         <tr>
           <th>ID</th><th>Time</th><th>Side</th><th>Type</th>
-          <th>Qty</th><th>Price</th><th>Status</th><th>Action</th>
+          <th>Qty</th><th>Price</th><th>Status</th>
         </tr>
       </thead>
       <tbody>
@@ -333,21 +425,7 @@ async function cancelOrder(id) {
             <td>{o.price ?? "-"}</td>
             <td>{o.status}</td>
             <td>
-              {o.status === "OPEN" && (
-                <button
-                  style={{
-                    background: "#ef4444",
-                    color: "#fff",
-                    border: "none",
-                    padding: "4px 8px",
-                    borderRadius: 6,
-                    cursor: "pointer",
-                  }}
-                  onClick={() => cancelOrder(o.id)}
-                >
-                  Cancel
-                </button>
-              )}
+              
             </td>
           </tr>
         ))}
@@ -358,33 +436,79 @@ async function cancelOrder(id) {
 
 
 
+{/* ---- Trades ---- */}
+{/* ---- Open Trades (executed + pending limits) ---- */}
 <div style={{ ...styles.scrollCard, flex: 1 }}>
-  <h3>Trades</h3>
+  <h3>Open Trades</h3>
   <div style={styles.tableWrapper}>
     <table style={styles.tableWide}>
       <thead>
         <tr>
           <th>ID</th>
           <th>Order</th>
+          <th>Side</th>
+          <th>Type</th>
           <th>Time</th>
           <th>Price</th>
           <th>Qty</th>
+          <th>Unrealized PnL ($)</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
-        {trades.map((t) => (
-          <tr key={t.id}>
-            <td>{t.id}</td>
-            <td>{t.orderId}</td>
-            <td>{new Date(t.timestamp).toLocaleTimeString()}</td>
-            <td>{t.executedPrice}</td>
-            <td>{t.executedQty}</td>
-          </tr>
-        ))}
+        {trades.map((t) => {
+          const current = Number(latestPriceWS ?? price ?? 0);
+          const exec = t.executedPrice != null ? Number(t.executedPrice) : null;
+          const qty = Number(t.executedQty ?? 0);
+          const side = t.side || (orders.find(o => o.id === t.orderId)?.side) || "BUY";
+
+          // UN-PNL only for executed trades
+          let upnl = null;
+          if (!t.pending && exec != null) {
+            upnl = (side === "BUY" ? (current - exec) : (exec - current)) * qty;
+          }
+
+          return (
+            <tr key={t.id}>
+              <td>{t.id}</td>
+              <td>{t.orderId}</td>
+              <td>{side}</td>
+              <td>{t.pending ? `PENDING ${t.type}` : "FILLED"}</td>
+              <td>{new Date(t.timestamp).toLocaleTimeString()}</td>
+              <td>{exec != null ? exec.toFixed(2) : "—"}</td>
+              <td>{qty}</td>
+              <td style={{ color: upnl != null && upnl >= 0 ? "#22c55e" : "#ef4444", fontWeight: 600 }}>
+                {upnl != null ? upnl.toFixed(2) : "—"}
+              </td>
+              <td>
+                {t.pending ? (
+                  <button
+                    onClick={() => cancelOrder(t.orderId)}
+                    style={{ background: "#a3a3a3", color: "#000", border: "none", padding: "4px 10px", borderRadius: 6, cursor: "pointer" }}
+                  >
+                    Cancel
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => closeTrade(t.id)}
+                    style={{ background: "#ef4444", color: "#fff", border: "none", padding: "4px 10px", borderRadius: 6, cursor: "pointer" }}
+                  >
+                    Close
+                  </button>
+                )}
+              </td>
+            </tr>
+          );
+        })}
+        {trades.length === 0 && (
+          <tr><td colSpan={9} style={{ opacity: 0.6, padding: 8 }}>No open trades</td></tr>
+        )}
       </tbody>
     </table>
   </div>
 </div>
+
+
 
 
       </div>
@@ -396,60 +520,49 @@ async function cancelOrder(id) {
             <small style={{ opacity: 0.7 }}>• Live @ ${livePrice.toFixed(2)}</small>
           ) : null}
         </h3>
-        <table style={styles.table}>
-          <thead>
-            <tr>
-              <th>Symbol</th>
-              <th>Size</th>
-              <th>Avg Price</th>
-              <th>Unrealized PnL</th>
-              <th>Realized PnL</th>
-            </tr>
-          </thead>
-          <tbody>
-            {positionsLive.map((p) => {
-              const upnl = Number(p.unrealizedPnl ?? 0);
-              const realized = Number(p.realizedPnl ?? 0);
-              const colorClass =
-                upnl > 0 ? "flash-green" : upnl < 0 ? "flash-red" : "";
-              return (
-                <tr key={p.id}>
-                  <td>{p.symbol}</td>
-                  <td>{p.size}</td>
-                  <td>{Number(p.avgPrice ?? 0).toFixed(2)}</td>
-                                    <td className={colorClass} style={{ fontWeight: 600 }}>
-                    {upnl.toFixed(2)}
-                    <div style={{ width: 80, height: 30 }}>
-                        <ResponsiveContainer>
-                        <LineChart
-                            data={[{ x: 0, y: 0 }, { x: 1, y: upnl }]}
-                            margin={{ top: 0, bottom: 0, left: 0, right: 0 }}
-                        >
-                            <Line
-                            type="monotone"
-                            dataKey="y"
-                            stroke={upnl >= 0 ? "#22c55e" : "#ef4444"}
-                            strokeWidth={2}
-                            dot={false}
-                            />
-                        </LineChart>
-                        </ResponsiveContainer>
-                    </div>
-                  </td>
+
+        {/* ➤ HEDGING CALC: Use open trades, not backend position */}
+        {(() => {
+          const hedged = calculateHedgedPosition(trades, livePrice);
+          return (
+            <table style={styles.table}>
+              <thead>
+                <tr>
+                  <th>Symbol</th>
+                  <th>Size (hedged)</th>
+                  <th>Avg Price</th>
+                  <th>Unrealized PnL</th>
+                  <th>Realized PnL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{SYMBOL}</td>
+                  <td>{hedged.size.toFixed(4)}</td>
+                  <td>{hedged.avgPrice.toFixed(2)}</td>
 
                   <td
                     style={{
-                      color: realized >= 0 ? "#22c55e" : "#ef4444",
+                      color: hedged.upnl >= 0 ? "#22c55e" : "#ef4444",
+                      fontWeight: 600,
                     }}
                   >
-                    {realized.toFixed(2)}
+                    {hedged.upnl.toFixed(2)}
+                  </td>
+
+                  <td style={{ color: "#3bc9db" }}>
+                    {/* Realized PNL comes from backend */}
+                    {positions?.[0]?.realizedPnl
+                      ? Number(positions[0].realizedPnl).toFixed(2)
+                      : "0.00"}
                   </td>
                 </tr>
-              );
-            })}
-          </tbody>
-        </table>
+              </tbody>
+            </table>
+          );
+        })()}
       </div>
+
     </div>
   );
 }

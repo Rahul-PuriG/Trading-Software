@@ -2,10 +2,8 @@ package com.trader.backendtrader.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.trader.backendtrader.model.Ticker;
 import com.trader.backendtrader.config.WebSocketConfig;
 import jakarta.annotation.PostConstruct;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
