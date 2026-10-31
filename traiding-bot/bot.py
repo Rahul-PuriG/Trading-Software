@@ -1,12 +1,41 @@
 """Local TWS paper-trading CLI. Order submission is always explicit."""
 
 import argparse
+from datetime import datetime, timezone
 from decimal import Decimal, InvalidOperation
 import json
 import math
+from pathlib import Path
 import sys
+from uuid import uuid4
 
-from ib_async import IB, LimitOrder, Stock
+from ib_async import IB, ExecutionFilter, LimitOrder, Stock
+
+
+DEFAULT_LOG = Path(__file__).resolve().parent / "logs" / "activity.jsonl"
+
+
+class ActivityLog:
+    def __init__(self, path):
+        self.path = Path(path)
+        self.run_id = str(uuid4())
+
+    def write(self, event, **data):
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        record = {"time": datetime.now(timezone.utc).isoformat(),
+                  "run_id": self.run_id, "event": event, **data}
+        with self.path.open("a", encoding="utf-8") as stream:
+            stream.write(json.dumps(record, default=str, allow_nan=False) + "\n")
+            stream.flush()
+
+
+def fill_info(fill):
+    e = fill.execution
+    return {"execution_id": e.execId, "account": e.acctNumber,
+            "order_id": e.orderId, "permanent_id": e.permId,
+            "client_id": e.clientId, "symbol": fill.contract.symbol,
+            "side": e.side, "quantity": e.shares, "price": e.price,
+            "execution_time": str(e.time)}
 
 
 def positive_number(value):
@@ -35,6 +64,7 @@ def paper_account(accounts, requested=None):
 def trade_info(trade):
     return {
         "order_id": trade.order.orderId,
+        "permanent_id": trade.order.permId,
         "client_id": trade.order.clientId,
         "account": trade.order.account,
         "symbol": trade.contract.symbol,
@@ -54,9 +84,12 @@ def parser():
     p.add_argument("--port", type=int, default=7497)
     p.add_argument("--client-id", type=int, default=17)
     p.add_argument("--account", help="Select a DU paper account")
+    p.add_argument("--log-file", type=Path, default=DEFAULT_LOG,
+                   help="Append activity as JSON Lines (default: logs/activity.jsonl)")
     sub = p.add_subparsers(dest="command", required=True)
     sub.add_parser("account", help="Read account summary and positions")
     sub.add_parser("orders", help="Read open orders across API clients")
+    sub.add_parser("fills", help="Retrieve executions available from the current TWS session")
     order = sub.add_parser("order", help="Preview a stock limit order; --submit sends it")
     order.add_argument("symbol")
     order.add_argument("action", choices=["BUY", "SELL"])
@@ -71,6 +104,8 @@ def parser():
 
 
 def run(args):
+    log = ActivityLog(args.log_file)
+    log.write("run_started", command=args.command, client_id=args.client_id)
     ib = IB()
     ib.RequestTimeout = 20
     ib.RaiseRequestErrors = True
@@ -79,6 +114,29 @@ def run(args):
         ib.connect(args.host, args.port, clientId=args.client_id,
                    timeout=10, readonly=not modifying)
         account = paper_account(ib.managedAccounts(), args.account)
+        log.write("connected", account=account)
+
+        def record_event(event, **data):
+            # Callback failure must not cause another order submission or hide a fill.
+            try:
+                log.write(event, **data)
+            except (OSError, ValueError) as exc:
+                print(f"ACTIVITY LOG FAILED: {exc}. Check TWS for order state.", file=sys.stderr)
+
+        def on_status(trade):
+            if trade.order.account == account:
+                record_event("order_status", **trade_info(trade))
+
+        def on_fill(trade, fill):
+            if fill.execution.acctNumber == account:
+                record_event("fill", **fill_info(fill))
+
+        def on_error(req_id, code, message, contract):
+            record_event("broker_message", request_id=req_id, code=code, message=message)
+
+        ib.orderStatusEvent += on_status
+        ib.execDetailsEvent += on_fill
+        ib.errorEvent += on_error
         if args.command == "account":
             print(json.dumps({
                 "account": account,
@@ -88,8 +146,15 @@ def run(args):
                               for p in ib.positions(account)],
             }, indent=2, default=str))
         elif args.command == "orders":
-            print(json.dumps([trade_info(t) for t in ib.reqAllOpenOrders()
-                              if t.order.account == account], indent=2, default=str))
+            orders = [trade_info(t) for t in ib.reqAllOpenOrders()
+                      if t.order.account == account]
+            log.write("open_orders", account=account, orders=orders)
+            print(json.dumps(orders, indent=2, default=str))
+        elif args.command == "fills":
+            fills = [fill_info(f) for f in ib.reqExecutions(ExecutionFilter(acctCode=account))
+                     if f.execution.acctNumber == account]
+            log.write("execution_snapshot", account=account, fills=fills)
+            print(json.dumps(fills, indent=2, default=str))
         elif args.command == "order":
             contracts = ib.qualifyContracts(Stock(args.symbol.upper(), "SMART", args.currency))
             if len(contracts) != 1:
@@ -104,14 +169,22 @@ def run(args):
                               "currency": args.currency, "time_in_force": "DAY",
                               "outside_regular_hours": False}, indent=2))
             if not args.submit:
+                log.write("order_preview", account=account, symbol=contract.symbol,
+                          action=args.action, quantity=args.quantity, limit_price=args.limit_price)
                 return 0
+            order.orderRef = log.run_id
+            log.write("submit_requested", account=account, symbol=contract.symbol,
+                      action=args.action, quantity=args.quantity, limit_price=args.limit_price,
+                      contract_id=contract.conId, order_ref=order.orderRef)
             trade = ib.placeOrder(contract, order)
+            log.write("submit_returned", **trade_info(trade))
             # A submitted order may stay open after this process disconnects.
             for _ in range(100):
                 ib.sleep(0.1)
                 if trade.orderStatus.status in {"Submitted", "Filled", "Cancelled", "Inactive"}:
                     break
             print(json.dumps(trade_info(trade), indent=2, default=str))
+            log.write("order_observed", **trade_info(trade))
             if trade.orderStatus.status in {"Cancelled", "Inactive"}:
                 return 1
             if trade.orderStatus.status != "Filled":
@@ -125,19 +198,28 @@ def run(args):
                 raise ValueError("No matching open order owned by this account/client ID")
             trade = matches[0]
             if not args.submit:
+                log.write("cancel_preview", **trade_info(trade))
                 print("PREVIEW ONLY: rerun with --submit to request cancellation")
                 print(json.dumps(trade_info(trade), indent=2, default=str))
                 return 0
+            log.write("cancel_requested", **trade_info(trade))
             ib.cancelOrder(trade.order)
             for _ in range(100):
                 ib.sleep(0.1)
                 if trade.isDone():
                     break
             print(json.dumps(trade_info(trade), indent=2, default=str))
+            log.write("cancel_observed", **trade_info(trade))
             if trade.orderStatus.status != "Cancelled":
                 print("Cancellation not confirmed. Check TWS before retrying.", file=sys.stderr)
                 return 1
         return 0
+    except Exception as exc:
+        try:
+            log.write("run_error", error_type=type(exc).__name__, message=str(exc))
+        except (OSError, ValueError):
+            pass
+        raise
     finally:
         ib.disconnect()
 

@@ -75,6 +75,39 @@ Cancellation only targets orders owned by this API client ID and selected accoun
 Use TWS to cancel orders entered elsewhere. A fill can occur before cancellation;
 check the final status in TWS.
 
+## Activity log and fills
+
+Every command appends JSON records to `logs/activity.jsonl` beside `bot.py`.
+Records include UTC time and a run ID. Order submissions also carry that run ID
+in the IBKR order reference so you can correlate them with TWS. Logged events
+include submission/cancellation intent, observed order status, broker messages,
+and execution events received while the script is connected. Preview events
+are labelled separately from submissions. An intent record alone does not prove
+that IBKR accepted the request.
+
+To retrieve executions available from TWS after a script has exited:
+
+```powershell
+.\.venv\Scripts\python.exe bot.py fills
+Get-Content .\logs\activity.jsonl -Tail 20
+```
+
+The `fills` command prints executions and appends an execution snapshot. TWS
+limits the available execution history; this is not a complete account statement.
+Snapshots can repeat executions: use `execution_id` when reconciling them.
+The CLI does not keep monitoring once it exits, so rerun `orders` and `fills`
+to refresh observations, and use TWS statements for authoritative history.
+
+Logs contain account identifiers and trading details. They are ignored by Git;
+keep them private. A custom path goes before the command:
+
+```powershell
+.\.venv\Scripts\python.exe bot.py --log-file C:\Trading\activity.jsonl orders
+```
+
+An unwritable log stops a command before order submission. If a later write
+fails, inspect TWS before retrying: the order may already have been submitted.
+
 ## Connection options and troubleshooting
 
 Global options go **before** the command:

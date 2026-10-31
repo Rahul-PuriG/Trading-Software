@@ -1,4 +1,7 @@
 import argparse
+import json
+from pathlib import Path
+import tempfile
 from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
@@ -7,6 +10,43 @@ import bot
 
 
 class PaperTradingTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        default = patch("bot.DEFAULT_LOG", Path(self.temp.name) / "activity.jsonl")
+        default.start()
+        self.addCleanup(default.stop)
+
+    def test_log_appends_without_overwriting_and_correlates_run(self):
+        path = Path(self.temp.name) / "nested" / "activity.jsonl"
+        first = bot.ActivityLog(path)
+        first.write("submit_requested", symbol="AAPL")
+        first.write("order_status", status="Submitted")
+        second = bot.ActivityLog(path)
+        second.write("cancel_requested")
+        records = [json.loads(line) for line in path.read_text().splitlines()]
+        self.assertEqual(len(records), 3)
+        self.assertEqual(records[0]["run_id"], records[1]["run_id"])
+        self.assertNotEqual(records[1]["run_id"], records[2]["run_id"])
+        self.assertTrue(records[0]["time"].endswith("+00:00"))
+
+    @patch("bot.IB")
+    def test_fill_snapshot_is_recorded_and_filtered(self, ib_class):
+        ib = ib_class.return_value
+        ib.managedAccounts.return_value = ["DU123"]
+        def fill(account):
+            return SimpleNamespace(contract=SimpleNamespace(symbol="AAPL"),
+                execution=SimpleNamespace(execId="exec1", acctNumber=account,
+                    orderId=42, permId=99, clientId=17, side="BOT", shares=1,
+                    price=100, time="2026-10-31T12:00:00+00:00"))
+        ib.reqExecutions.return_value = [fill("DU123"), fill("DU999")]
+        self.assertEqual(bot.run(bot.parser().parse_args(["fills"])), 0)
+        records = [json.loads(line) for line in bot.DEFAULT_LOG.read_text().splitlines()]
+        snapshot = next(r for r in records if r["event"] == "execution_snapshot")
+        self.assertEqual(len(snapshot["fills"]), 1)
+        self.assertEqual(snapshot["fills"][0]["execution_id"], "exec1")
+        ib.placeOrder.assert_not_called()
+
     def test_live_or_mixed_sessions_are_rejected(self):
         for accounts in ([], ["U123"], ["DU123", "U123"]):
             with self.subTest(accounts=accounts), self.assertRaises(ValueError):
