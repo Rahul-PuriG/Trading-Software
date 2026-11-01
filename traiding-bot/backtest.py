@@ -87,7 +87,28 @@ def validate_coverage(bars, sessions, start, end):
     return len(expected)
 
 
-def simulate(bars, start, end, commission=1.0, slippage_bps=1.0, capital=10000.0):
+def aggregate_30min(bars):
+    """Build complete half-hour RTH candles anchored at 09:30 New York time."""
+    groups = {}
+    for bar in bars:
+        local = bar.timestamp.astimezone(NY)
+        minutes = local.hour * 60 + local.minute - (9 * 60 + 30)
+        if not 0 <= minutes < 390 or minutes % 5 or local.second:
+            raise ValueError("Expected aligned 5-minute SPY regular-hours bars")
+        groups.setdefault((local.date(), minutes // 30), []).append(bar)
+    result = []
+    for group in groups.values():
+        group.sort(key=lambda b: b.timestamp)
+        if len(group) != 6 or any(group[i].timestamp - group[0].timestamp != timedelta(minutes=5*i)
+                                  for i in range(6)):
+            raise ValueError("Incomplete 30-minute candle; check historical-data coverage")
+        result.append(Bar(group[0].timestamp, group[0].open,
+                          max(b.high for b in group), min(b.low for b in group), group[-1].close))
+    return sorted(result, key=lambda b: b.timestamp)
+
+
+def simulate(bars, start, end, commission=1.0, slippage_bps=1.0, capital=10000.0,
+             fast=5, slow=20, trend=None, bar_minutes=5):
     """One share, long/flat, rolling SMA across sessions, no same-bar fills."""
     closes = []
     previous = None
@@ -101,6 +122,9 @@ def simulate(bars, start, end, commission=1.0, slippage_bps=1.0, capital=10000.0
     curve = []
     eligible = []
     slip = slippage_bps / 10000
+    required = max(slow, trend or 0)
+    if capital <= 0 or not 0 < fast < slow or (trend is not None and trend < slow):
+        raise ValueError("Expected positive capital and fast < slow <= trend")
 
     def close_position(bar, raw_price, reason):
         nonlocal cash, position
@@ -130,10 +154,11 @@ def simulate(bars, start, end, commission=1.0, slippage_bps=1.0, capital=10000.0
                 close_position(bar, bar.open, "crossover")
             pending = None
         closes.append(bar.close)
-        if len(closes) >= 20:
-            difference = mean(closes[-5:]) - mean(closes[-20:])
-            if active and previous is not None:
-                if previous <= 0 < difference and position is None:
+        if len(closes) >= slow:
+            difference = mean(closes[-fast:]) - mean(closes[-slow:])
+            if active and previous is not None and len(closes) >= required:
+                above_trend = trend is None or bar.close > mean(closes[-trend:])
+                if previous <= 0 < difference and position is None and above_trend:
                     pending = "BUY"
                 elif previous >= 0 > difference and position is not None:
                     pending = "SELL"
@@ -145,8 +170,9 @@ def simulate(bars, start, end, commission=1.0, slippage_bps=1.0, capital=10000.0
             drawdown_pct = max(drawdown_pct, (peak - equity) / peak * 100)
             curve.append({"timestamp": bar.timestamp.isoformat(), "equity": equity})
     warmup = sum(b.timestamp.astimezone(NY).date() < start for b in bars)
-    if warmup < 20 or not eligible:
-        raise ValueError("Need at least 20 pre-period warmup bars and bars in the test period")
+    if warmup < required or not eligible:
+        raise ValueError(f"Need at least {required} pre-period {bar_minutes}-minute warmup bars "
+                         "and bars in the test period. Download an earlier start date if needed.")
     # Explicit reporting assumption: liquidate at final close, including costs.
     if position:
         close_position(eligible[-1], eligible[-1].close, "end_of_test_liquidation")
@@ -159,6 +185,7 @@ def simulate(bars, start, end, commission=1.0, slippage_bps=1.0, capital=10000.0
                  - eligible[0].open * (1 + slip) - 2 * commission)
     summary = {
         "symbol": "SPY", "start_inclusive": str(start), "end_exclusive": str(end),
+        "bar_minutes": bar_minutes, "fast_sma": fast, "slow_sma": slow, "trend_sma": trend,
         "first_bar": eligible[0].timestamp.isoformat(), "last_bar": eligible[-1].timestamp.isoformat(),
         "bars": len(eligible), "initial_capital": capital, "final_equity": cash,
         "net_pnl": cash - capital, "return_pct": (cash / capital - 1) * 100,
@@ -169,8 +196,10 @@ def simulate(bars, start, end, commission=1.0, slippage_bps=1.0, capital=10000.0
         "max_drawdown_pct": drawdown_pct,
         "one_share_buy_hold_net_pnl": benchmark,
         "commission_per_order": commission, "slippage_bps_per_side": slippage_bps,
-        "assumptions": ["5/20 SMA on completed 5-minute RTH candles; next-bar-open fills",
+        "assumptions": [f"{fast}/{slow} SMA on completed {bar_minutes}-minute RTH candles; next-bar-open fills",
+                        f"Entry requires close above {trend}-period SMA" if trend else "No trend filter",
                         "One share long/flat, no shorting; averages carry across sessions",
+                        f"Drawdown marks equity every {bar_minutes} minutes, not intrabar",
                         "Positions may remain overnight; no stop loss",
                         "Final position liquidated at final close with costs",
                         "No dividends, taxes, interest or partial fills; no annualization",
@@ -248,7 +277,9 @@ def main():
     p.add_argument("--start", type=date.fromisoformat, default=six_months_before(today))
     p.add_argument("--end", type=date.fromisoformat, default=today, help="Exclusive date")
     p.add_argument("--data", type=Path, default=ROOT / "data" / "spy_5min")
-    p.add_argument("--output", type=Path, default=ROOT / "reports" / "sma_5_20")
+    p.add_argument("--strategy", choices=["original", "slow"], default="original",
+                   help="original: 5-minute SMA 5/20; slow: 30-minute SMA 10/30 with SMA100 filter")
+    p.add_argument("--output", type=Path, default=None)
     p.add_argument("--host", default="127.0.0.1")
     p.add_argument("--port", type=int, default=7497)
     p.add_argument("--client-id", type=int, default=18)
@@ -265,8 +296,14 @@ def main():
         bars = read_bars(args.data / "SPY_5min.csv")
         sessions = json.loads((args.data / "sessions.json").read_text(encoding="utf-8"))
         validate_coverage(bars, sessions, args.start, args.end)
+        settings = {}
+        if args.strategy == "slow":
+            bars = aggregate_30min(bars)
+            settings = dict(fast=10, slow=30, trend=100, bar_minutes=30)
+        if args.output is None:
+            args.output = ROOT / "reports" / ("sma_10_30_trend100" if args.strategy == "slow" else "sma_5_20")
         summary, trades, curve = simulate(bars, args.start, args.end, args.commission,
-                                         args.slippage_bps, args.capital)
+                                         args.slippage_bps, args.capital, **settings)
         args.output.mkdir(parents=True, exist_ok=True)
         (args.output / "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
         for name, rows in [("trades", trades), ("equity", curve)]:

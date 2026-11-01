@@ -1,10 +1,47 @@
 from datetime import date, datetime, timedelta
 import unittest
 
-from backtest import Bar, NY, UTC, simulate, six_months_before, validate_coverage
+from backtest import Bar, NY, UTC, aggregate_30min, simulate, six_months_before, validate_coverage
 
 
 class BacktestTests(unittest.TestCase):
+    def test_half_hour_aggregation_uses_session_open_and_last_close(self):
+        first = datetime(2026, 5, 1, 9, 30, tzinfo=NY)
+        source = [Bar(first + timedelta(minutes=5*i), 100+i, 102+i, 99+i, 101+i)
+                  for i in range(12)]
+        bars = aggregate_30min(source)
+        self.assertEqual(len(bars), 2)
+        self.assertEqual(bars[0], Bar(first, 100, 107, 99, 106))
+        self.assertEqual(bars[1].timestamp, first + timedelta(minutes=30))
+        with self.assertRaises(ValueError):
+            aggregate_30min(source[:5] + source[6:])
+
+    def test_aggregation_does_not_join_separate_days(self):
+        first = datetime(2026, 5, 1, 15, 30, tzinfo=NY)
+        second = datetime(2026, 5, 4, 9, 30, tzinfo=NY)
+        source = [Bar(t + timedelta(minutes=5*i), 100, 100, 100, 100)
+                  for t in [first, second] for i in range(6)]
+        self.assertEqual([b.timestamp for b in aggregate_30min(source)], [first, second])
+
+    def test_trend_filter_blocks_below_trend_and_allows_above(self):
+        opening = datetime(2026, 5, 1, 9, 30, tzinfo=NY)
+        def data(old_price):
+            warmup = [Bar(opening - timedelta(days=10) + timedelta(minutes=30*i), p, p, p, p)
+                      for i, p in enumerate([old_price]*70 + [100]*30)]
+            return warmup + [Bar(opening, 110, 110, 110, 110),
+                             Bar(opening + timedelta(minutes=30), 112, 113, 112, 113)]
+        settings = dict(fast=10, slow=30, trend=100, bar_minutes=30)
+        _, blocked, _ = simulate(data(200), date(2026, 5, 1), date(2026, 5, 2), **settings)
+        _, allowed, _ = simulate(data(50), date(2026, 5, 1), date(2026, 5, 2), **settings)
+        self.assertEqual(blocked, [])
+        self.assertEqual(len(allowed), 1)
+        self.assertEqual(allowed[0]["entry_time"], (opening + timedelta(minutes=30)).isoformat())
+
+    def test_slow_strategy_requires_full_warmup(self):
+        with self.assertRaisesRegex(ValueError, "100 pre-period"):
+            simulate(self.bars([110,111]), date(2026, 5, 1), date(2026, 5, 2),
+                     fast=10, slow=30, trend=100, bar_minutes=30)
+
     def bars(self, closes):
         first = datetime(2026, 5, 1, 9, 30, tzinfo=NY)
         warmup = [Bar(first - timedelta(days=1) + timedelta(minutes=5*i),

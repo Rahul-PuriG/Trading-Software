@@ -1,6 +1,158 @@
 # IBKR paper trading — local Windows execution
 
+## USDJPY swing-plan validation sample
+
+The pure `fx_account.py` ledger models risk and margin separately from signal
+detection. Test with `python -m unittest test_fx_account -v`. It assumes gross
+initial margin, equity including marked open P&L, and whole USD base-unit sizing;
+these are labelled simulation conventions, not broker-verified behaviour.
+`reference_replay.py` checks two manually chosen price paths and does not detect
+strategy signals or produce a full profitability backtest.
+
+`swing_lc1.py` qualifies selected M15 inducement highs/lows only after they cause
+an opposite prior-level break: a wick is sufficient, and a close adds quality.
+It then checks the sweep/POI/closed-candle sequence conditional on annotated
+zone, origin/prior-reference selection and context inputs. `check_swing_reference.py` reconciles two
+examples and checks pending entry/stop amendments and risk replanning. It does
+not automatically identify structure pivots, select POIs or grade phases, and
+does not implement LC-2A/LC-2B. Do not report its selected examples as a full or
+out-of-sample strategy test. No broker orders are sent by these modules.
+
+Inducement is identified on the M15 entry timeframe only. Any qualifying point
+may be used; proximity to/inside the POI improves quality, not eligibility. This includes one
+formed in a pullback. A newer inducement does not disqualify LC-1; no left-leg-only
+or no-PBID admission filter applies. Mandatory break/sweep/mitigation and entry
+rules still apply; exact point selection remains annotated in the replays.
+Signal metadata reports distance in pips without using it as a rejection filter.
+
+`inducement_candidates.py` automatically enumerates M15 origins and prior-level
+break evidence, retaining multiple candidates. It is separate from context
+structure mapping. Its outputs still require POI/proximity and setup validation;
+candidate counts are not trades, and no automated profitability test is implied.
+
+`fractal_candidates.py` includes the diagnostic nested-candidate enumerator and
+`FractalSequenceDetector`, which advances A before a failure, freezes it during
+the pullback, and resets to the breakout candle C. The sequence detector requires
+a supplied direction and starting candle; automatic CHoCH direction changes and
+hierarchy initialization remain unfinished. `internal_structure.py` tracks
+internal pullbacks from supplied boundaries and fractal-direction evidence. It
+keeps a candidate pivot unconfirmed until a close beyond the prior internal
+level; fractal realignment alone is insufficient.
+
+`fractal_structure.py` maps context fractal CHoCH on **1H/4H only** and can feed
+direction evidence to the internal tracker on the same timeframe. It rejects
+M15 context mapping: the user's M15 LC-1 highs/lows serve as inducement near or
+inside the POI, with exact liquidity selection still supplied as annotations.
+They do not provide the 1H/4H context-fractal trend signal. For the bullish outside A/B/C case, high-first then
+low produces CHoCH; low-first then high produces no break from that proposed
+new point. Complete, matching one-minute evidence is required to choose the
+order; same-minute or missing evidence remains unresolved. Initial direction
+and reversal linking conventions still need chart validation. This is not a
+validated full-history hierarchy or automated strategy backtest.
+
+The user's USDJPY swing plan is separate from the earlier experimental SPY SMA
+strategies below. Its rules and journals are organized privately under the ignored
+`data/strategy_review/` directory. An automated USDJPY strategy backtest has not
+yet been implemented or validated.
+
+`download_usdjpy_sample.py` downloads a read-only IBKR historical sample to
+reconcile the January 23 and January 29, 2025 journal examples against candles:
+
+```powershell
+.\.venv\Scripts\python.exe download_usdjpy_sample.py
+```
+
+Keep TWS paper trading running on port 7497. Uses client ID 19 and the existing
+`ib_async` dependency and `bot.py` paper-account check. Read-Only API can stay on.
+No order submission/cancellation is performed. Default downloads:
+
+- 15-minute MIDPOINT context: November 1, 2024 through January 31, 2025.
+- 1-minute MIDPOINT execution sample: January 22 through January 30, 2025.
+
+Request dates use America/Halifax local midnight, with exclusive end dates. CSV
+timestamps are UTC and identify the candle start. Successful nonempty chunks
+are cached for retry; an empty request can indicate a weekend/holiday or missing
+data and is reported in metadata. Coverage and timeframe alignment require later
+inspection; a completed download does not prove a complete historical backtest.
+
+Downloader version 2 requests one-minute bars in explicit four-hour windows.
+The initial daily-request version returned partial FX sessions in the uploaded
+sample. Version 2 validates minute timestamps against every downloaded 15-minute
+bar in the execution range before accepting the execution CSV. It reuses the
+existing 15-minute cache, but the revised one-minute requests use new cache keys.
+If coverage fails, it writes `USDJPY_execution_1min_INCOMPLETE.csv`, marks
+`metadata.json` as failed and exits with an error; do not use an old standard-name
+execution file as if that run had succeeded. The check does not independently
+prove all 15-minute context bars are present.
+
+Outputs in `data/usdjpy_sample/`: `USDJPY_context_15min.csv`,
+`USDJPY_execution_1min.csv`, and `metadata.json`. These contain prices and request
+metadata, not account summary or credentials. Share those three files for review.
+TWS historical-data permissions are required. OANDA/FXReplay journal prices may
+differ from IBKR IDEALPRO midpoint prices. No bid/ask fills or 4H/daily bar
+aggregation anchors have been inferred. If one series fails, previously saved
+data/cache remains available; inspect the error before proceeding.
+
 ## Six-month SPY backtest
+
+### Risk-sized strategy with stop and 3.3R target
+
+`risk_backtest.py` imports the updated `backtest.py` and uses the same slow,
+long-only signals. It buys at the next available 5-minute open after a completed
+30-minute signal. The stop is the **signal candle low minus $0.05**, configurable
+with `--buffer`. A sell closes the long; there are no short entries.
+
+```powershell
+.\.venv\Scripts\python.exe risk_backtest.py --start 2026-05-01 --end 2026-11-01 --risk-pct 1 --reward-r 3.3 --buffer 0.05
+```
+
+Whole-share position sizing budgets 1% of current flat account equity, including
+modelled entry/stop slippage and round-trip commissions. Available cash caps
+the position: this is **up to** 1% planned risk with no leverage. If even one
+share cannot fit, the entry is skipped. Gaps through the stop can cause losses
+larger than the budget. Target is entry plus 3.3 times the entry-to-stop price
+distance; realized net R can be lower due to costs and crossover exits.
+
+Exit at stop, target, or bearish crossover, whichever occurs first. Positions
+can remain overnight. Checks use the original 5-minute OHLC data; when stop and
+target are both touched in one candle the stop is assumed first. A stop gap
+fills at the opening price less slippage. Target fills are at the limit, even
+if the open is above it. Intrabar event timestamps identify the 5-minute candle,
+not an exact execution second. No tick-level queue/liquidity model is available.
+Final open positions are liquidated at the final close with modelled costs.
+
+Reports are saved separately in `reports/risk1_rr3_3/`. They include exit reasons,
+position quantities, stop/target levels, planned risk, realized net R, and a
+cash-matched buy-and-hold comparison. Default costs remain $1 per order and 1 bp
+slippage per side. Compare returns carefully: earlier tests used one share,
+while this version sizes positions from risk. Neither script submits orders.
+
+### Slower comparison strategy
+
+The fixed `slow` strategy aggregates the existing bars into complete 30-minute
+candles anchored at 09:30 New York time. It enters on an SMA10 upward crossover
+of SMA30 only when that candle closes above SMA100, and exits on the downward
+crossover. Entry is not delayed until the filter passes: a fresh crossover is
+required. Signals use completed candles and fills use the next candle's open.
+Positions and averages carry overnight; one share, long/flat, no stop loss.
+The original strategy remains the default. This version is a hypothesis, not a
+proven improvement; these six months have already influenced its design and
+cannot serve as untouched validation data.
+
+After replacing `backtest.py`, reuse the existing download:
+
+```powershell
+.\.venv\Scripts\python.exe backtest.py run --strategy slow --start 2026-05-01 --end 2026-11-01
+```
+
+Results go to `reports/sma_10_30_trend100/`, leaving the original reports in place.
+The default $1/order commission and 0.01% slippage still apply. Drawdown uses
+30-minute closing equity, so intrabar drawdown can be larger. At least 100
+pre-period 30-minute candles are required; the downloaded extra weeks should
+provide enough, but insufficient warmup fails rather than shortening the test.
+No new packages, TWS connection, download, or orders are needed for `run`.
+
+### Original strategy and data download
 
 `backtest.py` tests the 5/20 SMA crossover on 5-minute SPY TRADES bars during
 regular market hours. Buy one share after an upward crossover; exit after a
