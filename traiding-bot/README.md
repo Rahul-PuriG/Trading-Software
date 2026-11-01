@@ -30,6 +30,19 @@ break evidence, retaining multiple candidates. It is separate from context
 structure mapping. Its outputs still require POI/proximity and setup validation;
 candidate counts are not trades, and no automated profitability test is implied.
 
+`scan_lc1_candidates` in `swing_lc1.py` connects the discovered candidate bank to
+a supplied POI/context, checks pre-window consumption and merges identical
+closed-candle signals. `check_lc1_discovery.py` reconciles the two January cases
+without supplying their marked inducement points to detection. Additional
+signals still need changing-context and position-lifecycle validation; this
+connection is not a full automated strategy backtest.
+
+`poi_mapping.py` discovers HTF origin candidates from a supplied internal/swing
+break reference and mapping window. It retains leg extremes and supported
+mid-leg points, reports earlier-known sweep evidence and audits pre-confirmation
+returns. Structural initialization, the departure convention and ambiguous
+overlapping origins still require validation; candidates are not active zones.
+
 `fractal_candidates.py` includes the diagnostic nested-candidate enumerator and
 `FractalSequenceDetector`, which advances A before a failure, freezes it during
 the pullback, and resets to the breakout candle C. The sequence detector requires

@@ -1,0 +1,261 @@
+{
+  "scope": "Automatic candidate enumeration only; not final structure hierarchy or trade signals",
+  "results": {
+    "15min": {
+      "input_bars": 6043,
+      "candidate_patterns": 6128,
+      "ordering_review_patterns": 528,
+      "comparison_matches": [
+        {
+          "kind": "fractal_high_candidate",
+          "confirmation_direction": "SELL",
+          "anchor_start": "2025-01-29T11:00:00+00:00",
+          "anchor_break_level": 155.326,
+          "first_failed_candle": "2025-01-29T11:15:00+00:00",
+          "failed_candles": 3,
+          "reference_price": 155.5225,
+          "reference_candle_starts": [
+            "2025-01-29T11:30:00+00:00"
+          ],
+          "confirmation_candle_start": "2025-01-29T12:00:00+00:00",
+          "available_at": "2025-01-29T12:15:00+00:00",
+          "confirmation_candle_closed_beyond_A": false,
+          "confirmation_quality": "wick_only",
+          "reference_also_crossed_in_confirmation_candle": false,
+          "requires_ordering_review": false,
+          "spans_quote_gap": false,
+          "scope": "Candidate pattern only; no automatic hierarchy, POI or trade classification"
+        },
+        {
+          "kind": "fractal_high_candidate",
+          "confirmation_direction": "SELL",
+          "anchor_start": "2025-01-29T11:15:00+00:00",
+          "anchor_break_level": 155.343,
+          "first_failed_candle": "2025-01-29T11:30:00+00:00",
+          "failed_candles": 2,
+          "reference_price": 155.5225,
+          "reference_candle_starts": [
+            "2025-01-29T11:30:00+00:00"
+          ],
+          "confirmation_candle_start": "2025-01-29T12:00:00+00:00",
+          "available_at": "2025-01-29T12:15:00+00:00",
+          "confirmation_candle_closed_beyond_A": false,
+          "confirmation_quality": "wick_only",
+          "reference_also_crossed_in_confirmation_candle": false,
+          "requires_ordering_review": false,
+          "spans_quote_gap": false,
+          "scope": "Candidate pattern only; no automatic hierarchy, POI or trade classification"
+        },
+        {
+          "kind": "fractal_high_candidate",
+          "confirmation_direction": "SELL",
+          "anchor_start": "2025-01-29T10:30:00+00:00",
+          "anchor_break_level": 155.32,
+          "first_failed_candle": "2025-01-29T10:45:00+00:00",
+          "failed_candles": 9,
+          "reference_price": 155.5225,
+          "reference_candle_starts": [
+            "2025-01-29T11:30:00+00:00"
+          ],
+          "confirmation_candle_start": "2025-01-29T13:00:00+00:00",
+          "available_at": "2025-01-29T13:15:00+00:00",
+          "confirmation_candle_closed_beyond_A": false,
+          "confirmation_quality": "wick_only",
+          "reference_also_crossed_in_confirmation_candle": false,
+          "requires_ordering_review": false,
+          "spans_quote_gap": false,
+          "scope": "Candidate pattern only; no automatic hierarchy, POI or trade classification"
+        },
+        {
+          "kind": "fractal_high_candidate",
+          "confirmation_direction": "SELL",
+          "anchor_start": "2025-01-29T09:45:00+00:00",
+          "anchor_break_level": 155.221,
+          "first_failed_candle": "2025-01-29T10:00:00+00:00",
+          "failed_candles": 19,
+          "reference_price": 155.5225,
+          "reference_candle_starts": [
+            "2025-01-29T11:30:00+00:00"
+          ],
+          "confirmation_candle_start": "2025-01-29T14:45:00+00:00",
+          "available_at": "2025-01-29T15:00:00+00:00",
+          "confirmation_candle_closed_beyond_A": true,
+          "confirmation_quality": "close_confirmed",
+          "reference_also_crossed_in_confirmation_candle": false,
+          "requires_ordering_review": false,
+          "spans_quote_gap": false,
+          "scope": "Candidate pattern only; no automatic hierarchy, POI or trade classification"
+        },
+        {
+          "kind": "fractal_high_candidate",
+          "confirmation_direction": "SELL",
+          "anchor_start": "2025-01-29T09:00:00+00:00",
+          "anchor_break_level": 155.0905,
+          "first_failed_candle": "2025-01-29T09:15:00+00:00",
+          "failed_candles": 24,
+          "reference_price": 155.5225,
+          "reference_candle_starts": [
+            "2025-01-29T11:30:00+00:00"
+          ],
+          "confirmation_candle_start": "2025-01-29T15:15:00+00:00",
+          "available_at": "2025-01-29T15:30:00+00:00",
+          "confirmation_candle_closed_beyond_A": false,
+          "confirmation_quality": "wick_only",
+          "reference_also_crossed_in_confirmation_candle": false,
+          "requires_ordering_review": false,
+          "spans_quote_gap": false,
+          "scope": "Candidate pattern only; no automatic hierarchy, POI or trade classification"
+        },
+        {
+          "kind": "fractal_high_candidate",
+          "confirmation_direction": "SELL",
+          "anchor_start": "2025-01-29T09:30:00+00:00",
+          "anchor_break_level": 155.1735,
+          "first_failed_candle": "2025-01-29T09:45:00+00:00",
+          "failed_candles": 22,
+          "reference_price": 155.5225,
+          "reference_candle_starts": [
+            "2025-01-29T11:30:00+00:00"
+          ],
+          "confirmation_candle_start": "2025-01-29T15:15:00+00:00",
+          "available_at": "2025-01-29T15:30:00+00:00",
+          "confirmation_candle_closed_beyond_A": true,
+          "confirmation_quality": "close_confirmed",
+          "reference_also_crossed_in_confirmation_candle": false,
+          "requires_ordering_review": false,
+          "spans_quote_gap": false,
+          "scope": "Candidate pattern only; no automatic hierarchy, POI or trade classification"
+        },
+        {
+          "kind": "fractal_high_candidate",
+          "confirmation_direction": "SELL",
+          "anchor_start": "2025-01-29T05:45:00+00:00",
+          "anchor_break_level": 155.002,
+          "first_failed_candle": "2025-01-29T06:00:00+00:00",
+          "failed_candles": 39,
+          "reference_price": 155.5225,
+          "reference_candle_starts": [
+            "2025-01-29T11:30:00+00:00"
+          ],
+          "confirmation_candle_start": "2025-01-29T15:45:00+00:00",
+          "available_at": "2025-01-29T16:00:00+00:00",
+          "confirmation_candle_closed_beyond_A": false,
+          "confirmation_quality": "wick_only",
+          "reference_also_crossed_in_confirmation_candle": false,
+          "requires_ordering_review": false,
+          "spans_quote_gap": false,
+          "scope": "Candidate pattern only; no automatic hierarchy, POI or trade classification"
+        },
+        {
+          "kind": "fractal_high_candidate",
+          "confirmation_direction": "SELL",
+          "anchor_start": "2025-01-29T06:00:00+00:00",
+          "anchor_break_level": 155.0035,
+          "first_failed_candle": "2025-01-29T06:15:00+00:00",
+          "failed_candles": 38,
+          "reference_price": 155.5225,
+          "reference_candle_starts": [
+            "2025-01-29T11:30:00+00:00"
+          ],
+          "confirmation_candle_start": "2025-01-29T15:45:00+00:00",
+          "available_at": "2025-01-29T16:00:00+00:00",
+          "confirmation_candle_closed_beyond_A": false,
+          "confirmation_quality": "wick_only",
+          "reference_also_crossed_in_confirmation_candle": false,
+          "requires_ordering_review": false,
+          "spans_quote_gap": false,
+          "scope": "Candidate pattern only; no automatic hierarchy, POI or trade classification"
+        },
+        {
+          "kind": "fractal_high_candidate",
+          "confirmation_direction": "SELL",
+          "anchor_start": "2025-01-29T08:15:00+00:00",
+          "anchor_break_level": 155.01,
+          "first_failed_candle": "2025-01-29T08:30:00+00:00",
+          "failed_candles": 29,
+          "reference_price": 155.5225,
+          "reference_candle_starts": [
+            "2025-01-29T11:30:00+00:00"
+          ],
+          "confirmation_candle_start": "2025-01-29T15:45:00+00:00",
+          "available_at": "2025-01-29T16:00:00+00:00",
+          "confirmation_candle_closed_beyond_A": false,
+          "confirmation_quality": "wick_only",
+          "reference_also_crossed_in_confirmation_candle": false,
+          "requires_ordering_review": false,
+          "spans_quote_gap": false,
+          "scope": "Candidate pattern only; no automatic hierarchy, POI or trade classification"
+        }
+      ]
+    },
+    "1h": {
+      "input_bars": 1465,
+      "candidate_patterns": 1408,
+      "ordering_review_patterns": 150,
+      "comparison_matches": [
+        {
+          "kind": "fractal_high_candidate",
+          "confirmation_direction": "SELL",
+          "anchor_start": "2025-01-29T00:00:00+00:00",
+          "anchor_break_level": 155.433,
+          "first_failed_candle": "2025-01-29T01:00:00+00:00",
+          "failed_candles": 2,
+          "reference_price": 155.79,
+          "reference_candle_starts": [
+            "2025-01-29T01:00:00+00:00"
+          ],
+          "confirmation_candle_start": "2025-01-29T03:00:00+00:00",
+          "available_at": "2025-01-29T04:00:00+00:00",
+          "confirmation_candle_closed_beyond_A": true,
+          "confirmation_quality": "close_confirmed",
+          "reference_also_crossed_in_confirmation_candle": false,
+          "requires_ordering_review": false,
+          "spans_quote_gap": false,
+          "scope": "Candidate pattern only; no automatic hierarchy, POI or trade classification"
+        },
+        {
+          "kind": "fractal_high_candidate",
+          "confirmation_direction": "SELL",
+          "anchor_start": "2025-01-28T14:00:00+00:00",
+          "anchor_break_level": 155.05,
+          "first_failed_candle": "2025-01-28T15:00:00+00:00",
+          "failed_candles": 13,
+          "reference_price": 155.79,
+          "reference_candle_starts": [
+            "2025-01-29T01:00:00+00:00"
+          ],
+          "confirmation_candle_start": "2025-01-29T05:00:00+00:00",
+          "available_at": "2025-01-29T06:00:00+00:00",
+          "confirmation_candle_closed_beyond_A": true,
+          "confirmation_quality": "close_confirmed",
+          "reference_also_crossed_in_confirmation_candle": false,
+          "requires_ordering_review": false,
+          "spans_quote_gap": true,
+          "scope": "Candidate pattern only; no automatic hierarchy, POI or trade classification"
+        },
+        {
+          "kind": "fractal_high_candidate",
+          "confirmation_direction": "SELL",
+          "anchor_start": "2025-01-28T15:00:00+00:00",
+          "anchor_break_level": 155.216,
+          "first_failed_candle": "2025-01-28T16:00:00+00:00",
+          "failed_candles": 12,
+          "reference_price": 155.79,
+          "reference_candle_starts": [
+            "2025-01-29T01:00:00+00:00"
+          ],
+          "confirmation_candle_start": "2025-01-29T05:00:00+00:00",
+          "available_at": "2025-01-29T06:00:00+00:00",
+          "confirmation_candle_closed_beyond_A": true,
+          "confirmation_quality": "close_confirmed",
+          "reference_also_crossed_in_confirmation_candle": false,
+          "requires_ordering_review": false,
+          "spans_quote_gap": true,
+          "scope": "Candidate pattern only; no automatic hierarchy, POI or trade classification"
+        }
+      ]
+    }
+  },
+  "timeframe_correction": "User context-fractal structure is 1H/4H. Prior M15 context scans are not the separate M15 LC-1 fractal-CHoCH rule; mixed context/LC-1 validation is superseded.",
+  "superseded_as_context_strategy_validation": true
+}

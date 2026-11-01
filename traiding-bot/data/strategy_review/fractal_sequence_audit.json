@@ -1,0 +1,95 @@
+{
+  "scope": "Directional reset-rule scan from each series first candle; directions supplied independently, no automatic CHoCH/reseeding, hierarchy, POI or trade selection. Labels compared only after detection.",
+  "runs": [
+    {
+      "timeframe": "15min",
+      "direction_supplied": "BUY",
+      "initial_A_supplied": "2024-11-01T03:00:00+00:00",
+      "input_bars": 6043,
+      "patterns": 40,
+      "confirmed_patterns": 38,
+      "ordering_review_patterns": 2,
+      "events_file": "fractal_sequence_15min_BUY.json",
+      "reference_comparison": [
+        {
+          "reference": "Jan23 liquidity",
+          "found_in_this_seeded_sequence": false,
+          "available_at": []
+        },
+        {
+          "reference": "Jan29 liquidity",
+          "found_in_this_seeded_sequence": false,
+          "available_at": []
+        }
+      ]
+    },
+    {
+      "timeframe": "15min",
+      "direction_supplied": "SELL",
+      "initial_A_supplied": "2024-11-01T03:00:00+00:00",
+      "input_bars": 6043,
+      "patterns": 19,
+      "confirmed_patterns": 19,
+      "ordering_review_patterns": 0,
+      "events_file": "fractal_sequence_15min_SELL.json",
+      "reference_comparison": [
+        {
+          "reference": "Jan23 liquidity",
+          "found_in_this_seeded_sequence": false,
+          "available_at": []
+        },
+        {
+          "reference": "Jan29 liquidity",
+          "found_in_this_seeded_sequence": false,
+          "available_at": []
+        }
+      ]
+    },
+    {
+      "timeframe": "1h",
+      "direction_supplied": "BUY",
+      "initial_A_supplied": "2024-11-01T03:00:00+00:00",
+      "input_bars": 1465,
+      "patterns": 27,
+      "confirmed_patterns": 27,
+      "ordering_review_patterns": 0,
+      "events_file": "fractal_sequence_1h_BUY.json",
+      "reference_comparison": [
+        {
+          "reference": "Jan23 POI origin",
+          "found_in_this_seeded_sequence": false,
+          "available_at": []
+        },
+        {
+          "reference": "Jan29 POI origin",
+          "found_in_this_seeded_sequence": false,
+          "available_at": []
+        }
+      ]
+    },
+    {
+      "timeframe": "1h",
+      "direction_supplied": "SELL",
+      "initial_A_supplied": "2024-11-01T03:00:00+00:00",
+      "input_bars": 1465,
+      "patterns": 15,
+      "confirmed_patterns": 14,
+      "ordering_review_patterns": 1,
+      "events_file": "fractal_sequence_1h_SELL.json",
+      "reference_comparison": [
+        {
+          "reference": "Jan23 POI origin",
+          "found_in_this_seeded_sequence": false,
+          "available_at": []
+        },
+        {
+          "reference": "Jan29 POI origin",
+          "found_in_this_seeded_sequence": false,
+          "available_at": []
+        }
+      ]
+    }
+  ],
+  "timeframe_correction": "User context-fractal structure is 1H/4H. Prior M15 context scans are not the separate M15 LC-1 fractal-CHoCH rule; mixed context/LC-1 validation is superseded.",
+  "superseded_as_context_strategy_validation": true
+}

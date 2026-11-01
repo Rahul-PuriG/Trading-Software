@@ -1,0 +1,190 @@
+{
+  "scope": "1H context-only, with supplied initial direction and chronological one-minute evidence where available. No M15 LC-1 qualification, automatic hierarchy/POI selection or trading performance claim.",
+  "four_hour_scan": "Not run; 4H aggregation anchor has not been inferred. The tracker accepts supplied 4H candles.",
+  "runs": [
+    {
+      "timeframe_minutes": 60,
+      "window": "full_context",
+      "supplied_initial_direction": "BUY",
+      "supplied_initial_A": "2024-11-01T03:00:00+00:00",
+      "input_bars": 1465,
+      "processed_bars": 66,
+      "complete": false,
+      "choch_count": 7,
+      "halt_reason": "opposing_reference_and_new_leg_extreme_in_same_candle",
+      "comparison": [
+        {
+          "context_reference": "Jan23 POI origin",
+          "matches_before_review": []
+        },
+        {
+          "context_reference": "Jan29 POI origin",
+          "matches_before_review": []
+        }
+      ],
+      "trace_file": "context_structure_1h_full_context_BUY.json"
+    },
+    {
+      "timeframe_minutes": 60,
+      "window": "full_context",
+      "supplied_initial_direction": "SELL",
+      "supplied_initial_A": "2024-11-01T03:00:00+00:00",
+      "input_bars": 1465,
+      "processed_bars": 66,
+      "complete": false,
+      "choch_count": 8,
+      "halt_reason": "opposing_reference_and_new_leg_extreme_in_same_candle",
+      "comparison": [
+        {
+          "context_reference": "Jan23 POI origin",
+          "matches_before_review": []
+        },
+        {
+          "context_reference": "Jan29 POI origin",
+          "matches_before_review": []
+        }
+      ],
+      "trace_file": "context_structure_1h_full_context_SELL.json"
+    },
+    {
+      "timeframe_minutes": 60,
+      "window": "minute_coverage",
+      "supplied_initial_direction": "BUY",
+      "supplied_initial_A": "2025-01-22T04:00:00+00:00",
+      "input_bars": 161,
+      "processed_bars": 46,
+      "complete": false,
+      "choch_count": 2,
+      "halt_reason": "opposing_reference_and_new_leg_extreme_in_same_candle",
+      "comparison": [
+        {
+          "context_reference": "Jan23 POI origin",
+          "matches_before_review": [
+            "2025-01-23T14:00:00+00:00"
+          ]
+        },
+        {
+          "context_reference": "Jan29 POI origin",
+          "matches_before_review": []
+        }
+      ],
+      "trace_file": "context_structure_1h_minute_coverage_BUY.json"
+    },
+    {
+      "timeframe_minutes": 60,
+      "window": "minute_coverage",
+      "supplied_initial_direction": "SELL",
+      "supplied_initial_A": "2025-01-22T04:00:00+00:00",
+      "input_bars": 161,
+      "processed_bars": 5,
+      "complete": false,
+      "choch_count": 1,
+      "halt_reason": "opposing_reference_and_new_leg_extreme_in_same_candle",
+      "comparison": [
+        {
+          "context_reference": "Jan23 POI origin",
+          "matches_before_review": []
+        },
+        {
+          "context_reference": "Jan29 POI origin",
+          "matches_before_review": []
+        }
+      ],
+      "trace_file": "context_structure_1h_minute_coverage_SELL.json"
+    },
+    {
+      "timeframe_minutes": 60,
+      "window": "2025-01-23",
+      "supplied_initial_direction": "BUY",
+      "supplied_initial_A": "2025-01-23T00:00:00+00:00",
+      "input_bars": 23,
+      "processed_bars": 23,
+      "complete": true,
+      "choch_count": 2,
+      "halt_reason": null,
+      "comparison": [
+        {
+          "context_reference": "Jan23 POI origin",
+          "matches_before_review": [
+            "2025-01-23T14:00:00+00:00"
+          ]
+        },
+        {
+          "context_reference": "Jan29 POI origin",
+          "matches_before_review": []
+        }
+      ],
+      "trace_file": "context_structure_1h_2025-01-23_BUY.json"
+    },
+    {
+      "timeframe_minutes": 60,
+      "window": "2025-01-23",
+      "supplied_initial_direction": "SELL",
+      "supplied_initial_A": "2025-01-23T00:00:00+00:00",
+      "input_bars": 23,
+      "processed_bars": 23,
+      "complete": true,
+      "choch_count": 1,
+      "halt_reason": null,
+      "comparison": [
+        {
+          "context_reference": "Jan23 POI origin",
+          "matches_before_review": [
+            "2025-01-23T14:00:00+00:00"
+          ]
+        },
+        {
+          "context_reference": "Jan29 POI origin",
+          "matches_before_review": []
+        }
+      ],
+      "trace_file": "context_structure_1h_2025-01-23_SELL.json"
+    },
+    {
+      "timeframe_minutes": 60,
+      "window": "2025-01-29",
+      "supplied_initial_direction": "BUY",
+      "supplied_initial_A": "2025-01-29T00:00:00+00:00",
+      "input_bars": 23,
+      "processed_bars": 23,
+      "complete": true,
+      "choch_count": 0,
+      "halt_reason": null,
+      "comparison": [
+        {
+          "context_reference": "Jan23 POI origin",
+          "matches_before_review": []
+        },
+        {
+          "context_reference": "Jan29 POI origin",
+          "matches_before_review": []
+        }
+      ],
+      "trace_file": "context_structure_1h_2025-01-29_BUY.json"
+    },
+    {
+      "timeframe_minutes": 60,
+      "window": "2025-01-29",
+      "supplied_initial_direction": "SELL",
+      "supplied_initial_A": "2025-01-29T00:00:00+00:00",
+      "input_bars": 23,
+      "processed_bars": 23,
+      "complete": true,
+      "choch_count": 1,
+      "halt_reason": null,
+      "comparison": [
+        {
+          "context_reference": "Jan23 POI origin",
+          "matches_before_review": []
+        },
+        {
+          "context_reference": "Jan29 POI origin",
+          "matches_before_review": [
+            "2025-01-29T04:00:00+00:00"
+          ]
+        }
+      ],
+      "trace_file": "context_structure_1h_2025-01-29_SELL.json"
+    }
+  ]
+}

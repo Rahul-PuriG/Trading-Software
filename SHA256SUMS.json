@@ -1,0 +1,2750 @@
+{
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".vscode/launch.json",
+      "bytes": 405,
+      "sha256": "34c63a6b4c24d18b620be5a576bf4dcbf616cf3bb98097f32c0c51f18001f7c0"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "bytes": 118,
+      "sha256": "eb53669b8d9474c081a1b9772a552d52f1ee913cc7bc57c898af1c9b0850a8dd"
+    },
+    {
+      "path": "FULL_BACKUP_README.md",
+      "bytes": 1960,
+      "sha256": "c27cd2cf01e3f6c06bae5be26b3ea4cab39de6b9d3fbf2623e308f318c23463f"
+    },
+    {
+      "path": "TRADING_BOT_HANDOFF.md",
+      "bytes": 11183,
+      "sha256": "a7977a82bbfd0c46b634b1a10a4c6ef537fe7c8cce7f42a7c8b6bcf4e0b19a71"
+    },
+    {
+      "path": "backend/.gitattributes",
+      "bytes": 278,
+      "sha256": "ca40924bbe3db74fe4f39c9b32500ca5a15e7bc1cff355033fe859702e5dbb97"
+    },
+    {
+      "path": "backend/.gitignore",
+      "bytes": 103,
+      "sha256": "db0a6577b955583791c2313de81b4cb41914bbc3234fa6ab86b28d15f9f2a922"
+    },
+    {
+      "path": "backend/app/bin/main/application.properties",
+      "bytes": 42,
+      "sha256": "b26780b16f7ace6af44212aa9764cc94c81aede2f1116abfd3e52e4fcdb8473f"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/BackendTraderApplication.class",
+      "bytes": 746,
+      "sha256": "134a6c24916bf33ada0763da1802417d67c92e555beeca9adf566b86e1ba57b7"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/config/WebSocketConfig$1.class",
+      "bytes": 2760,
+      "sha256": "5c7f25ff5c614b7348a289ef434047dac6f50227c326d3ffa2582a3e691eaa93"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/config/WebSocketConfig.class",
+      "bytes": 2928,
+      "sha256": "fd4e6fbd90885ee93d06c5897626e16fa31bb0767fbc083705fd4f734ec6045e"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/controller/PositionController.class",
+      "bytes": 1314,
+      "sha256": "a2c49244b0898f098df4f74138911984bee927bf917a9f0f77d04fec9ff1c0fa"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/controller/QuoteController$1.class",
+      "bytes": 896,
+      "sha256": "b03b0629b7fa353036755d76e7f1aa871f7b3aba70b68560cebfb6373f841066"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/controller/QuoteController.class",
+      "bytes": 3686,
+      "sha256": "9f8a381de4762e7f48e5c701692f6eb821a274c337a3f7ff44988537392b20e4"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/controller/VirtualTradingController.class",
+      "bytes": 13120,
+      "sha256": "8f9eeb0a892c57961074f005027f52be70a6a57d29ceb346c7816331262e1572"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/dto/PlaceOrderRequest.class",
+      "bytes": 3816,
+      "sha256": "6f0df1d5211ae5874b721101608bcc1e3d5a488e21ad6cb715a363269f811637"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/dto/PlaceOrderResponse.class",
+      "bytes": 4183,
+      "sha256": "c85de2b5219a0f0edfb6c3ff474915f1dc7ed99b97d860aa57bbc26a752fccad"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/entity/OrderEntity.class",
+      "bytes": 6232,
+      "sha256": "7b893702b50bb626031a44f3c6e65742e8cdf6a42348e54798d6f4db70468bd1"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/entity/QuoteEntity.class",
+      "bytes": 4241,
+      "sha256": "29900b492fad6795b98663eb888f551be99aea7699019da40ebdb8f52c688fe0"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/entity/TradeEntity.class",
+      "bytes": 5455,
+      "sha256": "7fb442e8806730d5a7d256021d0c3650016a4e1019a83a2a0166bee82c027bfc"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/entity/UserAccount.class",
+      "bytes": 4969,
+      "sha256": "b1718446a635ff08adc3005bc2f32e3ac18760cc69e4f4bb656796622b5a5d74"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/entity/VirtualPosition.class",
+      "bytes": 6025,
+      "sha256": "d044b2170101f785aa0199f1676c3d876c3e1ddcda32735ece90e95493c32f07"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/model/Ticker.class",
+      "bytes": 3426,
+      "sha256": "4830ecab4f6afd9ce8f95191d6b8c92fac11eeb347c8c6d7b23f369e3054e017"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/repository/OrderRepository.class",
+      "bytes": 539,
+      "sha256": "2d18d2b3ff4d6cec22734c22f2ca0fd1607cdb39d013a7952867c916bd7c67fb"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/repository/QuoteRepository.class",
+      "bytes": 533,
+      "sha256": "f1028922ebfae675fa88bb82d60ece9a934cb91213010d24ca8313457f991530"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/repository/TradeRepository.class",
+      "bytes": 756,
+      "sha256": "7d6f92d89be64677e03dbebb6644fa6f51e94d2a90453ab577c0d923495ea487"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/repository/UserAccountRepository.class",
+      "bytes": 545,
+      "sha256": "1d233d5dee2213318c9ef2380f9655568903133463decb9129c54c7449a4ce27"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/repository/VirtualPositionRepository.class",
+      "bytes": 924,
+      "sha256": "868d4ce2b35f00d42c59397348302fec12f8b3bd87937bf53a460e339b830344"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/service/CoinbaseWebSocketService$1.class",
+      "bytes": 4486,
+      "sha256": "70d476e28c59cec51bcdb8867a89aaa72913ab713e612c8fa94a3f902f7d1792"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/service/CoinbaseWebSocketService.class",
+      "bytes": 1732,
+      "sha256": "2b1e81ab5418049306e377c06f920a68c94656730cdee9f01a65a04c04b554df"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/service/PriceCache.class",
+      "bytes": 1767,
+      "sha256": "7d252bee9c81b3df951a9fe97950efb2e9397669360c308b2c6f8ffa87cdffe4"
+    },
+    {
+      "path": "backend/app/bin/main/com/trader/backendtrader/service/VirtualTradingService.class",
+      "bytes": 7922,
+      "sha256": "1a215e7a91e9d780103d2c565447a9ad3ee578f97d903be5e18756238b8a5f27"
+    },
+    {
+      "path": "backend/app/build.gradle",
+      "bytes": 954,
+      "sha256": "4ab476494c91d5770c50a36819b77ea49c801399afebb94b8577ecee9855cb8f"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/BackendTraderApplication.java",
+      "bytes": 341,
+      "sha256": "f3d957d6ed9a7a26efe97cc7fc661734121cbbd0fc24ca1d4be01285794f95cb"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/config/WebSocketConfig.java",
+      "bytes": 2371,
+      "sha256": "9f33fdd2fa43ad1462de2d8f656c4d6acb6aaa89e21707a7a94681908e3b70e4"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/controller/PositionController.java",
+      "bytes": 742,
+      "sha256": "8d6cee0d992ea656c1d239ca64baa84fe929f0f56a72b7a2db02ba0f9699206d"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/controller/QuoteController.java",
+      "bytes": 1456,
+      "sha256": "ffbb74854b36d7f0fd4fda728a633bad43f4b2b1765035e96ba112168a3a3a84"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/controller/VirtualTradingController.java",
+      "bytes": 8498,
+      "sha256": "6d92604bf9252c55d320c3746662438cf759442cfb663ed057a981bfb548bb95"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/dto/PlaceOrderRequest.java",
+      "bytes": 350,
+      "sha256": "32b29f09283829ee3855cdca062df998e22ff04b0090f2b160dc37013299f4cf"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/dto/PlaceOrderResponse.java",
+      "bytes": 330,
+      "sha256": "c13d766f63f8c8c5216fbc823b12f740d28efd6b345ca955983608269ab921cf"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/entity/OrderEntity.java",
+      "bytes": 782,
+      "sha256": "a3ebcadec1825e8cd64a9cd090c81b2040cd2c4f2d8f64218dcb5185833dc5f4"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/entity/QuoteEntity.java",
+      "bytes": 503,
+      "sha256": "232b9ab57a6d2d217a397ed2b495b5cec4c8a3fa1170357ca36dda8bf25a4fb7"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/entity/TradeEntity.java",
+      "bytes": 641,
+      "sha256": "4d7ca46ee3526f4fa7072dcfab14a0ccde6efc4265c81ec8de04ad45442f62d4"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/entity/UserAccount.java",
+      "bytes": 618,
+      "sha256": "c0c596644a45ed31b7fc04decff6ce57edf525da8a7f90638868f30aa62d2605"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/entity/VirtualPosition.java",
+      "bytes": 823,
+      "sha256": "9ad64843ef2b9a0f1a422cdafed619164b19d3298c9c0f5ef1bff4ae6f018746"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/model/Ticker.java",
+      "bytes": 473,
+      "sha256": "188b98ca0f91935043015ebaeab276c0321551fbd8b3bf34e5c12abe8e7acb58"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/repository/OrderRepository.java",
+      "bytes": 329,
+      "sha256": "b5ad1bfbd62848a1d2ba287cb16de81a97dd6e4e4e2e796312b993a4b97f11d0"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/repository/QuoteRepository.java",
+      "bytes": 331,
+      "sha256": "fbb53f6c745de6c70e726ead0168aafae5993adf59401896024a565063b53360"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/repository/TradeRepository.java",
+      "bytes": 420,
+      "sha256": "b7042b94facc9f1929f58cba8838bfa18b02002a5ced98abf8f4402f35057354"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/repository/UserAccountRepository.java",
+      "bytes": 329,
+      "sha256": "b3a11076f108652b1c749be1ce7cfce7380f3201b09077819fcf78809b16beac"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/repository/VirtualPositionRepository.java",
+      "bytes": 500,
+      "sha256": "f604c1f67b55d8598476b45ff6634f929d5abc10fd897d09b2544b5313abdb15"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/service/CoinbaseWebSocketService.java",
+      "bytes": 3926,
+      "sha256": "c02527c6c62a6f18a4ac0967e85a410579c912cee995030b492f4b8171abe167"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/service/PriceCache.java",
+      "bytes": 880,
+      "sha256": "580cddbf39380cb6ef1a9defb34396f882baced47fc21bc35b9da0a7922c7d28"
+    },
+    {
+      "path": "backend/app/src/main/java/com/trader/backendtrader/service/VirtualTradingService.java",
+      "bytes": 6402,
+      "sha256": "fe50c7bc3052d1a5c447d71edf705a3abfed185036eeffc3f66e8de7ef6054d9"
+    },
+    {
+      "path": "backend/app/src/main/resources/application.properties",
+      "bytes": 42,
+      "sha256": "b26780b16f7ace6af44212aa9764cc94c81aede2f1116abfd3e52e4fcdb8473f"
+    },
+    {
+      "path": "backend/gradle.properties",
+      "bytes": 194,
+      "sha256": "c5b0ffa9dc773a3f104db89a1faf33477150f1932c105f3825169fe4dcddf082"
+    },
+    {
+      "path": "backend/gradle/libs.versions.toml",
+      "bytes": 376,
+      "sha256": "fa19360b265ee42e1ac21aa679045ff5e108fa4c17c4313659465afcd83d3a5c"
+    },
+    {
+      "path": "backend/gradle/wrapper/gradle-wrapper.jar",
+      "bytes": 45633,
+      "sha256": "423cb469ccc0ecc31f0e4e1c309976198ccb734cdcbb7029d4bda0f18f57e8d9"
+    },
+    {
+      "path": "backend/gradle/wrapper/gradle-wrapper.properties",
+      "bytes": 252,
+      "sha256": "297d70e976c3434033149e1a72983da5db39a70c114a9b60d58357ef7a320041"
+    },
+    {
+      "path": "backend/gradlew",
+      "bytes": 8618,
+      "sha256": "fb68debc1b1acf8ec55dc0d5e5495e1dedd0bd6b61f304bee61613eeb2bd9b92"
+    },
+    {
+      "path": "backend/gradlew.bat",
+      "bytes": 2896,
+      "sha256": "fedad02c18e266ec094995a5751b7fe1eb6e74f66bf75db64fae2e50eb22c234"
+    },
+    {
+      "path": "backend/node_modules/.package-lock.json",
+      "bytes": 681,
+      "sha256": "0d6e66b818e59d6967743b3a6b4c765316756737a060eeda374e449b37e3badf"
+    },
+    {
+      "path": "backend/node_modules/ws/LICENSE",
+      "bytes": 1183,
+      "sha256": "2b29dcfe0d6471f7e8c92c5fb38c9f93edee10330937055440192f1832b1ecef"
+    },
+    {
+      "path": "backend/node_modules/ws/README.md",
+      "bytes": 15306,
+      "sha256": "bb979132f3cbff08ce47f36d041e18071f8f534d01f591c0b129ba7abf1e480e"
+    },
+    {
+      "path": "backend/node_modules/ws/browser.js",
+      "bytes": 176,
+      "sha256": "010da44addea1d88b2b732540c3f1fd0cbcb28926b96623d4c64222e0ead2d0e"
+    },
+    {
+      "path": "backend/node_modules/ws/index.js",
+      "bytes": 376,
+      "sha256": "70a117e957f85622a6fe2be39afb9597489965fe3fe6ebefd84adb8f0d9d114a"
+    },
+    {
+      "path": "backend/node_modules/ws/lib/buffer-util.js",
+      "bytes": 3056,
+      "sha256": "8b0a45739132f82e25ea13163780abf547ccfe989267f3eb7abb475beec92da3"
+    },
+    {
+      "path": "backend/node_modules/ws/lib/constants.js",
+      "bytes": 479,
+      "sha256": "7efe5c0b888e4fde8bd9076c65b81bfd0df0963810b977d890df126929bb9190"
+    },
+    {
+      "path": "backend/node_modules/ws/lib/event-target.js",
+      "bytes": 7321,
+      "sha256": "c45d3c6e12d170c860c0c3f1a050aa0f864d9806632b609a1e607d675aba128c"
+    },
+    {
+      "path": "backend/node_modules/ws/lib/extension.js",
+      "bytes": 6183,
+      "sha256": "852564f0f6b460287043803eae732666fb5610f676874354fc89f06aa4e986ed"
+    },
+    {
+      "path": "backend/node_modules/ws/lib/limiter.js",
+      "bytes": 1034,
+      "sha256": "e0469d4b83f6ba764b15f80e1766b75c136fbff68f048f4c050f0b1c7f065f69"
+    },
+    {
+      "path": "backend/node_modules/ws/lib/permessage-deflate.js",
+      "bytes": 14510,
+      "sha256": "adcedcb3069b7c6db3fd6cec93699ef70bd4061126b987dd9a8f7cb16d2b7530"
+    },
+    {
+      "path": "backend/node_modules/ws/lib/receiver.js",
+      "bytes": 16460,
+      "sha256": "7b9f6afc1fffb5c98d768d7d3d6fc1b709f28b45c6ae2682ff255075394323d9"
+    },
+    {
+      "path": "backend/node_modules/ws/lib/sender.js",
+      "bytes": 16711,
+      "sha256": "a80e8688dde53d46d836a58c9d15121ee12e978b7b0f656ed818c63d20df5f94"
+    },
+    {
+      "path": "backend/node_modules/ws/lib/stream.js",
+      "bytes": 4204,
+      "sha256": "a56fcb6e2b152097ee820b6f5410b1f71e59819b45d08d9f8bda588fe39070ec"
+    },
+    {
+      "path": "backend/node_modules/ws/lib/subprotocol.js",
+      "bytes": 1498,
+      "sha256": "be3f6323d6f549568577dcba9004c1479d95c65a7abb0fe0c582875b9fac0b7c"
+    },
+    {
+      "path": "backend/node_modules/ws/lib/validation.js",
+      "bytes": 3903,
+      "sha256": "41ce8e83d0d434132e1704895fedb91f6703a701b42d91c80954ab29b2845593"
+    },
+    {
+      "path": "backend/node_modules/ws/lib/websocket-server.js",
+      "bytes": 16393,
+      "sha256": "fe8a410e89325608dc94d09778a2650bf041b9b7f5dff61d5005ea111e09a508"
+    },
+    {
+      "path": "backend/node_modules/ws/lib/websocket.js",
+      "bytes": 36463,
+      "sha256": "ea50fd045185975e0e572637cd96fa065a7e988a1d1c890d18002c75a8a253b9"
+    },
+    {
+      "path": "backend/node_modules/ws/package.json",
+      "bytes": 1723,
+      "sha256": "aaedef2a72b60db8fb36d9b46c48d44986051785a2b6450c62994603c85dd959"
+    },
+    {
+      "path": "backend/node_modules/ws/wrapper.mjs",
+      "bytes": 341,
+      "sha256": "e37bddaf6d40a3b2ee107906f792cc5117e543cba776fa25f7aeeb3908637f7c"
+    },
+    {
+      "path": "backend/package-lock.json",
+      "bytes": 829,
+      "sha256": "82a90383b200c9bc4139bf4dfa5e0263a0e4c6a50a9657450a94fb7a44bf9339"
+    },
+    {
+      "path": "backend/package.json",
+      "bytes": 268,
+      "sha256": "c464c59f8a79bc38e62d53db71b55c43b2fa37f12232ff3c8a024bb183dad39a"
+    },
+    {
+      "path": "backend/settings.gradle",
+      "bytes": 529,
+      "sha256": "8d32422016aff6745402987c92cb888095a60cc72a7d6ce604a27a7f8c350b1f"
+    },
+    {
+      "path": "backend/test_ws.js",
+      "bytes": 321,
+      "sha256": "ff144cc819515b943da95ff6f99c65ecc8755d61bba03b2342b505071c3862a2"
+    },
+    {
+      "path": "frontend/.gitignore",
+      "bytes": 253,
+      "sha256": "fe718e7babb14f3cbad2d97f08889b9ce5215ed3fe0e43b2b8cfbfb3b9b844e8"
+    },
+    {
+      "path": "frontend/README.md",
+      "bytes": 1157,
+      "sha256": "7a6f004c103a2e323a5677758071ad4dfe22ea8a92883aadd5f5b39b46dd729d"
+    },
+    {
+      "path": "frontend/eslint.config.js",
+      "bytes": 763,
+      "sha256": "38c6066c62e803f0b512c2e18297c36cdeaccd6a1190c1cc19cc59c96c74bbc1"
+    },
+    {
+      "path": "frontend/index.html",
+      "bytes": 357,
+      "sha256": "469d70dd50c91ed9f54e312c31c0fbb5209ad857bdf2c9fa60e7579737638579"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "bytes": 89300,
+      "sha256": "c3ddf1e9459ade269fc22ee30020a89f747a5ef654558b54219bb6a2f14bb6e6"
+    },
+    {
+      "path": "frontend/package.json",
+      "bytes": 655,
+      "sha256": "85d18d5960b21c11940f1b59e3389124772f5b5664719edf5c0943b520f561bc"
+    },
+    {
+      "path": "frontend/public/vite.svg",
+      "bytes": 1497,
+      "sha256": "4a748afd443918bb16591c834c401dae33e87861ab5dbad0811c3a3b4a9214fb"
+    },
+    {
+      "path": "frontend/src/App.css",
+      "bytes": 1107,
+      "sha256": "df1ed6ed8b2737267c603efea39614e7668ffa4b786597ae77cecf8ed8cc83cc"
+    },
+    {
+      "path": "frontend/src/App.jsx",
+      "bytes": 579,
+      "sha256": "47a65ec800f53f9adb6a8a1b7b5dff11216b0aa8b9e2584712d97e9b9dd83f4f"
+    },
+    {
+      "path": "frontend/src/TradingPanel.jsx",
+      "bytes": 17454,
+      "sha256": "cefbc28a515e9898ce8e305fdc49d8ab3c0b908e21228b33df8695a35d477db7"
+    },
+    {
+      "path": "frontend/src/api.js",
+      "bytes": 689,
+      "sha256": "de589b8210a3ef02efc82683d794542e0d907de035bfd0c412649e84b2ab0ce8"
+    },
+    {
+      "path": "frontend/src/assets/react.svg",
+      "bytes": 4126,
+      "sha256": "35ef61ed53b323ae94a16a8ec659b3d0af3880698791133f23b084085ab1c2e5"
+    },
+    {
+      "path": "frontend/src/index.css",
+      "bytes": 2026,
+      "sha256": "20c51bc8ae3a074c6de2727a0398787459538e5147d5ed81b2159e679b6839ff"
+    },
+    {
+      "path": "frontend/src/main.jsx",
+      "bytes": 229,
+      "sha256": "4b4b864dbe45253425d0c925337180ec07e204295179f80f59551216f466f618"
+    },
+    {
+      "path": "frontend/vite.config.js",
+      "bytes": 161,
+      "sha256": "4d36db3522a7b2dd10e0936e1004373c7ee65f10f7cd7920cd76410459c15a45"
+    },
+    {
+      "path": "project_archive/generated_images/exec-288a1cd3-74de-4efc-94f7-13acd1d48093.png",
+      "bytes": 1332284,
+      "sha256": "abe931e8a570c62e4055e2b42e6b1634f2b5cf967ab30aeaa644aa7795d6fff6"
+    },
+    {
+      "path": "project_archive/generated_images/exec-ad82e6dc-ff0a-48d9-ac63-d5c6e6c5fd75.png",
+      "bytes": 1286086,
+      "sha256": "2fc5756c52c4a3164eafeba40792bd39198e5df75ffa9fff3306c846f63dea7a"
+    },
+    {
+      "path": "project_archive/original_uploads/2832a3d0-6f6d-440a-81ef-ee990bc91c7b/trades.csv",
+      "bytes": 1796,
+      "sha256": "1b34962ece37463f85f4a949af4c9c1a0994b8954665133ed8a21209a99e3da4"
+    },
+    {
+      "path": "project_archive/original_uploads/2bd88684-df96-45a4-8cbe-5c496065d075/Swing USDJPY Round 2.xlsx",
+      "bytes": 383490,
+      "sha256": "e56c0329057a8b76e052d207a0aaeff22899f354abaddd4b317e410c0b23a6da"
+    },
+    {
+      "path": "project_archive/original_uploads/4236cda1-485e-438d-9ea6-be1e2b955a56/b9091482-1c56-498c-988d-3e072f4c49b5_ExportBlock-3486dd29-6a08-45d7-a5cc-35cec9796627.zip",
+      "bytes": 1578199,
+      "sha256": "6f0392e61deeaafb269d25ee1195f9689360b5fe4e6f02ab87d6b6d8c240ef55"
+    },
+    {
+      "path": "project_archive/original_uploads/4236cda1-485e-438d-9ea6-be1e2b955a56/extracted/LC-1.png",
+      "bytes": 244238,
+      "sha256": "215a4b21ed71bc67a2581cae01a5ad16a79a6a9f019fcbeae8e55afe988f0487"
+    },
+    {
+      "path": "project_archive/original_uploads/4236cda1-485e-438d-9ea6-be1e2b955a56/extracted/LC-1_Requirements.png",
+      "bytes": 358829,
+      "sha256": "bfdfeffba8a5d01ccc2a438fe4aef601eeafce65e0b410634edbf96b57d685c9"
+    },
+    {
+      "path": "project_archive/original_uploads/4236cda1-485e-438d-9ea6-be1e2b955a56/extracted/LC-2A.png",
+      "bytes": 238067,
+      "sha256": "cdc256105ff68d7475eafcbe3ef46b9464268959739b79c3f3fba383c57de63e"
+    },
+    {
+      "path": "project_archive/original_uploads/4236cda1-485e-438d-9ea6-be1e2b955a56/extracted/Screenshot_2024-06-06_132439.png",
+      "bytes": 512826,
+      "sha256": "e1cb61b0db1dcef23e32b2977c07f4b3754ad15e3431908a9c410f106f925232"
+    },
+    {
+      "path": "project_archive/original_uploads/4236cda1-485e-438d-9ea6-be1e2b955a56/extracted/Screenshot_2024-10-03_185409.png",
+      "bytes": 368386,
+      "sha256": "3bbe91cc5b8c776317c5ba534b117394a5b78f3e452e84a37d03025f43a42788"
+    },
+    {
+      "path": "project_archive/original_uploads/4236cda1-485e-438d-9ea6-be1e2b955a56/extracted/Swing Trading Plan 2b4f66962cbc80b499add2804afbc51c.md",
+      "bytes": 4954,
+      "sha256": "b4b6fd3d893209a48e46a5f0ee599b9ebfe97b2a10eb703d10bbff5266c45cf7"
+    },
+    {
+      "path": "project_archive/original_uploads/45b92d57-9c95-4e4c-8dc8-9bd96cdef715/trades.csv",
+      "bytes": 2908,
+      "sha256": "41f14e10f36f464e13440071085b5d4cf49db396d3ec795b43ab1109e989a90d"
+    },
+    {
+      "path": "project_archive/original_uploads/6a16e64a-e4db-4084-924a-4bfad72f3b54/metadata.json",
+      "bytes": 3814,
+      "sha256": "b1faf289451ef05b17c55be999797d70f926ca28c4bc443f401a1561956a7fa5"
+    },
+    {
+      "path": "project_archive/original_uploads/788d875b-6751-4b09-a3bd-4da1cf3518ef/USDJPY_execution_1min.csv",
+      "bytes": 211271,
+      "sha256": "726fee5b09e7bcc482e7ee2e44f34749bd23c3f838c4757b016250790abe8540"
+    },
+    {
+      "path": "project_archive/original_uploads/7c156918-5218-4a2f-889b-fbc6d55d2844/metadata.json",
+      "bytes": 4203,
+      "sha256": "eb5c7f0320625550eb61b219add239b27d9abde0e17e421fd0614fb1c6b9c452"
+    },
+    {
+      "path": "project_archive/original_uploads/8b13e8f1-f1d9-4441-bf8c-b4a23c32d324/Swing USDJPY Round 1.xlsx",
+      "bytes": 395201,
+      "sha256": "cd8fc84898e468377f2d5c9c77a1bfb5615d4e6ce88467f220f2ba44d9a4a706"
+    },
+    {
+      "path": "project_archive/original_uploads/aa493170-95e9-47ef-b3b2-6e2ba3d8311a/journal_charts_part_01.zip",
+      "bytes": 12173613,
+      "sha256": "9d27d88fe97119844508500c9b5e465ec266432adf379e9b50b5824c7968184e"
+    },
+    {
+      "path": "project_archive/original_uploads/be6d5243-8a0d-4321-8479-1ff4a500c23e/journal_charts_part_02.zip",
+      "bytes": 6045471,
+      "sha256": "ca3b34d2e3861984bc54a3269404fa5595bfa63b98734430e59a027f389e507c"
+    },
+    {
+      "path": "project_archive/original_uploads/c14ce89e-4578-47a6-995a-2a1ad50e6708/Swing USDJPY Round 3.xlsx",
+      "bytes": 390129,
+      "sha256": "b31c51f4a14e46d54b91f56e6afe37274b610cdf0e4a22863da31442054d9c4c"
+    },
+    {
+      "path": "project_archive/original_uploads/db884e2c-e35f-475a-8135-d43678ae9435/USDJPY_context_15min.csv",
+      "bytes": 364761,
+      "sha256": "266bfaca2ed663edcd8fbe7239e98b216c76762c3a1dc796e9a66b994dc9c140"
+    },
+    {
+      "path": "project_archive/original_uploads/e4d04edc-b576-45db-9d57-f84bcc6b2557/USDJPY_execution_1min.csv",
+      "bytes": 602042,
+      "sha256": "d4a52f8bed7840f7f79c2a39457532054d61b845756df672d076da73a3aaf108"
+    },
+    {
+      "path": "project_archive/previous_exports/spy-backtest-update.zip",
+      "bytes": 9421,
+      "sha256": "8901354e601c5a318f303cd0fa4d2241e48775ab5d59335ca2ce0b5b29744592"
+    },
+    {
+      "path": "project_archive/previous_exports/trading-bot-handoff.zip",
+      "bytes": 44113428,
+      "sha256": "d9b6f856a00323b4042bcb09fc5fc250f0fc4345b1d55a75a5b6198c4cf9303e"
+    },
+    {
+      "path": "project_archive/previous_exports/trading-software-work.bundle",
+      "bytes": 244788,
+      "sha256": "0973ec65003f336eb9b86c35faa106b443c827bc6006638f08506a16e70b3bf4"
+    },
+    {
+      "path": "traiding-bot/.gitignore",
+      "bytes": 26,
+      "sha256": "472f568478bff9056ec56b5c5e8a7ca3d280c651d527321e1eb80892801164be"
+    },
+    {
+      "path": "traiding-bot/README.md",
+      "bytes": 18390,
+      "sha256": "4e73b7454a50416dbce3c14e55a665010fb368852e194b1a9ca5ec59a6a8101d"
+    },
+    {
+      "path": "traiding-bot/backtest.py",
+      "bytes": 15465,
+      "sha256": "30a0bda3e2d36a88c5359821a83f1443dbcd0737907f34928ac03783d03bdc76"
+    },
+    {
+      "path": "traiding-bot/bot.py",
+      "bytes": 10833,
+      "sha256": "617d5a1958dfe4488e6f4595c1f3e74aac6791106aec49d1f431b15900fede43"
+    },
+    {
+      "path": "traiding-bot/check_lc1_discovery.py",
+      "bytes": 3785,
+      "sha256": "f5756e1d3795b19dcc17743c5654c1d96f1a1406a1b4c1704249e966b1a01d2d"
+    },
+    {
+      "path": "traiding-bot/check_swing_reference.py",
+      "bytes": 6064,
+      "sha256": "24a75bdbfb146a2690a918f09486e94f90d672de0b60a0b7a8e0b60815a93ee0"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/ACCOUNT_MODEL.md",
+      "bytes": 3129,
+      "sha256": "e67553202833af7f5611bc4826d00cfac891b70ec23fbce6c6490b7c091641a1"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/CHART_REVIEW.md",
+      "bytes": 4910,
+      "sha256": "96cba66ca0e4ea602778c57d8ec37de63669261c0439263af101d5f0ae67025d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/CURRENT_SPEC.md",
+      "bytes": 18506,
+      "sha256": "10b19f4638848f07ca14509736617b26212a8b6af671e2e3106dc1e5e3d7cfdd"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/FRACTAL_CANDIDATE_STAGE.md",
+      "bytes": 5690,
+      "sha256": "1523a9fe5d62f7fea6114b70f8b92125bbbe2b61ca7f0d1c3e3b4ea4302f43a8"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/FRACTAL_CHOCH_STAGE.md",
+      "bytes": 6065,
+      "sha256": "ae201edc365b45f0c5465bc23931a6653425a63505486b0a6ec909879efd163d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/INDUCEMENT_DISCOVERY.md",
+      "bytes": 3509,
+      "sha256": "5815bf4b025693843eb63f20f6746f8baffa2d5fc676d202a09889383f649f5d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/INTERNAL_STRUCTURE_STAGE.md",
+      "bytes": 2844,
+      "sha256": "8a3a31b21921e5e86132d349bbd2385164c1ca4874cb6fb9d35b3f86be5275f7"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/LC1_DISCOVERY_CONNECTION.md",
+      "bytes": 3371,
+      "sha256": "e111bbfa320fe0bf2e681ad48b755ba623b5b209c5507da7e16e4a276a1cfbb7"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/LC1_IMPLEMENTATION.md",
+      "bytes": 6548,
+      "sha256": "38b98c98a6a9a367504bf9c4733913403d4566e0b3c9de1d85511824356a39c2"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/PHASE_RULES.md",
+      "bytes": 3668,
+      "sha256": "1cf73ffe2f856c290048006005e85e15517c0a16e5866e6784624d99894e228a"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/PLAN_REVIEW.md",
+      "bytes": 9171,
+      "sha256": "c63143eb1aefaf3a58b4d9d618a7048d8d8f14574958d091047665807d9facf0"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/POI_MAPPING_STAGE.md",
+      "bytes": 4077,
+      "sha256": "5b81e0504a4ce8e32b2e2f50b5092a55133c0a57095910b7fff083d3a2d91c6f"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/POI_SELECTION_FROM_IMAGES.md",
+      "bytes": 2764,
+      "sha256": "a81fbe2f23558558ecfce9f5e3dbb7a4c9d01049ed93f691b95bea538f41c850"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/USER_CLARIFICATIONS.md",
+      "bytes": 50348,
+      "sha256": "6a1564d4c8d773a28f9764e708aa36054e0f912db0e6ee48b201be049eba2547"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/chart_manifest.json",
+      "bytes": 65722,
+      "sha256": "1cd320235220c57fc4acb669c63b3ced28beb0cffa1c62cd3da20617763b99dd"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row10_daily_4h.png",
+      "bytes": 39631,
+      "sha256": "5574b7d7f9133f189810157c0c49e613f1d066e776f301a05075512da02cf3b9"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row10_entry_15min.png",
+      "bytes": 42953,
+      "sha256": "37e3ff0e1201d6d248938ed7de083d87edd55fcfeeef478092a048c3412c83e4"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row10_one_hour.png",
+      "bytes": 33710,
+      "sha256": "b86bba0ee77309a49b8edd389e381d1022a83959c0dbd2887dbd5c26b979d894"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row11_daily_4h.png",
+      "bytes": 47195,
+      "sha256": "c399f254eb78e72c2c388c357e62468e7381ffea50b1ecac5d6d26d9c469f363"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row11_entry_15min.png",
+      "bytes": 39964,
+      "sha256": "5d23d9132b03de80fc0f539a4102dcd028663786390b2d4711f52fa15eb103f2"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row11_one_hour.png",
+      "bytes": 36673,
+      "sha256": "a626ca49ac83999c0cdcc893020407951c55246c859ec5fab9165480dea41501"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row12_daily_4h.png",
+      "bytes": 36322,
+      "sha256": "8044e689c91ff979b3ca81af2f93fa0a6da98e5f7eab798cb993b65afdbe8e31"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row12_entry_15min.png",
+      "bytes": 39048,
+      "sha256": "1bdf1859543d24a0256525ce869ddb17e13b87422bcdcbf6410c3256d828ab0d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row12_one_hour.png",
+      "bytes": 32100,
+      "sha256": "f47e03bf44d6d8fb5a8b2864e1a8ac79da987bbbb34c364756f64d59703aeeb2"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row13_daily_4h.png",
+      "bytes": 34108,
+      "sha256": "35e2c3294e60443e26cbe5635cffdbc7e56369754f2a21c69368091d3aab9e51"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row13_entry_15min.png",
+      "bytes": 37103,
+      "sha256": "392433710b1e98cbb5a9159402b8cf539dfabdc7f1febaaf623b85de4186921a"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row13_one_hour.png",
+      "bytes": 34317,
+      "sha256": "34e505ec2282e804d7d19ebf8a1760030ce6defea9c9f34bae3e33e1dc393c79"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row14_daily_4h.png",
+      "bytes": 44111,
+      "sha256": "c994ee4747a1f3f4211377af9298dbe14a2f5599ae283cabb3967ef9a56ba745"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row14_entry_15min.png",
+      "bytes": 45203,
+      "sha256": "5685fe02bfb7a4acdd3542b0c48db8103e5abc9b07dd50b674da0a6afce89a2b"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row14_one_hour.png",
+      "bytes": 44254,
+      "sha256": "f4c5058b52db5278e6722f71d3ee55de83bf1a1fd80df93bdf7df96ed4945449"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row15_daily_4h.png",
+      "bytes": 40158,
+      "sha256": "82e080294a578c7472530835563a1ef113295567ed42499e495a11182210491f"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row15_entry_15min.png",
+      "bytes": 44182,
+      "sha256": "19f899bddd42247c83b3206e3c4a1c55de30a6640481780bb26488bc978722ff"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row15_one_hour.png",
+      "bytes": 42153,
+      "sha256": "c03e8ac0c76a7e2fca075d4260b2334097450391ca7532969651e72a60963e2e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row16_daily_4h.png",
+      "bytes": 36021,
+      "sha256": "264e688c424ba7a1c0662643e8ab5bf75d06e9cf27fea88b6c5511b571fbb255"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row16_entry_15min.png",
+      "bytes": 43920,
+      "sha256": "68fc3b53affbb6764d4a5ac8d0217f3376d230bd8ecb33e633a85f34f19f299b"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row16_one_hour.png",
+      "bytes": 36021,
+      "sha256": "264e688c424ba7a1c0662643e8ab5bf75d06e9cf27fea88b6c5511b571fbb255"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row17_daily_4h.png",
+      "bytes": 46243,
+      "sha256": "ac8a1f39b3dbfa686523141e89353b9ed43ae30b630a273195c8d4f8c80997c8"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row17_entry_15min.png",
+      "bytes": 48731,
+      "sha256": "e613b366bb5aa69bbd97d7826d62a961683657c4ae24250da3c6e4589aab8ff4"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row17_one_hour.png",
+      "bytes": 37808,
+      "sha256": "cacb31fb531e9248d71ba3913f4f71d05c42f14ba93cca3199b49f176dc8105f"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row18_daily_4h.png",
+      "bytes": 43309,
+      "sha256": "5bbd901b93a2069b70e8c9ecc37cd20f1d61be02e67395b0c9f736b47b2f86a1"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row18_entry_15min.png",
+      "bytes": 38543,
+      "sha256": "025797a8e73c67166b4a4bcf97c35e03904aee05304b5552c73c56ff48a9801a"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row18_one_hour.png",
+      "bytes": 41597,
+      "sha256": "b8af163597547352e88c6785f1ed6945825c8e3f343afdf14dfdcc4510a016f0"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row19_daily_4h.png",
+      "bytes": 40012,
+      "sha256": "0be944ce2482cc237acff2ab44502dc247ca79b859fd25f167fa68c9806bf05e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row19_entry_15min.png",
+      "bytes": 44270,
+      "sha256": "831f57a60ff711c01d0c5edfddc8b8e6d6dc885cf77d2266a810c289342d389f"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row19_one_hour.png",
+      "bytes": 36695,
+      "sha256": "4d06a780f1187b7054c5baf8f10c1f4ebdec49e03fa660e0ad316197624a10e8"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row20_daily_4h.png",
+      "bytes": 52074,
+      "sha256": "6270f5b1f4e420aba1d994a76204e6be74d3bb4bf407c53a8dc5799ba229ad4c"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row20_one_hour.png",
+      "bytes": 40754,
+      "sha256": "0a9a91f9dc907c6461c9365208037e0a431c5626ddd7bbe71c3c09db2f3aa153"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row21_daily_4h.png",
+      "bytes": 44515,
+      "sha256": "80d5fbbd8b9f71eb6b0c39c472fe53900d48e74dc8a23f137f42f265f1b82993"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row21_entry_15min.png",
+      "bytes": 30994,
+      "sha256": "2df39f0fd5cee7e597b7afb6c204ec18ccff6d30bead819718ddb9ff52cb4bc9"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row21_one_hour.png",
+      "bytes": 46648,
+      "sha256": "4a403c8914cc33827b682092fb9fdf9ff4df37eafa745b1980f47374af50b971"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row22_daily_4h.png",
+      "bytes": 44040,
+      "sha256": "2821391d04609374af192fe2bada72eca173a134ec5098e414839c8cbc99cc08"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row22_entry_15min.png",
+      "bytes": 37634,
+      "sha256": "ae58990e1f501c06698ab2a882dc330c9a8cd379f20819e4ff9545bf1c99962c"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row22_one_hour.png",
+      "bytes": 36983,
+      "sha256": "80dc6275100afb6f2ded0664f9e9d8223ac7880b4e5927f1235ec688b676bdd1"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row23_daily_4h.png",
+      "bytes": 41857,
+      "sha256": "3563c9557c3fce60380eeabbe61a020284330a0c8c814d3a621aaaccb17422e7"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row23_entry_15min.png",
+      "bytes": 38651,
+      "sha256": "ca17ef97241bfddded0d8b811ef65f872f1c847f7fb5d27bc809139f85a3cdc8"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row23_one_hour.png",
+      "bytes": 33872,
+      "sha256": "9e75b27cba5d86ee929d82c5e8564856feec27e8520df923477fc923b76e1f32"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row24_daily_4h.png",
+      "bytes": 38487,
+      "sha256": "0a6223a58c479934a1c4d48e8a9990d1a93f7efae6948f578e335a7600dea44e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row24_entry_15min.png",
+      "bytes": 40642,
+      "sha256": "2a2fabed05cf32559d1f6395edac8f57bc0fbace0f842a2a894dee3b3ccf742e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row24_one_hour.png",
+      "bytes": 35415,
+      "sha256": "d722b5164f7ec1255f567ffc3ea55ddd6268aba61689dec9ccfa19af93e0c69f"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row25_daily_4h.png",
+      "bytes": 47143,
+      "sha256": "c75896ad361692f7b1a3f767b1a1260852502723d663be79f3e6b540f40286fd"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row25_entry_15min.png",
+      "bytes": 44275,
+      "sha256": "9ef1413f19dcc47ea172f77001ac4495a9e39703566637fb37fbcdcbc2bbcb24"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row25_one_hour.png",
+      "bytes": 37574,
+      "sha256": "ca4a6e846ed0053338a0f21ba274fef765cd6428b26ef37b541814474cfb97a0"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row26_daily_4h.png",
+      "bytes": 39098,
+      "sha256": "44b976188e94dc0901a890368c30bff0a38768f4854633c2a6e6e384e0b48de5"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row26_entry_15min.png",
+      "bytes": 45500,
+      "sha256": "dd2fbd6c0fa97df6d9f804b3803ecc5fef974f788653c55bf9ef2c777de6137d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row26_one_hour.png",
+      "bytes": 35667,
+      "sha256": "740a03bbe45c6e40c57a277c0dbd86d08d9d221decd83ad66191768da10f9ac9"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row27_daily_4h.png",
+      "bytes": 52458,
+      "sha256": "ae222a835ee1ed5151addc2a076b5833782ae20ef7a563fa5b6a551034c2c697"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row27_entry_15min.png",
+      "bytes": 36733,
+      "sha256": "ce7c115ec6dc8a37021b22f770770629b7e4b26c588df981b116cdcaf6311c16"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row27_one_hour.png",
+      "bytes": 39192,
+      "sha256": "5c71deb8bc1635486b437cf1b6f040a8e84cf07b4fa83c18b16fa8c50be49941"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row28_daily_4h.png",
+      "bytes": 45652,
+      "sha256": "788d488a854b86cdfdc9f27b0e2b2c006d84f4b1c63359ed59c1a6fa767b9294"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row28_entry_15min.png",
+      "bytes": 33813,
+      "sha256": "3235c30458365de5c4a01579a38ecf601d9cd2aaf6f11d3cf625c4e6b2a50deb"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row28_one_hour.png",
+      "bytes": 33813,
+      "sha256": "3235c30458365de5c4a01579a38ecf601d9cd2aaf6f11d3cf625c4e6b2a50deb"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row29_daily_4h.png",
+      "bytes": 45652,
+      "sha256": "788d488a854b86cdfdc9f27b0e2b2c006d84f4b1c63359ed59c1a6fa767b9294"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row29_entry_15min.png",
+      "bytes": 33813,
+      "sha256": "3235c30458365de5c4a01579a38ecf601d9cd2aaf6f11d3cf625c4e6b2a50deb"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row29_one_hour.png",
+      "bytes": 33813,
+      "sha256": "3235c30458365de5c4a01579a38ecf601d9cd2aaf6f11d3cf625c4e6b2a50deb"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row30_daily_4h.png",
+      "bytes": 39376,
+      "sha256": "cbe2f7b9f2ffc62066c83b3fac2d2865f983b7e9ffa17020f668a5ad1a864ee3"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row30_entry_15min.png",
+      "bytes": 34212,
+      "sha256": "5b153a4879ee56e86c15b40f85db78c31d2a9cf816bf2f7030219ac2bfc2e150"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row30_one_hour.png",
+      "bytes": 39879,
+      "sha256": "4f3a5ff9f0080d01fc76542a24d9ea9168d2ec15b7545b3039df8e3586e9e38b"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row31_daily_4h.png",
+      "bytes": 38023,
+      "sha256": "2c48c051ca7269be9f9c7caa5e61759c0c21e50b0523a4cd5cf6b2d0e515b2fb"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row31_entry_15min.png",
+      "bytes": 41512,
+      "sha256": "359519c0b95e5a5da08768221e51636ce263c162e1cec605bf5dc6c2b44868fc"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row31_one_hour.png",
+      "bytes": 38117,
+      "sha256": "60072bcab82532c0220df983fe8d49465bcc828b19a8a1bd00d9eb8bba89a0e5"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row32_daily_4h.png",
+      "bytes": 38625,
+      "sha256": "f8c2941edc4defe79ba523074ccd38a6b34d1fa07c1ea969596863e0081dc2fd"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row32_entry_15min.png",
+      "bytes": 43904,
+      "sha256": "e8e6c7991cde56036e7b814a77d82be0670bedc9848c6c2e375fd343cd1c14d6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row32_one_hour.png",
+      "bytes": 46232,
+      "sha256": "8d2f2de5b281be5a6a319046541d2c2d1175a3eaed016fe24a8a2f19f9e82d3e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row33_daily_4h.png",
+      "bytes": 44269,
+      "sha256": "c026d68495c8fdb205357cd5881c084872df60a288428f179b5c2d9f6aa3e26e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row33_entry_15min.png",
+      "bytes": 42656,
+      "sha256": "89671efd802ee7ad47c6c7c5b68aece317bebad1c6a8394adff0f5365808bd87"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row33_one_hour.png",
+      "bytes": 37349,
+      "sha256": "a7df9ce485630cc8538140aae81148da7b78960807b81a3a86f247373f9a3f17"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row34_daily_4h.png",
+      "bytes": 44269,
+      "sha256": "c026d68495c8fdb205357cd5881c084872df60a288428f179b5c2d9f6aa3e26e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row34_entry_15min.png",
+      "bytes": 39013,
+      "sha256": "c4e24f9167dac42eae52182d09d9cffd0a9573fa0b3951a6e1048a70b819e9b6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row34_one_hour.png",
+      "bytes": 37349,
+      "sha256": "a7df9ce485630cc8538140aae81148da7b78960807b81a3a86f247373f9a3f17"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row35_daily_4h.png",
+      "bytes": 44080,
+      "sha256": "99062d3d6b2ec5c375fae0d0a63d27f59d1d3dca637790b8f89999265bc86d58"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row35_entry_15min.png",
+      "bytes": 39891,
+      "sha256": "18ceed5f1c9577bc3ea6d028dfe6cd87801298e2a5ee7ff44f9bedee0d45732b"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row35_one_hour.png",
+      "bytes": 32998,
+      "sha256": "4a8aeef469f69b2f9e3e8ffd4e1b437edfe4d9993fe2574161f3e061135674af"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row36_daily_4h.png",
+      "bytes": 35738,
+      "sha256": "8414a6434870df7ab6ee70e0f6a0621f950b855ba0c1c4e983d35b979feac51f"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row36_entry_15min.png",
+      "bytes": 44857,
+      "sha256": "8969fa15cd206000e78f3d124af65d5a204483a00dafbf32957a886b287faa44"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row36_one_hour.png",
+      "bytes": 35738,
+      "sha256": "8414a6434870df7ab6ee70e0f6a0621f950b855ba0c1c4e983d35b979feac51f"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row37_daily_4h.png",
+      "bytes": 43313,
+      "sha256": "0d92a8fe5e5b5a26289e4b29340f2ad9ebb550d64999add7385137c598dfc3e3"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row37_entry_15min.png",
+      "bytes": 46185,
+      "sha256": "07e36fc8843a5fc3813cce893f85a2858c2ac00782e21294884acebaa29ac512"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row37_one_hour.png",
+      "bytes": 44044,
+      "sha256": "c68e75a3142068b9542f5303990467bf13fac58b0a85062d76441e65aa8cf4fb"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row38_daily_4h.png",
+      "bytes": 43682,
+      "sha256": "bb9f5097b983bec301da24f76f066b6c575be635349ade03e1416c3b3dcf2974"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row38_entry_15min.png",
+      "bytes": 51694,
+      "sha256": "339af04a5f9e0077d6a365dd7ecb85d904275e58c2546941ce8703f06550447f"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row38_one_hour.png",
+      "bytes": 43682,
+      "sha256": "bb9f5097b983bec301da24f76f066b6c575be635349ade03e1416c3b3dcf2974"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row39_daily_4h.png",
+      "bytes": 48164,
+      "sha256": "9c9202f0470b671b14d7adfd6391951155610e5d3b35393656b839e5263d6ce2"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row39_entry_15min.png",
+      "bytes": 46864,
+      "sha256": "f2dfe30f903aa0133411726e90fea2457e962ab2a726a9a0b4244eba94ba0938"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row39_one_hour.png",
+      "bytes": 44611,
+      "sha256": "d8c2748f174a457978eac9dcc69b571618e248f3031776b5980389c03a03ea2a"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row3_daily_4h.png",
+      "bytes": 40747,
+      "sha256": "f9dee2d489ca5439dd8dd2db68ad913f67dec4ebdfe31e48dbf7fd25a15c85ea"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row3_entry_15min.png",
+      "bytes": 41434,
+      "sha256": "13ac40f49d45b49eab32ff167ba49bd4a6c45de68d37ad48a68b829dd5626ac2"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row3_one_hour.png",
+      "bytes": 39305,
+      "sha256": "e5547d137f8121ccb57fcdbb18367aa91fc609edd99c220d93958ae81aaa801d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row40_daily_4h.png",
+      "bytes": 50942,
+      "sha256": "dedb717157888624f72d3504551d73817b71bfe28bdc2dc00a55a6dc02ab706c"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row40_entry_15min.png",
+      "bytes": 41476,
+      "sha256": "70377ed3254adcb13323052c260064ef63a5866465eb640edc1b7c431b310473"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row40_one_hour.png",
+      "bytes": 39854,
+      "sha256": "9a921861adf60c078e813891796e50ebb11764647dea013804b2d987b1f9032e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row41_daily_4h.png",
+      "bytes": 35969,
+      "sha256": "2aa089fd5794ae67d97763264800fe9e60bd3620fa3ffd58c67e55380311c79e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row41_entry_15min.png",
+      "bytes": 39449,
+      "sha256": "be17ebc2d21c484b1d104cb7fc8eb9d6df64a95a7048e648968afe0a366e53b3"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row41_one_hour.png",
+      "bytes": 34723,
+      "sha256": "0df6c9fb125ddf6dfac2a4179016fc7e1467bea7c6948d2bd1de8dd9509c0ca5"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row42_daily_4h.png",
+      "bytes": 66675,
+      "sha256": "7f91f6a7313bfc19519cbe881f19a2258ba5f19b4e2e7f6fb87992a7018621f3"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row42_entry_15min.png",
+      "bytes": 62852,
+      "sha256": "901c9c0eaec272b0d20f9be2772b42ac647c29a8ef38302c9edbee55dbad4f69"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row42_one_hour.png",
+      "bytes": 67275,
+      "sha256": "ace5a38c53c2f4ba8f317097d3749cb6678a3707b0f8069ab74c3701f5e3466a"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row43_daily_4h.png",
+      "bytes": 57741,
+      "sha256": "07299c2d91d50dd474fefbbccf13c3f1aa8b394dc9d8c52d0a3559be3dae4380"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row43_entry_15min.png",
+      "bytes": 67946,
+      "sha256": "b988e151f99100f4eef928a10e494cf1158520227d7aa0dbe13079a5aaef58f6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row43_one_hour.png",
+      "bytes": 63271,
+      "sha256": "aaa3711b276610c4b13a4e7a342f0595c2c41ceb76f10e03416ae9fc3cf13f31"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row44_daily_4h.png",
+      "bytes": 68684,
+      "sha256": "33c787bf70a791d2e29deaf491ad489b579620409c9e771115944adfceb3b2fc"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row44_entry_15min.png",
+      "bytes": 66658,
+      "sha256": "ff18b0c324ac2d5cb13471075572f28921f0b09594d09859029f0e1bf54f6dee"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row44_one_hour.png",
+      "bytes": 67528,
+      "sha256": "5c2d031d7cb1c5d970266a45b94075c49f5cb97b708d387ab70bb74e40aaef40"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row45_daily_4h.png",
+      "bytes": 68073,
+      "sha256": "4cf87417a62b4c9db2bb88c7ff29fd014b6101456e21d1ca06729356f35f3e23"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row45_entry_15min.png",
+      "bytes": 70886,
+      "sha256": "6814685c7cbc87a7ceceefba45f0290d70de99f2a4e1031e993355a0e3ba79a7"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row45_one_hour.png",
+      "bytes": 70886,
+      "sha256": "6814685c7cbc87a7ceceefba45f0290d70de99f2a4e1031e993355a0e3ba79a7"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row46_daily_4h.png",
+      "bytes": 64167,
+      "sha256": "9720122f92929a733bc0c1850196874d8a6c395d42d240097cc39a10e53338d2"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row46_entry_15min.png",
+      "bytes": 76339,
+      "sha256": "f78e0a6df154bc2aa283740d63a8cc4f405ff759269db8e72a62ff973c96e41b"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row46_one_hour.png",
+      "bytes": 67649,
+      "sha256": "7e8ebfc5656d83ab203fb0c7652bc58cb2770e226ed16a749f4fdd6a00ab1513"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row47_daily_4h.png",
+      "bytes": 66535,
+      "sha256": "90f7b167df8fae509e89f26bc98d7f31fe154852b7dd118d59396722e371a502"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row47_entry_15min.png",
+      "bytes": 67764,
+      "sha256": "c02be7ceb131b6cead86b85160ac00b7a042f0fff86db51490157c56b528ca30"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row47_one_hour.png",
+      "bytes": 62431,
+      "sha256": "95caffdc68bc53d61a406ad72b7bbf99c6797d444486fceebbb0ef6dc02f2a89"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row48_daily_4h.png",
+      "bytes": 81495,
+      "sha256": "c8e48313e551e0cbe6aacac78b22bab3be88851c4cdd5c0ac5288543e2b047bf"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row48_entry_15min.png",
+      "bytes": 75950,
+      "sha256": "38ac6be3fa1dd41abda59d354266259754db4cc94fe7269431191bb1a7333bcd"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row48_one_hour.png",
+      "bytes": 81496,
+      "sha256": "ce4c9a5d995ec93b26e845471c7b3e2956ada318258f6861f17beaeb0d07bd6f"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row49_daily_4h.png",
+      "bytes": 104643,
+      "sha256": "30f2a8899e6a4cf628447c638347ea2acc595e403bfb3758ede4bf18a4385074"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row49_entry_15min.png",
+      "bytes": 93149,
+      "sha256": "2bd954063315ed3ecbce5248b4947b7976063bcd8ba786dd216463c65f2d4b52"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row49_one_hour.png",
+      "bytes": 96329,
+      "sha256": "a8a4ee8a4f8d5b426321313cf2a131b478576f1d37037e7ef281591c2b784b40"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row4_daily_4h.png",
+      "bytes": 35457,
+      "sha256": "59edb120d59192c19db47a9e86b9aa7da2a760424125e222f8f5eced8d777aac"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row4_entry_15min.png",
+      "bytes": 38091,
+      "sha256": "bd21c0bd349c47072691a91b116d9333c20cfa2b39e2d35dd1137af94993f9be"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row4_one_hour.png",
+      "bytes": 37229,
+      "sha256": "9989e2967d66c38367be24408e25df73bf5c0906b1c795612cdaacc7a573fc16"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row50_daily_4h.png",
+      "bytes": 102623,
+      "sha256": "3ea73a21cda328e03154bc9670b34f15f2a49ea220f4b45a118bdf7a82a85610"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row50_entry_15min.png",
+      "bytes": 99392,
+      "sha256": "34598a5bea45ecc3f0235188b4ef0fdac0ff348a77f8fba52f186ec691d14d85"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row50_one_hour.png",
+      "bytes": 99788,
+      "sha256": "8c68287a0456e69bec2cac9e123e3caecf559712028dd494dc178b3273bcc5a6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row51_daily_4h.png",
+      "bytes": 97100,
+      "sha256": "e72814f21378db6fe7d5963520124e3f4c80b5769cc5413cbd4e135dbcc7c8af"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row51_entry_15min.png",
+      "bytes": 107431,
+      "sha256": "85c0de2b78a0f549eeee4f82c6193013ce5bfa5bf618b9cb0fc1d9e76b9eb19d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row51_one_hour.png",
+      "bytes": 111641,
+      "sha256": "fcb4fa6dc8c23982d77767e1ec806b6c22847dba15ab8a2f14dc751f3eb00abe"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row52_daily_4h.png",
+      "bytes": 96964,
+      "sha256": "09d9560b3d16f1a423bad5c78b6d9a0a3f5c22700a188102cf02a673d0359989"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row52_entry_15min.png",
+      "bytes": 91678,
+      "sha256": "abd7b19b9d069bce152730eda9a0f3a7f2abe6a077f45129a12a4d1105a67435"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row52_one_hour.png",
+      "bytes": 101376,
+      "sha256": "f638a2f88a63ccd00c8dca4a8e8850e74a8dfa60b54bdc8edc5087e9ec3c5765"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row53_daily_4h.png",
+      "bytes": 98370,
+      "sha256": "79b880a4ec3734d1410a8ccd267ce8d673eca54b9a4889658bdf1f094d6a11d1"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row53_entry_15min.png",
+      "bytes": 102041,
+      "sha256": "b1e3b743af2761ab47e1df822c9711f9ff4e689c6141968ab330a0092f5c1cbb"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row53_one_hour.png",
+      "bytes": 94501,
+      "sha256": "0f2c99d9afa6be16163e997fcb330b88ab8bbbad4ffdc2621fc74c9e0c99fe56"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row54_daily_4h.png",
+      "bytes": 117410,
+      "sha256": "1cedb3ea3ab531d26b741bf687dc02a96bf51e5ab43233fa4aabbc5c8f3e9491"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row54_entry_15min.png",
+      "bytes": 94501,
+      "sha256": "0f2c99d9afa6be16163e997fcb330b88ab8bbbad4ffdc2621fc74c9e0c99fe56"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row54_one_hour.png",
+      "bytes": 106885,
+      "sha256": "b9469984118dd7bc26c490448692c1571a46165928ecf215b44b175c47653796"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row55_daily_4h.png",
+      "bytes": 85405,
+      "sha256": "4122ef8fcea63eafadc703085c23810b07ddb2f5619a3b3d4f2565e5b11ce59c"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row55_entry_15min.png",
+      "bytes": 79362,
+      "sha256": "0bee112b6a45911ac559bba527027e286db8a4850085f11aede7bcdb54a66657"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row55_one_hour.png",
+      "bytes": 76160,
+      "sha256": "13abe0324ee0d5fce465cbbab6cba686907c5a3692e1b1dee9f0c551f20f60d5"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row56_daily_4h.png",
+      "bytes": 88796,
+      "sha256": "5c11612c50f8bf2fe0d7bf562a6d8dde5eedf733e789cb8e47710dbce48c668d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row56_entry_15min.png",
+      "bytes": 83082,
+      "sha256": "06db91a03dc42cbfcb5f22bd61006ee5fe78e29df7b4b66b3fafda5ec040d13a"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row56_one_hour.png",
+      "bytes": 89907,
+      "sha256": "208d6381ba80bc48c7e07fc11642130279d267a8e5a575dd6fb54689419e66f7"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row57_daily_4h.png",
+      "bytes": 87276,
+      "sha256": "5c8d71003ada8fd1f12791ea6ce7f33fc36693b8821688ab150395900039b8ce"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row57_entry_15min.png",
+      "bytes": 78403,
+      "sha256": "f821f96e9abaa5a4b32be71f5011b1f797ceff4dd43a974fa0dd2c6f38c82737"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row57_one_hour.png",
+      "bytes": 89509,
+      "sha256": "f484ea8515856aa4dc452a18bd7730d2018224cd3c88ef284d91957474a635c6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row58_daily_4h.png",
+      "bytes": 77985,
+      "sha256": "ec7ce187615e9ef7452d9afef5f446dc4717d0e40c07d05f39d7325507d8a032"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row58_entry_15min.png",
+      "bytes": 84195,
+      "sha256": "3dab27b33bc17bc48454e8706fa5f76e98060e040ab7a0e9214a41ccf4b494a1"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row58_one_hour.png",
+      "bytes": 88626,
+      "sha256": "526f87818b80823aec17b421330e652039553634e231758d2b9c6c1dd9b65eb1"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row59_daily_4h.png",
+      "bytes": 86971,
+      "sha256": "5035755ae39a0fad6004b9e3d95264bcecd15577d3f5e927176b36d8fd0d4368"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row59_entry_15min.png",
+      "bytes": 82603,
+      "sha256": "cfd586cf0503507684017ebbfdf5abbe3801649054d05b1789b1e2007e7abf8b"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row59_one_hour.png",
+      "bytes": 76864,
+      "sha256": "3c2634c3d05e80d328c261ab9f11aa02fa0d700040c5c49fd8a79bf99e196383"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row5_daily_4h.png",
+      "bytes": 40118,
+      "sha256": "df0bc99850334b029c65f04deaff258d76312ec87c62cc24a15d7e186e1dca69"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row5_entry_15min.png",
+      "bytes": 40379,
+      "sha256": "055caf27010a53b35b6a15cdbbdcbdc74f6dbe8cd49cdf8eb4350a673d1b3c79"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row5_one_hour.png",
+      "bytes": 34786,
+      "sha256": "440f43bba54315277aaac45cc747b63ccdd0e38f7e6189c227a9e6be495fcacb"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row6_daily_4h.png",
+      "bytes": 42022,
+      "sha256": "630588396d06b38966dc8fdaab5c0a6592862b923378d0be12355ada1d8009f1"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row6_entry_15min.png",
+      "bytes": 37950,
+      "sha256": "4355abd9edf5af9a7cbb5afb56eea5a1a92ed244343441376ddc590c01ee3bd6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row6_one_hour.png",
+      "bytes": 34240,
+      "sha256": "371714c96b2f652c569fe62e0bf0e69a8eef196946f57a903fac143e5f68ed0b"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row7_daily_4h.png",
+      "bytes": 40796,
+      "sha256": "595a372a7f0d867eef835287398682100a8179c52b8f0b15592b56b4e741b7f0"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row7_entry_15min.png",
+      "bytes": 42089,
+      "sha256": "23edeafdf04b336e65482dc4cfcb82d449a532afc87cf3b1d2fd1e8ea87b140f"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row7_one_hour.png",
+      "bytes": 40796,
+      "sha256": "595a372a7f0d867eef835287398682100a8179c52b8f0b15592b56b4e741b7f0"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row8_daily_4h.png",
+      "bytes": 45160,
+      "sha256": "903254c4a08fae018310b8e06c91bd4d63729925ea5838541b1d814c98809b0d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row8_entry_15min.png",
+      "bytes": 41587,
+      "sha256": "ffd94481b783550fa8fe05b06585a84f5600cbf8575fce8a6effbfb79c11680f"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row8_one_hour.png",
+      "bytes": 38715,
+      "sha256": "945c67687693e2f4c830bfd392ffa70adf6185685dd1ebf652dd3d09001fc593"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row9_daily_4h.png",
+      "bytes": 40065,
+      "sha256": "081777d42050d16572433931b1a1de239ace658c5bbf819980c8566556f538b7"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row9_entry_15min.png",
+      "bytes": 42804,
+      "sha256": "16f381384615009ac4858d9df01576e5f70acd5660e2faa9924df21c1be5aac3"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_1_row9_one_hour.png",
+      "bytes": 40309,
+      "sha256": "8a683c1910306fca0e9d465e2f437ad367ca7905dd3a57ddd50c7b0a9e172d85"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row10_daily_4h.png",
+      "bytes": 85871,
+      "sha256": "6727ab6d5c3b1d1d459c001681f8f651f67b0ec1cf16b618a390a71b5864a8c0"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row10_entry_15min.png",
+      "bytes": 78755,
+      "sha256": "b52fd2865725dcebc30dd9300abbc1970428650b8e4682b0e401243be6536a7c"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row10_one_hour.png",
+      "bytes": 83026,
+      "sha256": "2b19214c8e7540b85b758b7633b9fda95a42abbcaee6ddf0f957bc7a171ad641"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row11_daily_4h.png",
+      "bytes": 83152,
+      "sha256": "0a7a40f4056feb0cfaaf16ad7e0e734a9827db718cc3e862f26286381c7b1fb8"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row11_entry_15min.png",
+      "bytes": 87522,
+      "sha256": "b711512799d050e9a527cd75098e193e2b05afbf5b1af8808eca359c8050fd93"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row11_one_hour.png",
+      "bytes": 87522,
+      "sha256": "b711512799d050e9a527cd75098e193e2b05afbf5b1af8808eca359c8050fd93"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row12_daily_4h.png",
+      "bytes": 89937,
+      "sha256": "50ccdd95917044e1842c3496dc532ba89f658b69161dd2abfc8b4044b5cc39e8"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row12_entry_15min.png",
+      "bytes": 96995,
+      "sha256": "d58b8a12878a535ebfc58c9c40169972ea2b4cd0f81672bf8fc7b1d59efe27cf"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row12_one_hour.png",
+      "bytes": 90572,
+      "sha256": "933bc02cd04be747940c83123f5a53d41889dbc6c99f994946b95e3ce46f0ebf"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row13_daily_4h.png",
+      "bytes": 93948,
+      "sha256": "f51e047a1506253dc12d28df9245841ca5c2b913aad3b24e05a3f54cc5128b21"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row13_entry_15min.png",
+      "bytes": 91145,
+      "sha256": "0c49d18befcb36f0cb63c9d12bdbd2baad0cead4e1d93570b6da168e3616281d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row13_one_hour.png",
+      "bytes": 83337,
+      "sha256": "38e6dd4d58e11d6cd5eef7608568de4affac655266561ba93503ca06884286cd"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row14_daily_4h.png",
+      "bytes": 93396,
+      "sha256": "c59e216487ceb36deae77ba5985d9eaecf1d4c4feb2744476581c3c3b859a342"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row14_entry_15min.png",
+      "bytes": 89936,
+      "sha256": "b2da57957a68c275dddf6f829e7ae09f678f5f167b9be03d7d271a8d013b58fb"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row14_one_hour.png",
+      "bytes": 88037,
+      "sha256": "628c1a4f92e7808015921316bebdea56de31a3eb53db891177b27ba0a99238d8"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row15_daily_4h.png",
+      "bytes": 90197,
+      "sha256": "8062e2a356987bbf2ecd4a14baa442e9f48ac78ab3142743ce875f99ce3990dd"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row15_entry_15min.png",
+      "bytes": 96331,
+      "sha256": "00658758fbd0473c16d77d45084f8a87f48966fac526ae8bf5a5471ef7f5cd88"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row15_one_hour.png",
+      "bytes": 84754,
+      "sha256": "717004ec1b669f62ac8900f9f8407c846618128bfbd0e469d3f0b696990d1e74"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row16_daily_4h.png",
+      "bytes": 111258,
+      "sha256": "85521c1fb7b5a21178b8d1909df8ec9dba92881c4b55e9fcf101fef8ab4cfa55"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row16_entry_15min.png",
+      "bytes": 106243,
+      "sha256": "f3b499426be712b424965fe7080c62246a4b8c39df5519955a2da4f3d7ddf158"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row16_one_hour.png",
+      "bytes": 106243,
+      "sha256": "f3b499426be712b424965fe7080c62246a4b8c39df5519955a2da4f3d7ddf158"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row17_daily_4h.png",
+      "bytes": 85084,
+      "sha256": "3229035790f42f77c7a01f8ea26e3cd65c9ee904cc6c7c03f49f169b45738c92"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row17_entry_15min.png",
+      "bytes": 83503,
+      "sha256": "9002de5007a42d67e376f32c5313e57c8f5d471b137a04a5ee7c7cc8ff851182"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row17_one_hour.png",
+      "bytes": 82165,
+      "sha256": "60328643b750b6d0d0950c324ef83455e4dc2e4533f726d3eaea02707282f7b2"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row19_daily_4h.png",
+      "bytes": 97386,
+      "sha256": "868f7f2516322953bb096b7528412a15450f8fb2cbe3748a13e64e4b7ac0c460"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row19_entry_15min.png",
+      "bytes": 86586,
+      "sha256": "e911a635d797bcdd3ec4f78d22ea40859030b1c2b66f2f93e7bc1c7045a95406"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row19_one_hour.png",
+      "bytes": 81943,
+      "sha256": "255e1dd2cc76421b466531a679603e431f8d676cc07f603a5fb09097150019e3"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row3_daily_4h.png",
+      "bytes": 92690,
+      "sha256": "a25c63deaee09ae815369b8c4e30963c7dd19624ef27def7c0e2141232b6d1dd"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row3_entry_15min.png",
+      "bytes": 87875,
+      "sha256": "a861777c3daaf441860913adc843b962ba7b9ea9f4943b5a1f3c791112c568f9"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row3_one_hour.png",
+      "bytes": 86450,
+      "sha256": "cc2db4f80d1f73667c000a3ce8933a9c04749eab8f585d60df22424d485afb5f"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row4_daily_4h.png",
+      "bytes": 87401,
+      "sha256": "d5bead0c415091f9b3b65eb6709ac8480f577e0925d50f30ac32c795c334f5d7"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row4_entry_15min.png",
+      "bytes": 79287,
+      "sha256": "f9118df9cc0985978d22c587900f0c0e6a00499f7603ffe26df1dc5ad13f2773"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row4_one_hour.png",
+      "bytes": 79105,
+      "sha256": "56084a95366a27bcf5b292202ef9262abbfcc8e3ddb2dacae67d998c8e7ca42b"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row6_daily_4h.png",
+      "bytes": 92896,
+      "sha256": "a306e37109379812d7c6a39b9ce9365230da20553373147a092ad1be787e8dab"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row6_entry_15min.png",
+      "bytes": 76543,
+      "sha256": "94299c727573d131ea95895ecba30d969c67563ce1a1dc7efa5290fb83a57212"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row6_one_hour.png",
+      "bytes": 93862,
+      "sha256": "b0619ee545458f9604e855b0f66324e49c6ea8e50489cd7d73d5fc4f2195aa27"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row7_daily_4h.png",
+      "bytes": 103389,
+      "sha256": "ae85471fae6c762c9d8f30775a9a8e49b169fef40ec3217893eeda3627af2896"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row7_entry_15min.png",
+      "bytes": 98678,
+      "sha256": "49f23996b3acfe8a3a64b147d3f944784eb327c457992671b53e6b144fa6eea7"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row7_one_hour.png",
+      "bytes": 85787,
+      "sha256": "0ec4e80dfe8e550268647187a065e0667908db446198e0e0d203829e3b953826"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row8_daily_4h.png",
+      "bytes": 99674,
+      "sha256": "1b93e856339565e99a07f02ced8c78e412781c14fbe50b3ec09f88271bf9c76b"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row8_entry_15min.png",
+      "bytes": 87571,
+      "sha256": "d7aa3f214d5bd7a0ab5fdcc20553ce9730cee6e6cb510013cfd0362181f50f6c"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row8_one_hour.png",
+      "bytes": 89502,
+      "sha256": "251145c8edb057d3b6de7683b8a17c4cdfc9cb3066be0145525ae28b1ec0efdb"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row9_daily_4h.png",
+      "bytes": 86444,
+      "sha256": "3bc9ec5dba2ca86b9f2ed2b6c2ec20b6837d67ac552142c871bf64fb0f42559d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row9_entry_15min.png",
+      "bytes": 92600,
+      "sha256": "412c99af56511d63e016b6c76ac94680a276119c44587aee6228ad9327eb0944"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_2_row9_one_hour.png",
+      "bytes": 97768,
+      "sha256": "65d3c6f7bb4a9344b757d70069a84f70450eba6203462fe6564005051230d5df"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row10_daily_4h.png",
+      "bytes": 93927,
+      "sha256": "83ea7e7099c257f28657ae9eda080ff2c56b76df6d9ab426b9356ac135feaba0"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row10_entry_15min.png",
+      "bytes": 108722,
+      "sha256": "382d6b99d9b54b13eef6c43a6c8d1d3fdf09832380d0974458e4198baecd41bc"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row10_one_hour.png",
+      "bytes": 80649,
+      "sha256": "f19abeed01a4c207340ac52641678f9d671ad6282a94dc943ae1f492e26179d6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row11_daily_4h.png",
+      "bytes": 97981,
+      "sha256": "2e18c110e4a7112b79a79b92a127234761fbef7f1dc98816153587cdeaa8de90"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row11_entry_15min.png",
+      "bytes": 93891,
+      "sha256": "e8826f7e8f76f019a478131e1c5706a796c5db0e9dc25ed3cbcdd99190ce7045"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row11_one_hour.png",
+      "bytes": 84379,
+      "sha256": "bad3dbc0bd9464d0117caa96de5a3e521d962c9adb132ffb2e715f3d98b74631"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row12_daily_4h.png",
+      "bytes": 92561,
+      "sha256": "8d603bde3096b68ccd232027b5c870e807d12627d07cde371b7956e623e4f042"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row12_entry_15min.png",
+      "bytes": 93606,
+      "sha256": "d8018ac54f85bc26d0b9e080a6885a50fdb21d48988608ceb655ab83f258ed0e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row12_one_hour.png",
+      "bytes": 84742,
+      "sha256": "3ef961a0b8511ba8a6bebe848549c713da66cc4e72b4aa334e1318e1b6e0986e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row13_daily_4h.png",
+      "bytes": 98574,
+      "sha256": "ab9d8bf4a65ccf087324edba1da098fd685cae9da9822c7e4063eaa4dbc49d07"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row13_entry_15min.png",
+      "bytes": 94333,
+      "sha256": "b9ccbdb21b15470670ce9290a21ed84c50d25ab206d6191900e46eef4c6770c1"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row13_one_hour.png",
+      "bytes": 82842,
+      "sha256": "acc6478f97dbd085ddafa94228e164eec7609ceddd31a5086062ba4fb15a7a09"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row14_daily_4h.png",
+      "bytes": 114062,
+      "sha256": "64a7375b5d788ef18f66b93536127411c23b159959ad04abdcf82fe37edbded6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row14_entry_15min.png",
+      "bytes": 133943,
+      "sha256": "4551a4aa2457a8f46ae2e359af41c0e31ae566a7806dba69fa912e246de17fda"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row14_one_hour.png",
+      "bytes": 110127,
+      "sha256": "e23c6d8ec72f7581ac0e0d8a747b39845fa426c9179bd1a175c4a630ff365d03"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row15_daily_4h.png",
+      "bytes": 114131,
+      "sha256": "f60477e7076b9ea9570919eb1c85db5c2232fcdd6b80e19ec59f8898363ffdd7"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row15_entry_15min.png",
+      "bytes": 107068,
+      "sha256": "c03abb1921f4e92ac2c100f8f25d85d1a9b75fdacb271b8941e860a612a84220"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row15_one_hour.png",
+      "bytes": 100010,
+      "sha256": "a645e931f561ed85f77e5b09727a8a4973b368feb501e415a144eeb7effec582"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row16_entry_15min.png",
+      "bytes": 109550,
+      "sha256": "9403c896c6c51c088fa743493da7d9c97f81dbe3c69c2a2d090eb62f8b568341"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row17_daily_4h.png",
+      "bytes": 123811,
+      "sha256": "eab8c94943f3428978b6c4ca5ac72abf85af86f2f6cee42b7d13d4e33ab8b99f"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row17_entry_15min.png",
+      "bytes": 110857,
+      "sha256": "9d4887eb0ba530420911e7ff0841fa36dee07592a8cff774f248903dd1584584"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row17_one_hour.png",
+      "bytes": 107328,
+      "sha256": "801484a546213a4aa96c01e3a6aa829f2e9f4cd64b1ecc7642f03a97ad05fda2"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row18_entry_15min.png",
+      "bytes": 97486,
+      "sha256": "f1ce8eecedec9f0e92db41b7ee79a2ee80ee64467fa5952cf4384cbea9c600d0"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row19_daily_4h.png",
+      "bytes": 125711,
+      "sha256": "0b387f77c33a10ff5fe7a4ced5d97e6a3fc19b06d7e03682f8812c2f18dba0e6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row19_entry_15min.png",
+      "bytes": 100818,
+      "sha256": "044e465fd2236dcf39f73357ba345e0aeb1a84935aa58c7e37b712aae0321389"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row19_one_hour.png",
+      "bytes": 93133,
+      "sha256": "d7809845c63e06ede20f7ce82c8dc99e1334ecaec446fcc5bb188798c55ad4e6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row20_daily_4h.png",
+      "bytes": 124124,
+      "sha256": "3bb0459e00e31ebfd706e84555ca0f425dbd7540a9514a726af686df0e32990d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row20_entry_15min.png",
+      "bytes": 94478,
+      "sha256": "e175a61fa9268f8267d1ac12f8d02c1af192daad8f6f72970c06a73bbff874ed"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row20_one_hour.png",
+      "bytes": 98116,
+      "sha256": "b990c0f370cf93c1e630d34a8127dc5f4a7091c646dce46a724519c645c4acb6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row21_daily_4h.png",
+      "bytes": 122989,
+      "sha256": "8a6818a81fa4b716bf5ff4cdc83562e63ed48244062c46f49938852ec28cc381"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row21_entry_15min.png",
+      "bytes": 115063,
+      "sha256": "c8e9e8403e4d0c9eddcac0d3971fefa2e20afdf20944099c6ff434017b7bcca4"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row21_one_hour.png",
+      "bytes": 112828,
+      "sha256": "ad0242e55ab67c520a96b6e54143fc95605a2f420cf72e4b50068fbf4215d329"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row22_daily_4h.png",
+      "bytes": 113369,
+      "sha256": "7a996bd5a83bfe72a0a3df288fb75d255ffc74e5ffe03b05e0295197db3e4821"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row22_entry_15min.png",
+      "bytes": 94855,
+      "sha256": "e1eb1c4531c716d9faf2e7e3a04868c738416173844503dbc258d15581bd0b26"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row22_one_hour.png",
+      "bytes": 110144,
+      "sha256": "2fd67634a4cdc0ad565eadbbb4e5ad77462a860e0b38555eb43c14be203dfab0"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row23_daily_4h.png",
+      "bytes": 101948,
+      "sha256": "7d664174e6fce22c677a5be71650c6361d26824b6a43946573babb0ea0a74b1d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row23_entry_15min.png",
+      "bytes": 105063,
+      "sha256": "3527849b91d5d31ae1d5c1e05ace18be54cbe079a8657f508679dd1a95883925"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row23_one_hour.png",
+      "bytes": 102135,
+      "sha256": "808b14d3e79491216032154f247f425195b2567652d78101a3c2336a2000266b"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row24_daily_4h.png",
+      "bytes": 109294,
+      "sha256": "8341688d56a95be38fe3a7662999fcc7431db411af55b44456d6ccf33441620e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row24_entry_15min.png",
+      "bytes": 106238,
+      "sha256": "d13e1724b1bba75be01f01781b3448ebc208f918cf1b24fc93102d41a3e8cc78"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row24_one_hour.png",
+      "bytes": 99252,
+      "sha256": "8acb51acd3b0d728e94d209e358ee637fbc5cd9c5171b5596871bbebc831df8d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row25_daily_4h.png",
+      "bytes": 94031,
+      "sha256": "50520cf2661f71bf3919e50b6eb12b3374b8ad4fc4a68a6ea8e0427215860b1e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row25_entry_15min.png",
+      "bytes": 110038,
+      "sha256": "77867fe12797718cd73833a71b78a54aa18850832340a51b9e55dddda4f7aa66"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row25_one_hour.png",
+      "bytes": 107891,
+      "sha256": "e7e004db9467f3e565870bb1e6d69980c218edfad53b66c4b571e787668333f8"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row26_daily_4h.png",
+      "bytes": 103381,
+      "sha256": "e94edcfa69b4f1db43f6fd5e278660c16f9065548ab54631ee2719ef1fc3f13e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row26_entry_15min.png",
+      "bytes": 97551,
+      "sha256": "4c1c957e58136d6d0e1c2e25072ebbb2dd8d9f9b9d3d91abd1930c4b4148b2d6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row26_one_hour.png",
+      "bytes": 110571,
+      "sha256": "aeb578c488785b5ab21418a816855990dbe6da0d4a8131321aa729477ee3bdb7"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row27_daily_4h.png",
+      "bytes": 115848,
+      "sha256": "ea623be7260b4b4d404abbb485d69f68095657595495b5fd0c8d6f9a8a342c48"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row27_entry_15min.png",
+      "bytes": 99624,
+      "sha256": "711636352c19ea6732b50a7687fc30c6890ae5fc377fcea026498bed07f63efe"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row27_one_hour.png",
+      "bytes": 92188,
+      "sha256": "920e67db41b4104779f50f18a2c485e34ce9eb817761780825c6349e542ed668"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row28_daily_4h.png",
+      "bytes": 103164,
+      "sha256": "dc5f1165f88e11d88dcd96ff2ff6cf6ab4ed06eb15b36bb103a22d13370dcec7"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row28_entry_15min.png",
+      "bytes": 112012,
+      "sha256": "0cad225db122b98084ba4b51402fe61f7c34dc62dd7a576574930a035f2896bb"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row28_one_hour.png",
+      "bytes": 109526,
+      "sha256": "0549d1296406440ff51c07a2921906680d56a1bbbc9a56337feccc9a835b1bb8"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row29_daily_4h.png",
+      "bytes": 120458,
+      "sha256": "5ff406123f5f694e7c90a39a6e9672a3fbf2421f2e192fcb594ad7ab9cc1c768"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row29_entry_15min.png",
+      "bytes": 110105,
+      "sha256": "ff789bc8168491bf4c3c9be02011b91247692228d2df247d11d2f7bf70d1f9db"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row29_one_hour.png",
+      "bytes": 96184,
+      "sha256": "1b4d2bc7cb6dabe5ae229f23cc8150d33e88c635be73bb2c6e3cef0f5438a2cc"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row30_daily_4h.png",
+      "bytes": 115233,
+      "sha256": "8899dc6df7cffbc01dcbcf3a4e63d842be3de2a3e68da1b8fc0ee4c19e5bd6e9"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row30_entry_15min.png",
+      "bytes": 116670,
+      "sha256": "d88971dfd0c6a2590fd4189492ddb387724732cffacbc3a7971155941210ee97"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row30_one_hour.png",
+      "bytes": 105574,
+      "sha256": "672540606cdf1fde14a8ee973cc006ccdfb36924b41bcd856471a5ec62d5d0eb"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row31_daily_4h.png",
+      "bytes": 100390,
+      "sha256": "f2686eb51bf7d7353bab73f6561237a0040187d2e8b29a0edad4c53d41f4d111"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row31_entry_15min.png",
+      "bytes": 92062,
+      "sha256": "b3debaef97e1567c21ae5174bac6f51e1d2977a47f146eb3c52f6a7dd75c2307"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row31_one_hour.png",
+      "bytes": 90669,
+      "sha256": "df02e400e768e0e343e12ade89acf06d02ba44aea70b4f8aeb9aa4df356e69eb"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row32_daily_4h.png",
+      "bytes": 98994,
+      "sha256": "c0e427292fd7cc675f70767929543c6960fa490b5fef6653b8053bffe938544f"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row32_entry_15min.png",
+      "bytes": 101115,
+      "sha256": "b51791b217d1e5f9499c98ce3a14bd6592911e46b10f7b4ef4b0a5249a211a7c"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row32_one_hour.png",
+      "bytes": 96278,
+      "sha256": "c3a516b9385664143785c9b522fb23898b1b21077b7ddf175002b20cd1057876"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row33_daily_4h.png",
+      "bytes": 110113,
+      "sha256": "ba68d8019c3b0092c400d4fcc235963105dbfd7b5d3b61b685ba29df0d6549f8"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row33_entry_15min.png",
+      "bytes": 100091,
+      "sha256": "d4d33a1263cae4c58079540c8c166a35d4ee805e3a795c8dd5684ac510736d74"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row33_one_hour.png",
+      "bytes": 96220,
+      "sha256": "36ff71e30b0099f7641fe0d5a068e6630149da441ef18958c5a2130cd408417d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row34_daily_4h.png",
+      "bytes": 99686,
+      "sha256": "9517033845cbfb209345e468e893bb6bd2ef795deeb249c87c610fbb948a1de4"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row34_entry_15min.png",
+      "bytes": 108462,
+      "sha256": "09c557097e2867753042d8fd67ebc04dabab8214aa874f7107bb05f6f07a1f65"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row34_one_hour.png",
+      "bytes": 97811,
+      "sha256": "b4b87fe81469ae368127d912fd5e3d8073c5aeb705309798c897a35209a9e34d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row35_daily_4h.png",
+      "bytes": 100927,
+      "sha256": "090f874d257036cef6a620adabef731127d5f0e2a353ba99246ed620eaf899d7"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row35_entry_15min.png",
+      "bytes": 108037,
+      "sha256": "4632767e6cc1fc81b6556a131b722ed8415b74d81816741f61218ab505135e0b"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row35_one_hour.png",
+      "bytes": 107121,
+      "sha256": "3d410bedd11cd8223bbf7e77bd5517f5bd604f8c15411f71ecd5b9025cdb5165"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row36_daily_4h.png",
+      "bytes": 98071,
+      "sha256": "42ab2df51f2bee1b02094abfdffe49455d4363ac927e7c5835377ad086187762"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row36_entry_15min.png",
+      "bytes": 89915,
+      "sha256": "dae4f9aa40dd57216d7c067597ab716bee420ac404248e7c658bc41a854294e0"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row36_one_hour.png",
+      "bytes": 91029,
+      "sha256": "97aaeb862af2bd6f7b3c01bb3acb46786bd8c0054260541e3cbcf95e6f09bc14"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row37_daily_4h.png",
+      "bytes": 113577,
+      "sha256": "11fb663709bcb4f8b93d1e26e85b16347e562f3ad432a42829fcdabe3228cfc6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row37_entry_15min.png",
+      "bytes": 105745,
+      "sha256": "be0e53ebf49f77b9f22b32283cec1dcd275ae3b67d87013c9ffef6a97aee1808"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row37_one_hour.png",
+      "bytes": 107039,
+      "sha256": "961dce93475888f620aed389825ba1317e674244fabce8b4345de30453f8da3d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row38_daily_4h.png",
+      "bytes": 100627,
+      "sha256": "8b9977cc86de77dfbb00074e8750575b8e132420bc07f8a0cbc1c841bf94fc39"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row38_entry_15min.png",
+      "bytes": 109097,
+      "sha256": "bebe8714ae8449ae24876bee0a4f21f7481151a97c6da9995555d961a3cce653"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row38_one_hour.png",
+      "bytes": 95604,
+      "sha256": "c4cca1047a52ba73b4611d3b8ffb122ba8f229862d877615fea8156ef9e9e507"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row39_daily_4h.png",
+      "bytes": 95543,
+      "sha256": "4a7e29c5688b1be6e22f27e7749c85c299dcf6b9585b3375539bdcf1c720bb3a"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row39_entry_15min.png",
+      "bytes": 97785,
+      "sha256": "c038822cb5c8aa5fa745221c2bd363587c9cfba4ee8c3c55b8c63240c6c9fe75"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row39_one_hour.png",
+      "bytes": 103469,
+      "sha256": "224c8ea9845f177f4ed6deb163a7eec5abed81e4ef7a0bffb92a6227ea4808fc"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row3_entry_15min.png",
+      "bytes": 84502,
+      "sha256": "3b5952cbfaa64680611f6ce8d8007ff0bec10ea383e02aeb3e3f644b1f4f6298"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row3_one_hour.png",
+      "bytes": 94124,
+      "sha256": "04ebf7eb41eefdfb3af715efe31fe5b65f152ac94e6aea5cfe8b3b91e8db5bb7"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row4_daily_4h.png",
+      "bytes": 93914,
+      "sha256": "a09fb243bf7bd33c05e75d443157652f9c58908c9120b0c02ff047e878b65571"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row4_entry_15min.png",
+      "bytes": 96003,
+      "sha256": "bbb726922fb5aa3b1d451c92a038bec890212e2307fd5672b3955cb3728901a5"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row4_one_hour.png",
+      "bytes": 96883,
+      "sha256": "4d229309b6bfb7afca33784238cf899525627f777732b78b1092b47bff525aa5"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row5_daily_4h.png",
+      "bytes": 87388,
+      "sha256": "568dd61381549a42b80089c4bf0f0ea50b9246141236af04cfb68c289493c71c"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row5_entry_15min.png",
+      "bytes": 78106,
+      "sha256": "156d5c7e66e531d1de94681ea09485520f5cea27fd2a8ac0ed79236232b779cc"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row5_one_hour.png",
+      "bytes": 92752,
+      "sha256": "1b3b9ad90f5e0e4d8280724196e7ba08064320d44eaacae8cc208c724f70c769"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row6_daily_4h.png",
+      "bytes": 102338,
+      "sha256": "66c366603bfaf1e61b9779ce8d49d96a3097cf6191d064818bfd1be30439f3f0"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row6_entry_15min.png",
+      "bytes": 87663,
+      "sha256": "5b690d854f0c0b0a2f72dd270637978e5ae2ebd0dd9a0b8d9e7c5bddf26483eb"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row6_one_hour.png",
+      "bytes": 93967,
+      "sha256": "be44c4aaab7a5dfd3ccb0a71c9e146b05de39080a8877e98d03426d50a54926a"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row7_daily_4h.png",
+      "bytes": 92267,
+      "sha256": "adeb797d86d1d03262069c2de381fa996dd75c52a105d9a95a82a0e02f14f87a"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row7_entry_15min.png",
+      "bytes": 95470,
+      "sha256": "8d27d818c482dfd48cbbc14fb7bac73aa71f49af1791000d6cd6fd748cec60df"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row7_one_hour.png",
+      "bytes": 87443,
+      "sha256": "885485c326422067e93c793d84faf6c27be463f301cbdd3868dbd87d3e6e087e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row8_daily_4h.png",
+      "bytes": 101822,
+      "sha256": "3c5cedb66b5c79ef19755728c2861bbd41a36ba69b83e3c562a2730917e605b6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row8_entry_15min.png",
+      "bytes": 102139,
+      "sha256": "d4e5a7c28894ad8275e51f1dc7b5d3b7cb55b44af63c1c1155887c71149f552a"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row8_one_hour.png",
+      "bytes": 107377,
+      "sha256": "8169a522e3a08c55ad67ce7ff60178580e4b4b18e41033b5ed01e2ae80bfc726"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row9_daily_4h.png",
+      "bytes": 86843,
+      "sha256": "5969bab7acfcf57990b799625a1437d0c366a5343f96fbbb16b6ffcf97d58460"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row9_entry_15min.png",
+      "bytes": 88281,
+      "sha256": "ec226b7a71c40eb508e2f6f7ca8f902443d283f9115a74c93bb7a6c1478421bc"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/Swing_USDJPY_Round_3_row9_one_hour.png",
+      "bytes": 109279,
+      "sha256": "abd389775b63a258fc989d9def480ac24b1e75c2a279e10edf7166e6b4396161"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/charts/manifest.json",
+      "bytes": 120329,
+      "sha256": "4a00e124767cc35817d63dae13ea8bf97f45d73972680da3245bb6aa0e4620f4"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/context_structure_1h_2025-01-23_BUY.json",
+      "bytes": 6310,
+      "sha256": "2cc21917d2c244fd19cfc5e7027f72ce95613ce0199fddc10b689055d63c3a53"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/context_structure_1h_2025-01-23_SELL.json",
+      "bytes": 5669,
+      "sha256": "b5d12edcbf41c860bcee5f7f68ec2b6d126eb41fb8bbf7dc5deeaaf79e59b59a"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/context_structure_1h_2025-01-29_BUY.json",
+      "bytes": 580,
+      "sha256": "008b158520a4aa7f6c56ad0ad281f873e5ef9ba42f569d444ed3c94bbbae7122"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/context_structure_1h_2025-01-29_SELL.json",
+      "bytes": 3527,
+      "sha256": "e03c7dc165e96ca6fb4843fd6253e929f499abf37b13a99998797d894cef8040"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/context_structure_1h_full_context_BUY.json",
+      "bytes": 11962,
+      "sha256": "7905dcb57685b83e875cb11e4d7117270c7c28d05051bd21a106761c367892e1"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/context_structure_1h_full_context_SELL.json",
+      "bytes": 12604,
+      "sha256": "0106960ebd0523f6b2bf0a8a6ada844312e4a787164f627edd61e5a6a750cfa4"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/context_structure_1h_minute_coverage_BUY.json",
+      "bytes": 7681,
+      "sha256": "e844317e2afcc1cd5b76d2a0ce46f4aa0fe8be3da0cb2be87a692c8e93b089cf"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/context_structure_1h_minute_coverage_SELL.json",
+      "bytes": 2081,
+      "sha256": "69eb1ba0ce1f550fa811452816d5d45f28e5649def9c7803067e75f134147add"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/context_structure_audit.json",
+      "bytes": 5711,
+      "sha256": "c8fb0bd0882642da84c50076d3a764d1dd02fc61f6b04736bf96d948a2728958"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/date_corrections.json",
+      "bytes": 530,
+      "sha256": "191ea3d7d5e1d2347c8a6cd9ee83e9ee3e0a5fde5888d8a24102418eca862e1f"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_candidate_audit.json",
+      "bytes": 11489,
+      "sha256": "7cde75eb34c152d9dd0ac97a5fd5e55f35433348e89816c20931066f2eb34ed6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_candidates_15min.json",
+      "bytes": 4785384,
+      "sha256": "e2aa3dbba96a123df08752be08ed0c4f1ed7a03738c03704de895bc95ed5ea5e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_candidates_1h.json",
+      "bytes": 1098606,
+      "sha256": "0e155ec93526515b3ee35a971966a068cdce5d398ce0cb768bb38131b21ceacf"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_reference_comparison.json",
+      "bytes": 1579,
+      "sha256": "8cf604eb78a7c4085865a47a64960bdb29be84a0cd4bd53c17cbeffa7dea1175"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_sequence_15min_BUY.json",
+      "bytes": 34774,
+      "sha256": "cf719572a17f0d336952d4a5fe82a8dfcd5885c318c1ceecb1639271aba50226"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_sequence_15min_SELL.json",
+      "bytes": 16550,
+      "sha256": "b2895dca32d9c7a95767b96c1ed24713a70f7064709630f63aadd937fd723a37"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_sequence_1h_BUY.json",
+      "bytes": 23438,
+      "sha256": "6fec1d97d4251027c01df87c26cea7cdd87ae5ba9e0989e754c00ccf4317494e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_sequence_1h_SELL.json",
+      "bytes": 13046,
+      "sha256": "478e22ff71ef7758982f82e52c172f6ef3ffd7d8c988da5115aee34956611d8b"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_sequence_audit.json",
+      "bytes": 2984,
+      "sha256": "049385c73cc94adceea62446f3c707ae27cad46d8e05b0d17fbaf6c80febfbbe"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_structure_15min_2025-01-23_BUY.json",
+      "bytes": 8850,
+      "sha256": "dcb7b5eccefd88d1a04bcfccdada211d5b32ef11e4dee05358a5fd02025c9d1c"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_structure_15min_2025-01-23_SELL.json",
+      "bytes": 9497,
+      "sha256": "8f36d9415975727b452005b5234daac619a4f8bce4048217da7d3266af63dde7"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_structure_15min_2025-01-29_BUY.json",
+      "bytes": 1935,
+      "sha256": "836c5cf9f777e2acaddf208907eab39849a45fddf699afa7d3542a800561d67f"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_structure_15min_2025-01-29_SELL.json",
+      "bytes": 11739,
+      "sha256": "4834497198d1d904d55de6fd4994965d6f99d29bed347c7b185beeb9edd3710d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_structure_15min_full_context_BUY.json",
+      "bytes": 1941,
+      "sha256": "270b41bea73f79020f1bbdd4789bf277ced658a268dcf4507755311326b955c7"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_structure_15min_full_context_SELL.json",
+      "bytes": 10025,
+      "sha256": "76f9268cf7a80ef703ed17f8d42811ed1dc2c2b43962bd2c59c4e3e5ae37c261"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_structure_1h_2025-01-23_BUY.json",
+      "bytes": 6251,
+      "sha256": "2037e0ad143bae967a24657be3d42e38d67e713eff05d4533af3244da845744e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_structure_1h_2025-01-23_SELL.json",
+      "bytes": 5610,
+      "sha256": "badd913a90fef7e1f701f8ca597a5b5285498eba83848491eb3565cf8a556833"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_structure_1h_2025-01-29_BUY.json",
+      "bytes": 521,
+      "sha256": "bff4c342a6f39362f387510913ff5c55586c8d638a801d98c40ee3b40be189d6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_structure_1h_2025-01-29_SELL.json",
+      "bytes": 3468,
+      "sha256": "129f9ad35c994ca3508a97f0e1ecf77fcbb32d15c66e58fb94af71faf62b995d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_structure_1h_full_context_BUY.json",
+      "bytes": 11903,
+      "sha256": "096b6914c43a3932b16f193bef6c3331e4aa9b9b42bcd964999fd120363c0ce8"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_structure_1h_full_context_SELL.json",
+      "bytes": 12545,
+      "sha256": "7ea362b66bb53c325ee0257cb7dbf2f2abbbc82bd85a0ea2b16da2695efde866"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/fractal_structure_audit.json",
+      "bytes": 9102,
+      "sha256": "07104110d9a242311be1356bc543e0c9b50eecdba5995be14f48a102a4077170"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/inducement_candidate_audit.json",
+      "bytes": 25385,
+      "sha256": "53138b25ea58721bccb950a4840ad5a3dfa39d77ee7d229ee2a750e3203e83bf"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/inducement_candidate_pairs.csv",
+      "bytes": 9000921,
+      "sha256": "b98ef67612fac19a4956614225a1b240c01a1f2b41c14a487e79998bc56b9de0"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/january29_candidate_mapping.json",
+      "bytes": 1172,
+      "sha256": "07199be196f4f53a31b66efcc446b1de9a77947b9338f527397fe3eafca594a8"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/january29_candidate_mapping.png",
+      "bytes": 187209,
+      "sha256": "28c3ade5f26602a2ea491b344130647b6c470c696a2a82868a1b7a22cfa2c2f6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/january29_outside_candle_order.json",
+      "bytes": 758,
+      "sha256": "8c70189bd3b1e91606fbdbb8ffe7c9c1c9b95655bb691cdd78c252d837fc8fe1"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/january29_outside_candle_question.png",
+      "bytes": 181326,
+      "sha256": "29bf392ef8e087270f5c83ea70bb1873a4e70cbe4e64c505445fe7e3e8a81231"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/journal_audit.json",
+      "bytes": 2220,
+      "sha256": "91e8e3f72e2f7be016efb44b49adbb224da1b024919540f12a4a812a28fc791e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/journal_records.csv",
+      "bytes": 17565,
+      "sha256": "420a5fe1c06ec1239c8be31728c93eb6b3f669a5ae7308cbebf255e91ae4ff24"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/lc1_automatic_inducement_connection.json",
+      "bytes": 1399255,
+      "sha256": "62b028d1cd1a1c0acaddb882b070bdf8bcc71f9783637d6376fbbab95a044825"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/lc1_sequence_reconciliation.json",
+      "bytes": 12512,
+      "sha256": "8cb1245b4de932027ee9ccf4340c10862cc550f78240672157f3ae78ee1d402d"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/poi_origin_A_B_review.png",
+      "bytes": 174463,
+      "sha256": "ec1016d5bd2fdcd36f73bcd86d203d3ecc9348629f59e92278ed931680e91393"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/poi_origin_mapping_audit.json",
+      "bytes": 18054,
+      "sha256": "331a5bc224b95f610c6c1c22c0fb97049e0e4cced232cd407c679acc41c66e14"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/reference_accounting.json",
+      "bytes": 2782,
+      "sha256": "92b31f47545c140358dbf69fb66790b5095532c1655bd0ef64d0dae7c1d2623a"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/reference_replay.json",
+      "bytes": 4304,
+      "sha256": "0f0b1d434ae03e0202b7d0150da725fac1ad622dcd67e5c47e8f40df5d8832be"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/usdjpy_sample_audit/USDJPY_context_15min.csv",
+      "bytes": 364761,
+      "sha256": "266bfaca2ed663edcd8fbe7239e98b216c76762c3a1dc796e9a66b994dc9c140"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/usdjpy_sample_audit/USDJPY_execution_1min.csv",
+      "bytes": 211271,
+      "sha256": "726fee5b09e7bcc482e7ee2e44f34749bd23c3f838c4757b016250790abe8540"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/usdjpy_sample_audit/USDJPY_execution_1min_v2.csv",
+      "bytes": 602042,
+      "sha256": "d4a52f8bed7840f7f79c2a39457532054d61b845756df672d076da73a3aaf108"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/usdjpy_sample_audit/audit.json",
+      "bytes": 2797,
+      "sha256": "298e1d67f5bd6da78ae3c872f07ead5f24ef200f0127d824657b5ddb258695b6"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/usdjpy_sample_audit/audit_v2.json",
+      "bytes": 772,
+      "sha256": "6f838ebfc9cd5a10641473508c2d4300f2543091a7a5a7a844c1697d4a9f225e"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/usdjpy_sample_audit/metadata.json",
+      "bytes": 3814,
+      "sha256": "b1faf289451ef05b17c55be999797d70f926ca28c4bc443f401a1561956a7fa5"
+    },
+    {
+      "path": "traiding-bot/data/strategy_review/usdjpy_sample_audit/metadata_v2.json",
+      "bytes": 4203,
+      "sha256": "eb5c7f0320625550eb61b219add239b27d9abde0e17e421fd0614fb1c6b9c452"
+    },
+    {
+      "path": "traiding-bot/download_journal_charts.py",
+      "bytes": 7376,
+      "sha256": "16d28bfb5c1a00415e1b54cdb0409ccb5ea12e15c60c6ff38163ef2273eafdc8"
+    },
+    {
+      "path": "traiding-bot/download_usdjpy_sample.py",
+      "bytes": 10595,
+      "sha256": "be965eeff477bfe438127fa25d681d41c5865b3052169f466ad9166b4fe4e14f"
+    },
+    {
+      "path": "traiding-bot/fractal_candidates.py",
+      "bytes": 7561,
+      "sha256": "f8fc5fd13037100601221f4a48a773b5e57cfffe7e09dd2889e9ef1b1cf68d51"
+    },
+    {
+      "path": "traiding-bot/fractal_structure.py",
+      "bytes": 14755,
+      "sha256": "f7e7d319ecfb3579b044399f72517a8b403c590384aa4487b59654fc319eb7a9"
+    },
+    {
+      "path": "traiding-bot/fx_account.py",
+      "bytes": 7483,
+      "sha256": "2e25d50f40846b82d962fb7c907b483c92ce347ee013e28b87ea17d043e8f974"
+    },
+    {
+      "path": "traiding-bot/inducement_candidates.py",
+      "bytes": 5394,
+      "sha256": "a940a54ee9d64f3d66cf3d210ba240a33273c9d7ccf3d17175227d2d528c3683"
+    },
+    {
+      "path": "traiding-bot/internal_structure.py",
+      "bytes": 7797,
+      "sha256": "7ab9904ea23af7de3ff42b263257494137627843705391fdb29ee379d0ca4d5d"
+    },
+    {
+      "path": "traiding-bot/poi_mapping.py",
+      "bytes": 7963,
+      "sha256": "2e9f25568e09474cb68e45dc8118ff27fde227819eed57fc25764845cd4b5cd5"
+    },
+    {
+      "path": "traiding-bot/reference_replay.py",
+      "bytes": 6853,
+      "sha256": "707bc3818a1132265752e2caffbfcc25ed9ad3ecaad269bfb9c9ae85f1dba6f9"
+    },
+    {
+      "path": "traiding-bot/requirements.txt",
+      "bytes": 16,
+      "sha256": "986336a76db8d3a2e2ccf1ace2188db33c99600f54d124aa47329fbd0972fd3e"
+    },
+    {
+      "path": "traiding-bot/risk_backtest.py",
+      "bytes": 10738,
+      "sha256": "690f89c3715dd4a332b530eacdfa88cdcf2101db770a7a794d6ab5d7571bf364"
+    },
+    {
+      "path": "traiding-bot/structure_evidence.py",
+      "bytes": 1832,
+      "sha256": "566436758a99fc00bb0c8d0816b87451239bd35a08f69fe36646ce3f76587a7e"
+    },
+    {
+      "path": "traiding-bot/swing_lc1.py",
+      "bytes": 20084,
+      "sha256": "eed9d3bc892c3d47a6791d3ce5ddd48c8e1c4a44ae5fa709e74d708f9bf770f5"
+    },
+    {
+      "path": "traiding-bot/test_backtest.py",
+      "bytes": 5376,
+      "sha256": "6f848d4b99f63fa989385be95710f04e81167b474e781224cc0e137871ee7416"
+    },
+    {
+      "path": "traiding-bot/test_bot.py",
+      "bytes": 4390,
+      "sha256": "ae00c349539f1ab9238bcc549272fdadc161b085c316142d867748845961e1b3"
+    },
+    {
+      "path": "traiding-bot/test_download_usdjpy_sample.py",
+      "bytes": 3807,
+      "sha256": "23e959ff9941fe5213df2523aa843a4e954f48946720711daa8959a85a2232dd"
+    },
+    {
+      "path": "traiding-bot/test_fractal_candidates.py",
+      "bytes": 8769,
+      "sha256": "8a724428559ddc86d26b56a1223dcfaab032ae48c352742f21939ab503374c63"
+    },
+    {
+      "path": "traiding-bot/test_fractal_structure.py",
+      "bytes": 10760,
+      "sha256": "bd9d73cda4b58e67c56a13d7d5c00fa683eb36b8f1fa4b824b8476065ee15229"
+    },
+    {
+      "path": "traiding-bot/test_fx_account.py",
+      "bytes": 4100,
+      "sha256": "ae16be1328468afb9b2d98bc9c25ee17c2a8c831c526efc674c4d5cd50feff6e"
+    },
+    {
+      "path": "traiding-bot/test_inducement_candidates.py",
+      "bytes": 3680,
+      "sha256": "1b819faf36b39011e847adc10f3ed238fdacd3bce5e6a7dd067c5db7d956323a"
+    },
+    {
+      "path": "traiding-bot/test_internal_structure.py",
+      "bytes": 6984,
+      "sha256": "8a175abdcc48869fe01838e408fab8d60c2b6bc0aedef0176a9e3a4b55c82fd2"
+    },
+    {
+      "path": "traiding-bot/test_lc1_candidates.py",
+      "bytes": 3800,
+      "sha256": "bda90bca83e1aa91e57c86b1db6cb092cf70ac593c50d777dc2e79e102c29130"
+    },
+    {
+      "path": "traiding-bot/test_poi_mapping.py",
+      "bytes": 6101,
+      "sha256": "ab98ec8290475afa4d0c9af234c0af65248a7ae0d8032265b05dfbda488f7664"
+    },
+    {
+      "path": "traiding-bot/test_reference_replay.py",
+      "bytes": 2328,
+      "sha256": "3426dc9f0aa97e4c469e41c6608353fcba2c3ae3a153780652a428d8b0f852d4"
+    },
+    {
+      "path": "traiding-bot/test_risk_backtest.py",
+      "bytes": 4102,
+      "sha256": "ce7491ef47aba23a971b2119a8cba18478c3db27b4acbb5cc2036fb9812806b2"
+    },
+    {
+      "path": "traiding-bot/test_structure_evidence.py",
+      "bytes": 1991,
+      "sha256": "5eafecb470db95d14d1554fbb2e57cf7e026d3bc8d886f1fd287debd8a000b67"
+    },
+    {
+      "path": "traiding-bot/test_swing_lc1.py",
+      "bytes": 9803,
+      "sha256": "402407e93950621fc7346f65d1e166f7c6af9e277d824ac06bd068c2863eac4e"
+    }
+  ],
+  "excluded_regenerable_paths": [
+    ".git/",
+    "backend/.gradle/",
+    "backend/build/",
+    "backend/node_modules/",
+    "backend/app/build/",
+    "frontend/dist/",
+    "frontend/node_modules/",
+    "traiding-bot/__pycache__/"
+  ],
+  "exclusion_note": "Regenerable/untracked dependencies and caches omitted; previously tracked dependency files preserved."
+}

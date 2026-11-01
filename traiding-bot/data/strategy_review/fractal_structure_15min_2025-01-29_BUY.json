@@ -1,0 +1,46 @@
+{
+  "processed_bars": 4,
+  "complete": false,
+  "final_state": {
+    "status": "review_required",
+    "fractal_direction": "BUY",
+    "opposing_reference": null,
+    "active_A_start": "2025-01-29T00:45:00+00:00",
+    "halted_reason": "breakout_also_crosses_proposed_new_reference",
+    "events": [],
+    "scope": "Supplied initial direction; provisional reversal linking; no POI, phase, order or profitability inference"
+  },
+  "fractal_events": [
+    {
+      "event": "fractal_ordering_review_required",
+      "reason": "breakout_also_crosses_proposed_new_reference",
+      "known_at": "2025-01-29T01:00:00+00:00",
+      "pattern": {
+        "kind": "fractal_low_candidate",
+        "confirmation_direction": "BUY",
+        "anchor_start": "2025-01-29T00:15:00+00:00",
+        "anchor_break_level": 155.634,
+        "first_failed_candle": "2025-01-29T00:30:00+00:00",
+        "failed_candles": 1,
+        "reference_price": 155.512,
+        "reference_candle_starts": [
+          "2025-01-29T00:30:00+00:00"
+        ],
+        "confirmation_candle_start": "2025-01-29T00:45:00+00:00",
+        "available_at": "2025-01-29T01:00:00+00:00",
+        "confirmation_candle_closed_beyond_A": false,
+        "confirmation_quality": "wick_only",
+        "reference_also_crossed_in_confirmation_candle": true,
+        "requires_ordering_review": true,
+        "spans_quote_gap": false,
+        "scope": "Directional sequence from supplied start; no automatic trend initialization, hierarchy or trade classification",
+        "sequence_selected": true,
+        "confirmed": false
+      }
+    }
+  ],
+  "internal_events": [],
+  "scope": "Conditional structure trace, not an automated strategy backtest",
+  "timeframe_correction": "User context-fractal structure is 1H/4H. Prior M15 context scans are not the separate M15 LC-1 fractal-CHoCH rule; mixed context/LC-1 validation is superseded.",
+  "superseded_as_context_strategy_validation": true
+}

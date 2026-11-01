@@ -1,0 +1,1740 @@
+[
+  {
+    "workbook": "Swing USDJPY Round 2.xlsx",
+    "row": 3,
+    "date": "2024-01-08 00:00:00",
+    "time": "04:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Swept LQ, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765732119849_fc98eebc5956df43cb1ca05035448149.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765732032692_200725d2531ba95f92dade14f2f8dec4.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765731998886_31ecd12fb4a4ac0e5561aa3c03180176.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 2.xlsx",
+    "row": 4,
+    "date": "2024-01-14 00:00:00",
+    "time": "17:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Swept LQ, Pricing (P&D/FVG)",
+    "grade": "HIGH",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765793334225_8a22a8f3d0ef8028688ec5019c2cab63.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765793314732_83d895155122375b6c4073a0b5b81c84.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765793275982_4809f0e4d18222ce69e6841719748b0e.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 2.xlsx",
+    "row": 6,
+    "date": "2024-02-21 00:00:00",
+    "time": "00:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Unmitigated, Swept LQ, Stacked HTF zone",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765794803749_db9734c45ac746d2f9f2d33e837588bb.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765794779948_6b7828b9f9d3fd0b6b10700adb4f4c60.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765794750652_c7ca7d18d938dbd88a9146e125b453cf.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 2.xlsx",
+    "row": 7,
+    "date": "2024-03-12 00:00:00",
+    "time": "10:00:00",
+    "setup": "LC-2A",
+    "confluences": "Led to a BOS, Flip, Swept LQ, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "HIGH",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765796936308_f4acf8b9c3f51cf88169558c2a06222c.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765796947586_c1d9f056cef67ad62326e836244b0109.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765796825634_9b167ab7f8b476027a7a7edbd570e3ef.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 2.xlsx",
+    "row": 8,
+    "date": "2024-03-28 00:00:00",
+    "time": "16:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Swept LQ, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765928739817_f1482acf5947899f49231e3900bfdcf1.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765928682125_276d9c588564990ac98548d6116e7a48.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765928664550_5eb260be1f87782461c9d1703691f1d7.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 2.xlsx",
+    "row": 9,
+    "date": "2024-04-04 00:00:00",
+    "time": "03:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765929467920_1e3b28446e41a4bb9b23532291386532.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765929438100_3c9e6dab4316c33dc3226c55ea8f277e.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765929413201_f33014928b0d32d7fc792e09dcc6cf18.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 2.xlsx",
+    "row": 10,
+    "date": "2024-05-20 00:00:00",
+    "time": "18:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1766015078249_4809366a85aff977db61e6a5fcbcd954.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1766015034215_c809409331c0b9bc18fd87abf6bc9b2e.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1766015004902_3415ea62df7251fb1ec2fefa79dd5549.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 2.xlsx",
+    "row": 11,
+    "date": "2024-06-03 00:00:00",
+    "time": "05:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Swept LQ, Flip, Strong LQ to Target, Stacked HTF zone, Unmitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1766098268947_1fadd79b577e9b6a8a2ba54758090729.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1766098074541_e73410d79701feab4ee0f80fc3e14818.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1766098074541_e73410d79701feab4ee0f80fc3e14818.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 2.xlsx",
+    "row": 12,
+    "date": "2024-06-04 00:00:00",
+    "time": "00:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1766098786208_74ab951bb58cab118a23df94dfc8532b.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1766098751025_81e10dc203374e6ba5d6c0d624e282a5.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1766098800555_0656aed233a425f8079ab6c03e893ed1.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 2.xlsx",
+    "row": 13,
+    "date": "2025-08-11 00:00:00",
+    "time": "10:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1766532143014_9f13291fc49859344080eb3fea524a2e.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1766532125929_5b8c3319bb18a638dfa4492534508f2f.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1766532099412_1bcc128d234bf10aedfd912178084e25.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 2.xlsx",
+    "row": 14,
+    "date": "2024-09-03 00:00:00",
+    "time": "13:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "HIGH",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1766533026193_04545c1dc911d627319141421467a869.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1766532986409_14e5a4b0ec3db250a90efe8ba7b9ca89.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1766532952165_26dadaa471d2d43be6bdda00f6cffade.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 2.xlsx",
+    "row": 15,
+    "date": "2024-09-23 00:00:00",
+    "time": "14:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Swept LQ, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG)",
+    "grade": "MED",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767048852437_501d3bc823b3d52276094956e2e6314a.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767048835569_3fb19a705744fca0600334d47ba05164.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767048809975_1de22376f1467a6b991e46f2d5983349.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 2.xlsx",
+    "row": 16,
+    "date": "2024-10-09 00:00:00",
+    "time": "04:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated, Chain",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767051312187_4b97d2fb4c99b8a713cd31d0ec39bf4d.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767051263081_f42fd093a18ef16beefb1a983a373da5.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767051263081_f42fd093a18ef16beefb1a983a373da5.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 2.xlsx",
+    "row": 17,
+    "date": "2024-10-24 00:00:00",
+    "time": "22:00:00",
+    "setup": "LC-2A",
+    "confluences": "Led to a BOS, Strong LQ to Target, Pricing (P&D/FVG), Unmitigated, Correctively zone mitigated",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767054059072_b47344f3d50684977ef351d5dec16f74.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767054048525_1639078af2dc8d161a57ed44fc9b0100.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767054034905_1a60fb64cee3c635b0088e6e517eaaec.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 2.xlsx",
+    "row": 19,
+    "date": "2024-11-26 00:00:00",
+    "time": "03:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Unmitigated, Strong LQ to Target, Chain",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767139578150_df06240ad13468226764b724774f6bc3.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767139564344_4da481db78373bca3280fd67a65a21a5.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767139479083_457e9cf69dd7e4cb26543b113086c955.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 3,
+    "date": "2023-01-02 00:00:00",
+    "time": "12:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Unmitigated, Stacked HTF zone, Strong LQ to Target",
+    "grade": "LOW",
+    "phase": "C",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/gOtbQY5G/",
+      "one_hour": "https://www.tradingview.com/x/Afbi1XLc/",
+      "entry_15min": "https://www.tradingview.com/x/0RIFeThu/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 4,
+    "date": "2023-01-03 00:00:00",
+    "time": "10:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Stacked HTF zone, Unmitigated",
+    "grade": "LOW",
+    "phase": "D",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/psoYgHbU/",
+      "one_hour": "https://www.tradingview.com/x/kxQ6ZI9M/",
+      "entry_15min": "https://www.tradingview.com/x/1MhATrKs/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 5,
+    "date": "2023-01-10 00:00:00",
+    "time": "09:00:00",
+    "setup": "LC-2A",
+    "confluences": "Led to a BOS, Strong LQ to Target, Unmitigated, Correctively zone mitigated",
+    "grade": "LOW",
+    "phase": "C",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/Gv2PSkjg/",
+      "one_hour": "https://www.tradingview.com/x/msFEO3VU/",
+      "entry_15min": "https://www.tradingview.com/x/8YJtCflS/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 6,
+    "date": "2023-01-11 00:00:00",
+    "time": "11:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Unmitigated, Correctively zone mitigated",
+    "grade": "MED",
+    "phase": "D",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/YRLnWU7S/",
+      "one_hour": "https://www.tradingview.com/x/8GkqHlLa/",
+      "entry_15min": "https://www.tradingview.com/x/A1fVt6Aw/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 7,
+    "date": "2023-01-24 00:00:00",
+    "time": "19:15:00",
+    "setup": "LC-2A",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Unmitigated, Correctively zone mitigated",
+    "grade": "MED",
+    "phase": "B",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/RczjbQtj/",
+      "one_hour": "https://www.tradingview.com/x/RczjbQtj/",
+      "entry_15min": "https://www.tradingview.com/x/TuZqThVk/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 8,
+    "date": "2023-01-25 00:00:00",
+    "time": "09:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated, Flip",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/buRLIAzM/",
+      "one_hour": "https://www.tradingview.com/x/I8LqON5s/",
+      "entry_15min": "https://www.tradingview.com/x/k0cU2bcg/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 9,
+    "date": "2023-01-27 00:00:00",
+    "time": "07:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Chain",
+    "grade": "MED",
+    "phase": "A",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/xis0ZomV/",
+      "one_hour": "https://www.tradingview.com/x/neFnOvmt/",
+      "entry_15min": "https://www.tradingview.com/x/eHDOtl37/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 10,
+    "date": "2023-01-30 00:00:00",
+    "time": "00:30:00",
+    "setup": "LC-1",
+    "confluences": "Flip, Led to a BOS, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/sSiELZEB/",
+      "one_hour": "https://www.tradingview.com/x/sxY0ccej/",
+      "entry_15min": "https://www.tradingview.com/x/4RlqkPmx/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 11,
+    "date": "2023-03-01 00:00:00",
+    "time": "12:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Pricing (P&D/FVG), Unmitigated, Flip",
+    "grade": "LOW",
+    "phase": "C",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/nAOCeXP8/",
+      "one_hour": "https://www.tradingview.com/x/k3vGzL4l/",
+      "entry_15min": "https://www.tradingview.com/x/q0MjDGol/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 12,
+    "date": "2023-03-02 00:00:00",
+    "time": "05:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated, Chain",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/tLOXWm36/",
+      "one_hour": "https://www.tradingview.com/x/IhrQsv2y/",
+      "entry_15min": "https://www.tradingview.com/x/pbm4jN0i/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 13,
+    "date": "2023-03-06 00:00:00",
+    "time": "09:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated, Flip, Strong LQ to Target",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/Sb6LFpeM/",
+      "one_hour": "https://www.tradingview.com/x/uHkReTka/",
+      "entry_15min": "https://www.tradingview.com/x/ojOQY8cV/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 14,
+    "date": "2023-03-17 00:00:00",
+    "time": "13:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "A",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/vdDP4IaH/",
+      "one_hour": "https://www.tradingview.com/x/G9RRjTl0/",
+      "entry_15min": "https://www.tradingview.com/x/Uz8pKMtY/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 15,
+    "date": "2023-03-21 00:00:00",
+    "time": "14:30:00",
+    "setup": "LC-2A",
+    "confluences": "Led to a BOS, Swept LQ, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "B",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/U2x9daon/",
+      "one_hour": "https://www.tradingview.com/x/E6tGEHUJ/",
+      "entry_15min": "https://www.tradingview.com/x/qCSnTfW0/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 16,
+    "date": "2023-03-26 00:00:00",
+    "time": "18:15:00",
+    "setup": "LC-2B",
+    "confluences": "Led to a BOS, Flip, Strong LQ to Target, Stacked HTF zone, Unmitigated, Correctively zone mitigated",
+    "grade": "MED",
+    "phase": "D",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/p5Ct0A5O/",
+      "one_hour": "https://www.tradingview.com/x/p5Ct0A5O/",
+      "entry_15min": "https://www.tradingview.com/x/Zj6Dmi5p/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 17,
+    "date": "2023-03-29 00:00:00",
+    "time": "18:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Stacked HTF zone, Unmitigated",
+    "grade": "LOW",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/jZwO0DoX/",
+      "one_hour": "https://www.tradingview.com/x/WrWU2AG3/",
+      "entry_15min": "https://www.tradingview.com/x/FCuONyGG/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 18,
+    "date": "2023-04-04 00:00:00",
+    "time": "02:45:00",
+    "setup": "LC-2A",
+    "confluences": "Led to a BOS, Flip, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "HIGH",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/eDpflT40/",
+      "one_hour": "https://www.tradingview.com/x/kCrFtgLX/",
+      "entry_15min": "https://www.tradingview.com/x/RMsPStJV/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 19,
+    "date": "2023-04-10 00:00:00",
+    "time": "06:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Swept LQ, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/6Vib54R0/",
+      "one_hour": "https://www.tradingview.com/x/TXuXg53O/",
+      "entry_15min": "https://www.tradingview.com/x/vF81677M/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 20,
+    "date": "2023-04-11 00:00:00",
+    "time": "08:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Pricing (P&D/FVG)",
+    "grade": "LOW",
+    "phase": "D",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/6QH5yh7E/",
+      "one_hour": "https://www.tradingview.com/x/aOkUhrhb/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 21,
+    "date": "2023-04-16 00:00:00",
+    "time": "21:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/jZKYLV0R/",
+      "one_hour": "https://www.tradingview.com/x/tMeTT7VO/",
+      "entry_15min": "https://www.tradingview.com/x/CdAatzvJ/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 22,
+    "date": "2023-04-24 00:00:00",
+    "time": "04:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/PgMfz3FL/",
+      "one_hour": "https://www.tradingview.com/x/rLzTJZAj/",
+      "entry_15min": "https://www.tradingview.com/x/GbZBNTRG/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 23,
+    "date": "2023-04-24 00:00:00",
+    "time": "14:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Strong LQ to Target, Stacked HTF zone, Unmitigated, Correctively zone mitigated",
+    "grade": "MED",
+    "phase": "B",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/ltQ0ycMv/",
+      "one_hour": "https://www.tradingview.com/x/8URPkSAZ/",
+      "entry_15min": "https://www.tradingview.com/x/HUYywgAc/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 24,
+    "date": "2023-04-25 00:00:00",
+    "time": "03:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Swept LQ, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "HIGH",
+    "phase": "B",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/znSGF9k1/",
+      "one_hour": "https://www.tradingview.com/x/aJwOBy9F/",
+      "entry_15min": "https://www.tradingview.com/x/IkpC2f9s/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 25,
+    "date": "2023-04-25 00:00:00",
+    "time": "09:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Swept LQ, Strong LQ to Target, Unmitigated",
+    "grade": "HIGH",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/gNZSxERX/",
+      "one_hour": "https://www.tradingview.com/x/pibwNnx0/",
+      "entry_15min": "https://www.tradingview.com/x/dEU9GJR9/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 26,
+    "date": "2023-04-25 00:00:00",
+    "time": "12:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Strong LQ to Target, Stacked HTF zone",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/BLBhlUbr/",
+      "one_hour": "https://www.tradingview.com/x/iGbdOPuE/",
+      "entry_15min": "https://www.tradingview.com/x/H3bKLZyr/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 27,
+    "date": "2023-05-15 00:00:00",
+    "time": "04:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Stacked HTF zone, Unmitigated",
+    "grade": "MED",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/eTf5tZJE/",
+      "one_hour": "https://www.tradingview.com/x/hxHclrhs/",
+      "entry_15min": "https://www.tradingview.com/x/pZuFwSz2/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 28,
+    "date": "2023-05-18 00:00:00",
+    "time": "02:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Unmitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/AkNB4Tly/",
+      "one_hour": "https://www.tradingview.com/x/CbmNeoal/",
+      "entry_15min": "https://www.tradingview.com/x/CbmNeoal/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 29,
+    "date": "2023-05-19 00:00:00",
+    "time": "03:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Unmitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/AkNB4Tly/",
+      "one_hour": "https://www.tradingview.com/x/CbmNeoal/",
+      "entry_15min": "https://www.tradingview.com/x/CbmNeoal/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 30,
+    "date": "2023-05-30 00:00:00",
+    "time": "07:00:00",
+    "setup": "LC-2B",
+    "confluences": "Led to a BOS, Stacked HTF zone, Unmitigated",
+    "grade": "LOW",
+    "phase": "A2",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/q0hjhtCh/",
+      "one_hour": "https://www.tradingview.com/x/YWivYQrd/",
+      "entry_15min": "https://www.tradingview.com/x/cvRvUwF9/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 31,
+    "date": "2023-06-01 00:00:00",
+    "time": "09:15:00",
+    "setup": "LC-1",
+    "confluences": "Chain, Unmitigated, Stacked HTF zone, Led to a BOS",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/BpFV9ohX/",
+      "one_hour": "https://www.tradingview.com/x/sHZUWwXP/",
+      "entry_15min": "https://www.tradingview.com/x/JPuQoEpH/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 32,
+    "date": "2023-06-07 00:00:00",
+    "time": "03:00:00",
+    "setup": "LC-2A",
+    "confluences": "Led to a BOS, Swept LQ, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/jD7vGkE1/",
+      "one_hour": "https://www.tradingview.com/x/Bpe3Nnef/",
+      "entry_15min": "https://www.tradingview.com/x/fLzZIKX2/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 33,
+    "date": "2023-06-26 00:00:00",
+    "time": "04:30:00",
+    "setup": "LC-2A",
+    "confluences": "Led to a BOS, Swept LQ, Stacked HTF zone, Unmitigated, Correctively zone mitigated",
+    "grade": "MED",
+    "phase": "A2",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/fc3rc3Mj/",
+      "one_hour": "https://www.tradingview.com/x/rTJi4Kwl/",
+      "entry_15min": "https://www.tradingview.com/x/Bhc3bxW9/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 34,
+    "date": "2023-06-26 00:00:00",
+    "time": "22:45:00",
+    "setup": "LC-2A",
+    "confluences": "Led to a BOS, Stacked HTF zone, Unmitigated, Correctively zone mitigated, Chain",
+    "grade": "MED",
+    "phase": "A2",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/fc3rc3Mj/",
+      "one_hour": "https://www.tradingview.com/x/rTJi4Kwl/",
+      "entry_15min": "https://www.tradingview.com/x/c9vSDo8q/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 35,
+    "date": "2023-07-13 00:00:00",
+    "time": "06:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Stacked HTF zone, Swept LQ",
+    "grade": "MED",
+    "phase": "A2",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/aCAJW19C/",
+      "one_hour": "https://www.tradingview.com/x/iar0VjrZ/",
+      "entry_15min": "https://www.tradingview.com/x/l47VacCt/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 36,
+    "date": "2023-07-14 00:00:00",
+    "time": "04:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Swept LQ, Stacked HTF zone",
+    "grade": "MED",
+    "phase": "A2",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/9jGS3MZa/",
+      "one_hour": "https://www.tradingview.com/x/9jGS3MZa/",
+      "entry_15min": "https://www.tradingview.com/x/zM9FYiU4/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 37,
+    "date": "2023-07-18 00:00:00",
+    "time": "15:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Strong LQ to Target, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/yv6tHX5C/",
+      "one_hour": "https://www.tradingview.com/x/kmOKQxhw/",
+      "entry_15min": "https://www.tradingview.com/x/oSnn6xEm/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 38,
+    "date": "2023-07-19 00:00:00",
+    "time": "09:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/5WJbiTTN/",
+      "one_hour": "https://www.tradingview.com/x/5WJbiTTN/",
+      "entry_15min": "https://www.tradingview.com/x/Na6YLUQr/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 39,
+    "date": "2023-07-24 00:00:00",
+    "time": "11:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "B",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/v0cSnWc6/",
+      "one_hour": "https://www.tradingview.com/x/DEMX4NUs/",
+      "entry_15min": "https://www.tradingview.com/x/iTtTkcGt/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 40,
+    "date": "2023-08-09 00:00:00",
+    "time": "04:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Chain",
+    "grade": "HIGH",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/BDnRwMMc/",
+      "one_hour": "https://www.tradingview.com/x/64RQ2jKB/",
+      "entry_15min": "https://www.tradingview.com/x/OJl8D8lG/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 41,
+    "date": "2023-08-13 00:00:00",
+    "time": "21:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Chain, Correctively zone mitigated",
+    "grade": "LOW",
+    "phase": "C",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://www.tradingview.com/x/MtCiLIiv/",
+      "one_hour": "https://www.tradingview.com/x/LMJNY6mr/",
+      "entry_15min": "https://www.tradingview.com/x/Nd4wUK5i/"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 42,
+    "date": "2023-08-15 00:00:00",
+    "time": "16:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Swept LQ, Pricing (P&D/FVG), Unmitigated",
+    "grade": "HIGH",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765323213567_4641dc5f7c22db1e6675c6d2e25fe662.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765323184719_7d3f8a4407fa5b31ffdd00537fbeb9e7.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765323236738_02e133b5a7dbdc0246408520efcb3e6c.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 43,
+    "date": "2023-08-16 00:00:00",
+    "time": "06:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Swept LQ, Strong LQ to Target, Chain",
+    "grade": "HIGH",
+    "phase": "C",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765324081661_2fdcad8259c67769a0d01a84627353ac.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765324062967_09083691a46e1789b71730a4d7c87c85.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765323948028_455853c3c40b2350f52248d6549970e6.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 44,
+    "date": "2023-08-20 00:00:00",
+    "time": "18:45:00",
+    "setup": "LC-2A",
+    "confluences": "Led to a BOS, Flip, Swept LQ, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated, Correctively zone mitigated",
+    "grade": "HIGH",
+    "phase": "C",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765325159093_af54e7bcda9e39f80417a07477a45479.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765325114233_5fb4aea44bb959251533318f5fcd2164.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765325219305_11816540eef1e8a8ee0aa953ad8824d7.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 45,
+    "date": "2023-08-22 00:00:00",
+    "time": "01:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Unmitigated",
+    "grade": "LOW",
+    "phase": "B",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765325965566_60ef5546101b2295d902f3c439505b8a.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765325914894_66c479a5d483ecc796f068256680d41c.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765325914894_66c479a5d483ecc796f068256680d41c.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 46,
+    "date": "2023-08-23 00:00:00",
+    "time": "07:45:00",
+    "setup": "LC-1",
+    "confluences": "Flip, Led to a BOS, Swept LQ, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated, Correctively zone mitigated",
+    "grade": "HIGH",
+    "phase": "C",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765326896877_a0f8380f74de535b5057b9738636ea80.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765326880174_a51410c43a2f589bf8515712cba08219.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765326798583_0d0ee40e83bf16a1819ed34fffafca90.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 47,
+    "date": "2023-09-19 00:00:00",
+    "time": "07:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Swept LQ, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated, Chain",
+    "grade": "HIGH",
+    "phase": "C",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765411150483_3958a36690e4a7037f54963c67f38cc5.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765411129888_9127fc9b6e345316af3e243f04bc2a1b.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765411163288_0235f6f9e8c68c8279acf583285b8d75.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 48,
+    "date": "2023-10-23 00:00:00",
+    "time": "05:15:00",
+    "setup": "LC-2A",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated, Chain",
+    "grade": "MED",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765413160320_19afc65301561e34b13e72e4fd42ac53.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765413007837_3740dd12943cd7ac7d1356f6c9652655.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765413090614_2059d0fef61e06c9f5819c7f9c9811a3.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 49,
+    "date": "2023-11-07 00:00:00",
+    "time": "14:15:00",
+    "setup": "LC-2B",
+    "confluences": "Flip, Strong LQ to Target, Unmitigated, Stacked HTF zone",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765497374401_caaaa451d57b8d53551491a4544b764b.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765497348525_01657331d779c76f5e3f1dfc105a7ca8.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765497326933_b72f32fd8009d8fde90d52a5af352434.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 50,
+    "date": "2023-11-07 00:00:00",
+    "time": "15:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Strong LQ to Target, Stacked HTF zone, Unmitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765497667367_c280908ec7489039a762fa7b4797c12d.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765497687319_bc4abbaf3d9a1ad6f7f3eec1586904e5.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765497700172_83b24822cf71d0500c0b9c18f0635b17.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 51,
+    "date": "2023-11-08 00:00:00",
+    "time": "07:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Stacked HTF zone, Unmitigated, Strong LQ to Target",
+    "grade": "MED",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765498011180_396c216fd0057531cceeeb220f9e520d.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765498038005_60e8e8b845d8935899ac2a2b77ee0f8a.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765497855989_8fd1462be47df899efe8d3097d0e2c71.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 52,
+    "date": "2023-11-08 00:00:00",
+    "time": "20:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Unmitigated",
+    "grade": "MED",
+    "phase": "A",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765498452275_7b9b105fb08fcef2dec7acab723f492a.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765498471832_aecb533e49d693975549dbc602ddf02b.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765498242328_65c74757ae7436d4d8baba714fc04f0b.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 53,
+    "date": "2023-11-09 00:00:00",
+    "time": "10:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Swept LQ, Strong LQ to Target, Stacked HTF zone, Unmitigated, Chain",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765498864789_b8850b75700226ec4d13427b032f736a.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765498878640_df7a51947b47f0a001cbe687d611f86a.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765498741046_7ee5b8e6b74c8df2033cc1b9d9976d8f.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 54,
+    "date": "2023-11-12 00:00:00",
+    "time": "20:00:00",
+    "setup": "LC-2B",
+    "confluences": "Led to a BOS, Swept LQ, Strong LQ to Target, Stacked HTF zone, Unmitigated, Chain",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765499442819_7bd206266027d83365a03c3974e87ea3.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765499422329_80fd6f344beeb02350eedd2b8e4fc8d2.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765498878640_df7a51947b47f0a001cbe687d611f86a.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 55,
+    "date": "2023-11-27 00:00:00",
+    "time": "12:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Swept LQ, Strong LQ to Target, Stacked HTF zone, Unmitigated, Pricing (P&D/FVG), Correctively zone mitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765500528986_8ddb41b059b4f9ef0924b72961b89275.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765500538064_c71ccdb04c502067334d09fa431b4429.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765500545909_3dadfcc5138a311e17f5ccc3b3d792ff.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 56,
+    "date": "2023-11-30 00:00:00",
+    "time": "03:45:00",
+    "setup": "LC-2B",
+    "confluences": "Led to a BOS, Chain, Unmitigated, Correctively zone mitigated",
+    "grade": "LOW",
+    "phase": "A2",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765582197920_0af392eca1faa145eb4fba3f2172bf63.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765582220960_db1735fa1634a0c41accabb7c863de7f.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765582237318_43505aa3c6f98613845290eb8380a22d.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 57,
+    "date": "2023-12-04 00:00:00",
+    "time": "01:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "D",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765582842070_afd4e7bec9b3578cb249533501f555d9.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765582823021_9d75e152167cb49eb7fc6830385ea6ea.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765582741805_231bba1fbc2edbe06acaaa796f08b9d4.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 58,
+    "date": "2023-12-13 00:00:00",
+    "time": "02:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Swept LQ, Stacked HTF zone, Unmitigated, Chain",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765584102402_0291f69c6f3c80363bf61f5639606de9.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765584124331_589a6e316bf078545648efd0c689d1a8.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765583784367_d25e6527423e1c9417ab8ec6e9718118.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 1.xlsx",
+    "row": 59,
+    "date": "2023-12-20 00:00:00",
+    "time": "01:30:00",
+    "setup": "LC-2B",
+    "confluences": "Led to a BOS, Swept LQ, Flip, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "HIGH",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1765585051119_3a0f527341fb7d8c54575f84149583b4.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1765585028730_f39207cfe603c61b1da18ad7aead6ba3.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1765584998244_c7cc77e80d6cb3bb654267eca3f86b22.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 3,
+    "date": "2025-01-23 00:00:00",
+    "time": "10:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": -1,
+    "charts": {
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767554680001_6655a326e4e1a9fd1ae752a415a1df71.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767554819724_0fd2050132b014045d760868c4e9addd.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 4,
+    "date": "2025-01-29 00:00:00",
+    "time": "15:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Swept LQ, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767555370705_c14a15cec03f30949001775eb44a7029.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767555317896_086056771cd8146f8024a1302151afc8.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767555286243_514fbba03522cbb773e732252bab67e1.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 5,
+    "date": "2025-02-13 00:00:00",
+    "time": "19:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767570880576_009b9c203302fead3519389ca185ec07.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767570867349_eb7818692d28108fd8127b38af0c378d.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767570820148_81b532cb766a21f1cec554f44bac10d2.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 6,
+    "date": "2025-02-13 00:00:00",
+    "time": "23:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Unmitigated, Pricing (P&D/FVG)",
+    "grade": "MED",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767571946014_a05d481f68b6101c6eb84da5379f1886.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767571925370_79022b70313af5a3111670d3f169cfd6.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767571885332_879adf6bef28d5d9d15c070bf95ab484.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 7,
+    "date": "2025-02-28 00:00:00",
+    "time": "00:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Unmitigated",
+    "grade": "LOW",
+    "phase": "A2",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767573993131_dafc1bd54fbeb62f2ecdd3dcf2883094.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767573932557_816c2913eee21a4137c86105b62bebec.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767573970897_92ac842001097b7f4f786061ffc77af0.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 8,
+    "date": "2025-02-17 00:00:00",
+    "time": "03:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Stacked HTF zone, Unmitigated",
+    "grade": "LOW",
+    "phase": "C",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767659099061_c23b9855771878f46eac654c84a9b977.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767659083025_ae1ca7cc8b59dd885d81f62793e2bf53.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767659057281_02fe4a30152de199dcbe857584f87241.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 9,
+    "date": "2025-02-19 00:00:00",
+    "time": "07:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767659903888_a45b15f9b69775367e788d911800e215.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767659883753_3f79598205b7b987d991bbb6dcf46f08.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767659850041_f094b394fbd32318e3c6679e60fa45b0.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 10,
+    "date": "2025-04-03 00:00:00",
+    "time": "04:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Unmitigated",
+    "grade": "LOW",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767661077983_3456a3fef0f4251478d119d7bdcb4e28.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767661053410_da6de8140ad43641ef3bd7d696dfd60a.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767660999675_e8f96c60209d46a9b591ef372836789d.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 11,
+    "date": "2025-04-09 00:00:00",
+    "time": "03:30:00",
+    "setup": "LC-1",
+    "confluences": "Unmitigated, Stacked HTF zone, Strong LQ to Target, Led to a BOS",
+    "grade": "MED",
+    "phase": "A",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767661779189_68784d74f9869731151e03339c659f76.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767661731072_e87d57a5193b7901683fcb63a3fd700f.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767661710560_2eac106ac46e356a1cf144b48569430c.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 12,
+    "date": "2025-04-15 00:00:00",
+    "time": "11:30:00",
+    "setup": "LC-1",
+    "confluences": "Chain, Correctively zone mitigated, Unmitigated, Pricing (P&D/FVG), Stacked HTF zone, Strong LQ to Target",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767662475104_40c42c9c36d3f5abe7f40ae8cd31b998.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767662455703_9e67b9844ad71d9f6f9cc3dad3ea893b.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767662439225_33043017db47690adc07f9a6b9bb9eb2.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 13,
+    "date": "2025-04-17 00:00:00",
+    "time": "15:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Swept LQ, Stacked HTF zone, Pricing (P&D/FVG)",
+    "grade": "MED",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767747729286_747ca7e96f1c359a9b0f51f2ffd1d569.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767747655712_823f29b6bc25d4414594df820a63c1d6.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767747683509_8d26aaf6687f90c412f403311a3dedc3.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 14,
+    "date": "2025-05-14 00:00:00",
+    "time": "03:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767830325993_5195d86ef170b5ab6467035b22ae31f8.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767830345379_b65d1208ac8c4423c5cb250386b7d71a.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767830133409_c393591bec6ec829cf7eb7dfd93ded76.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 15,
+    "date": "2025-05-22 00:00:00",
+    "time": "08:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Swept LQ, Strong LQ to Target, Stacked HTF zone, Unmitigated",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767831035958_5239c8bb37c2e52914d8d91736a5df60.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767831007392_19db14219353f82d4aa501972ab1f0e9.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767830957013_220d0d3daeba719da90726aa788f27dc.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 16,
+    "date": "2025-05-28 00:00:00",
+    "time": "05:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Swept LQ, Strong LQ to Target, Stacked HTF zone, Unmitigated, Pricing (P&D/FVG)",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": -1,
+    "charts": {
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767831779772_3158e1a70c4da498e907161c48686230.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 17,
+    "date": "2025-05-30 00:00:00",
+    "time": "03:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "A",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767832309258_0f6aef12a184961c1519761f23d690ac.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767832292174_dbcb661fafff92d3cfe81ffff6f118f1.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767832251087_aa7a1f6afbf3fb5990b38944e6ce6173.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 18,
+    "date": "01/06/25",
+    "time": "19:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767832510956_56a5fba7c0c0f2635f3a5fbae5481996.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 19,
+    "date": "2025-06-24 00:00:00",
+    "time": "19:15:00",
+    "setup": "LC-2A",
+    "confluences": "Led to a BOS, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767917969193_e3512730e81e8520ba318b4e00cc73eb.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767917934472_a105b89860421c7798519408cde3eedb.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767917894664_804c29d0dc1f34e1bb4968948cdccb6c.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 20,
+    "date": "2025-07-08 00:00:00",
+    "time": "05:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated, Chain",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767920076701_17dcb9a2383bb102755add8d7abff1ad.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767920061077_045b5c8174eec74330230af40053d5a4.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767920028962_44252b5fa8472d591dd2e19c36afb29c.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 21,
+    "date": "2025-07-09 00:00:00",
+    "time": "17:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767920646448_05d03302ab3d4d24aafdc35ac5da4bea.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767920619160_d36b3b13bbe8f1ffb90aeeb96bef8e44.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767920594710_72b197a2b30b12abbfb3a0f05810c3be.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 22,
+    "date": "2025-07-10 00:00:00",
+    "time": "19:45:00",
+    "setup": "LC-2A",
+    "confluences": "Led to a BOS, Flip, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767921105926_9c75b676e4e214621430b90667321882.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767921091217_16117116e5711ae301f569a684bc8dcb.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767921044265_49c7d0d79568596e08887e30bf41a950.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 23,
+    "date": "2025-07-15 00:00:00",
+    "time": "06:30:00",
+    "setup": "LC-2A",
+    "confluences": "Swept LQ, Strong LQ to Target, Led to a BOS, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767922138996_0ab89bc2963825edab6bd5d4ef7db670.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767922079892_2be00ac063f76c2be90690cf24044daa.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767922019150_cb39c0015dc6853d027b0842ca0f1ce5.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 24,
+    "date": "2025-07-16 00:00:00",
+    "time": "04:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Swept LQ, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "HIGH",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1767922868647_d37d991cd1c10372322caac24dc0199c.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1767922858096_a7d22e16f406907f9a4220fc1acf6233.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1767922542547_3daad0b3b72fab00de6f09499578d7ae.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 25,
+    "date": "2025-07-28 00:00:00",
+    "time": "23:55:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Unmitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1768347828019_da7b5069bafad0a510da6ec4f60906f0.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1768347748228_0cab53a7ba2280795be0729a38bfb4bf.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1768347717729_b4e2da97e7ca27e1459c7d058133f185.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 26,
+    "date": "2025-08-05 00:00:00",
+    "time": "23:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Stacked HTF zone, Unmitigated, Pricing (P&D/FVG)",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1768349866621_5a36b95294eaa4c5b2d1ded08e20a412.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1768349793909_aa2672ccb39f3131f92b8201298ce523.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1768349822231_0db46ac8bbbea2550b2f4861ee2ba854.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 27,
+    "date": "2025-08-05 00:00:00",
+    "time": "03:00:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Swept LQ, Stacked HTF zone, Unmitigated, Flip",
+    "grade": "HIGH",
+    "phase": "C",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1768350113752_be6be61c902075bf995ed79349b1e37c.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1768350103641_7e9ad224962e110db6803e71ec74097b.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1768350079347_4e7c36dc17463d36cce4c4308ac24e79.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 28,
+    "date": "2025-08-07 00:00:00",
+    "time": "11:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Swept LQ, Strong LQ to Target, Stacked HTF zone, Unmitigated",
+    "grade": "HIGH",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1768350645967_d63718dd0516aa8f2ffa5d1efb41bf37.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1768350636475_36edd9384477a4dbf10d9aa0256709a8.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1768350619762_f5564d0ca51f5388dc3099cc2ac60542.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 29,
+    "date": "2025-10-06 00:00:00",
+    "time": "10:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated, Correctively zone mitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1768354027460_83c6184d8a6cfdde6366ce05de9bf404.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1768353891919_0c1de03f99942d23a0774f3cacb01829.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1768353867088_759f116c7272e6cc908a7b4b9afe01ca.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 30,
+    "date": "2025-10-08 00:00:00",
+    "time": "10:30:00",
+    "setup": "LC-1",
+    "confluences": "Correctively zone mitigated, Unmitigated, Stacked HTF zone, Led to a BOS",
+    "grade": "MED",
+    "phase": "A2",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1768433159992_75e26ee233d92893af5695a0d87af7ee.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1768433137202_eb632d869a2cbad66c0e8c57f869f675.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1768433054777_59b84b3987456cf7d49913731ad98c74.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 31,
+    "date": "2025-10-16 00:00:00",
+    "time": "11:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated, Chain",
+    "grade": "MED",
+    "phase": "C",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1768433987872_72eb4b793e743b918d272d90ef4cbdd6.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1768433972086_0f86c6db8ec7e6589db4564729e3ba33.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1768433798296_c1fa8a655110316a635c0acaa01cd23e.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 32,
+    "date": "2025-10-27 00:00:00",
+    "time": "03:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Swept LQ, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated, Chain",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1768434990786_058fb65665bbac176ecdb4a990e86cb0.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1768434944947_8fa795f1c66ab666b90ef432e657c2c6.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1768434971678_944d3c50a6cae3c83977468050d0263e.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 33,
+    "date": "2025-10-27 00:00:00",
+    "time": "16:30:00",
+    "setup": "LC-1",
+    "confluences": "Swept LQ, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated, Led to a BOS, Flip, Correctively zone mitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1768435693897_42a9018cd778212dbcda2aaa6df4daee.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1768435655062_567e81a787abba7ee142a29654456ee1.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1768435637787_9bfc421e12fb43d4556c1b80f15ddbec.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 34,
+    "date": "2025-11-02 00:00:00",
+    "time": "12:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Swept LQ, Strong LQ to Target, Stacked HTF zone, Unmitigated",
+    "grade": "MED",
+    "phase": "A2",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1768436879133_0d2c9ce186f148edb80c45ae27285be9.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1768436999141_170825b880a7f9b7e27c1a4ab863c833.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1768436847181_e7373bf96f5177faf3c1a240032f0eb3.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 35,
+    "date": "2025-11-10 00:00:00",
+    "time": "11:30:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Flip, Swept LQ, Strong LQ to Target, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated",
+    "grade": "HIGH",
+    "phase": "A",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1768437759279_29dc75f83e8e714b08446b41c1af7fdb.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1768437787299_897d9f3898c24f4aee7f02b56c0a8fa0.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1768437725436_dbab2d2a56bfe7f98924749c87cb764a.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 36,
+    "date": "2025-11-12 00:00:00",
+    "time": "14:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Stacked HTF zone, Unmitigated",
+    "grade": "MED",
+    "phase": "A2",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1768438550199_c29b114e8209b6ab7f2e3182cec8b8a9.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1768438535316_19e09c9697bcffca87cada9f53fa7811.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1768438518345_67d5783c24ca4fb8166933bbe263dda4.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 37,
+    "date": "2025-11-18 00:00:00",
+    "time": "10:15:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Stacked HTF zone, Pricing (P&D/FVG), Unmitigated, Swept LQ",
+    "grade": "MED",
+    "phase": "A2",
+    "outcome_r": -1,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1768440434771_9f998e1365adae12e80e99fb449ef5fc.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1768440423393_588538a973cdee5ab7948277b89aec0c.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1768440388825_5e5a9dc67092641c2a76e92699fe1ad6.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 38,
+    "date": "2025-11-18 00:00:00",
+    "time": "23:55:00",
+    "setup": "LC-2A",
+    "confluences": "Led to a BOS, Chain, Correctively zone mitigated, Unmitigated, Stacked HTF zone, Swept LQ",
+    "grade": "HIGH",
+    "phase": "A2",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1768441268526_078d55a5a67553fc7dfddbb877e6340d.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1768441249132_feb29846ae0155145b03afdaef507e2c.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1768441217496_cc8b1254c920d1224451f5250af28f68.png"
+    }
+  },
+  {
+    "workbook": "Swing USDJPY Round 3.xlsx",
+    "row": 39,
+    "date": "2025-11-20 00:00:00",
+    "time": "04:45:00",
+    "setup": "LC-1",
+    "confluences": "Led to a BOS, Stacked HTF zone, Unmitigated",
+    "grade": "HIGH",
+    "phase": "A2",
+    "outcome_r": 2,
+    "charts": {
+      "daily_4h": "https://fxr-snapshots.s3.amazonaws.com/1768441939281_6c90a25bd3b0aaa50ba6270ae191b68c.png",
+      "one_hour": "https://fxr-snapshots.s3.amazonaws.com/1768441846893_968fe8969c3c03f9dd8864a15ce4cd90.png",
+      "entry_15min": "https://fxr-snapshots.s3.amazonaws.com/1768441810955_20e1f77a249071f3cc70cffdac62530a.png"
+    }
+  }
+]

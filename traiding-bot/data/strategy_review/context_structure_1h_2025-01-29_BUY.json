@@ -1,0 +1,17 @@
+{
+  "processed_bars": 23,
+  "complete": true,
+  "final_state": {
+    "status": "awaiting_first_reference",
+    "fractal_direction": "BUY",
+    "opposing_reference": null,
+    "active_A_start": "2025-01-29T01:00:00+00:00",
+    "halted_reason": null,
+    "events": [],
+    "context_timeframe_minutes": 60,
+    "scope": "1H/4H context only; supplied initial direction; provisional reversal linking; M15 LC-1 rules separate"
+  },
+  "fractal_events": [],
+  "internal_events": [],
+  "scope": "Conditional 1H/4H context trace; M15 LC-1 qualification excluded; not a strategy backtest"
+}

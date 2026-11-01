@@ -1,0 +1,16 @@
+{
+  "processed_bars": 23,
+  "complete": true,
+  "final_state": {
+    "status": "awaiting_first_reference",
+    "fractal_direction": "BUY",
+    "opposing_reference": null,
+    "active_A_start": "2025-01-29T01:00:00+00:00",
+    "halted_reason": null,
+    "events": [],
+    "scope": "Supplied initial direction; provisional reversal linking; no POI, phase, order or profitability inference"
+  },
+  "fractal_events": [],
+  "internal_events": [],
+  "scope": "Conditional structure trace, not an automated strategy backtest"
+}

@@ -1,0 +1,303 @@
+{
+  "scope": "Provisional CHoCH linking checked with both supplied initial directions; calendar-day January windows use no expected prices/pivot times. Stop at first ambiguous candle. No hierarchy/POI/trade validation.",
+  "runs": [
+    {
+      "frame": "15min",
+      "window": "full_context",
+      "initial_direction_supplied": "BUY",
+      "initial_A_supplied": "2024-11-01T03:00:00+00:00",
+      "input_bars": 6043,
+      "processed_bars": 10,
+      "complete": false,
+      "last_processed_candle": "2024-11-01T05:15:00+00:00",
+      "choch_count": 0,
+      "halt_reason": "breakout_also_crosses_proposed_new_reference",
+      "comparison": [
+        {
+          "reference": "Jan23 liquidity",
+          "matches_before_halt": []
+        },
+        {
+          "reference": "Jan29 liquidity",
+          "matches_before_halt": []
+        }
+      ],
+      "trace_file": "fractal_structure_15min_full_context_BUY.json"
+    },
+    {
+      "frame": "15min",
+      "window": "full_context",
+      "initial_direction_supplied": "SELL",
+      "initial_A_supplied": "2024-11-01T03:00:00+00:00",
+      "input_bars": 6043,
+      "processed_bars": 76,
+      "complete": false,
+      "last_processed_candle": "2024-11-03T23:00:00+00:00",
+      "choch_count": 4,
+      "halt_reason": "breakout_also_crosses_proposed_new_reference",
+      "comparison": [
+        {
+          "reference": "Jan23 liquidity",
+          "matches_before_halt": []
+        },
+        {
+          "reference": "Jan29 liquidity",
+          "matches_before_halt": []
+        }
+      ],
+      "trace_file": "fractal_structure_15min_full_context_SELL.json"
+    },
+    {
+      "frame": "15min",
+      "window": "2025-01-23",
+      "initial_direction_supplied": "BUY",
+      "initial_A_supplied": "2025-01-23T00:00:00+00:00",
+      "input_bars": 95,
+      "processed_bars": 95,
+      "complete": true,
+      "last_processed_candle": "2025-01-23T23:45:00+00:00",
+      "choch_count": 4,
+      "halt_reason": null,
+      "comparison": [
+        {
+          "reference": "Jan23 liquidity",
+          "matches_before_halt": []
+        },
+        {
+          "reference": "Jan29 liquidity",
+          "matches_before_halt": []
+        }
+      ],
+      "trace_file": "fractal_structure_15min_2025-01-23_BUY.json"
+    },
+    {
+      "frame": "15min",
+      "window": "2025-01-23",
+      "initial_direction_supplied": "SELL",
+      "initial_A_supplied": "2025-01-23T00:00:00+00:00",
+      "input_bars": 95,
+      "processed_bars": 95,
+      "complete": true,
+      "last_processed_candle": "2025-01-23T23:45:00+00:00",
+      "choch_count": 5,
+      "halt_reason": null,
+      "comparison": [
+        {
+          "reference": "Jan23 liquidity",
+          "matches_before_halt": []
+        },
+        {
+          "reference": "Jan29 liquidity",
+          "matches_before_halt": []
+        }
+      ],
+      "trace_file": "fractal_structure_15min_2025-01-23_SELL.json"
+    },
+    {
+      "frame": "15min",
+      "window": "2025-01-29",
+      "initial_direction_supplied": "BUY",
+      "initial_A_supplied": "2025-01-29T00:00:00+00:00",
+      "input_bars": 95,
+      "processed_bars": 4,
+      "complete": false,
+      "last_processed_candle": "2025-01-29T00:45:00+00:00",
+      "choch_count": 0,
+      "halt_reason": "breakout_also_crosses_proposed_new_reference",
+      "comparison": [
+        {
+          "reference": "Jan23 liquidity",
+          "matches_before_halt": []
+        },
+        {
+          "reference": "Jan29 liquidity",
+          "matches_before_halt": []
+        }
+      ],
+      "trace_file": "fractal_structure_15min_2025-01-29_BUY.json"
+    },
+    {
+      "frame": "15min",
+      "window": "2025-01-29",
+      "initial_direction_supplied": "SELL",
+      "initial_A_supplied": "2025-01-29T00:00:00+00:00",
+      "input_bars": 95,
+      "processed_bars": 79,
+      "complete": false,
+      "last_processed_candle": "2025-01-29T19:30:00+00:00",
+      "choch_count": 5,
+      "halt_reason": "breakout_also_crosses_proposed_new_reference",
+      "comparison": [
+        {
+          "reference": "Jan23 liquidity",
+          "matches_before_halt": []
+        },
+        {
+          "reference": "Jan29 liquidity",
+          "matches_before_halt": [
+            {
+              "event": "fractal_choch",
+              "known_at": "2025-01-29T13:15:00+00:00"
+            }
+          ]
+        }
+      ],
+      "trace_file": "fractal_structure_15min_2025-01-29_SELL.json"
+    },
+    {
+      "frame": "1h",
+      "window": "full_context",
+      "initial_direction_supplied": "BUY",
+      "initial_A_supplied": "2024-11-01T03:00:00+00:00",
+      "input_bars": 1465,
+      "processed_bars": 66,
+      "complete": false,
+      "last_processed_candle": "2024-11-06T00:00:00+00:00",
+      "choch_count": 7,
+      "halt_reason": "opposing_reference_and_new_leg_extreme_in_same_candle",
+      "comparison": [
+        {
+          "reference": "Jan23 POI origin",
+          "matches_before_halt": []
+        },
+        {
+          "reference": "Jan29 POI origin",
+          "matches_before_halt": []
+        }
+      ],
+      "trace_file": "fractal_structure_1h_full_context_BUY.json"
+    },
+    {
+      "frame": "1h",
+      "window": "full_context",
+      "initial_direction_supplied": "SELL",
+      "initial_A_supplied": "2024-11-01T03:00:00+00:00",
+      "input_bars": 1465,
+      "processed_bars": 66,
+      "complete": false,
+      "last_processed_candle": "2024-11-06T00:00:00+00:00",
+      "choch_count": 8,
+      "halt_reason": "opposing_reference_and_new_leg_extreme_in_same_candle",
+      "comparison": [
+        {
+          "reference": "Jan23 POI origin",
+          "matches_before_halt": []
+        },
+        {
+          "reference": "Jan29 POI origin",
+          "matches_before_halt": []
+        }
+      ],
+      "trace_file": "fractal_structure_1h_full_context_SELL.json"
+    },
+    {
+      "frame": "1h",
+      "window": "2025-01-23",
+      "initial_direction_supplied": "BUY",
+      "initial_A_supplied": "2025-01-23T00:00:00+00:00",
+      "input_bars": 23,
+      "processed_bars": 23,
+      "complete": true,
+      "last_processed_candle": "2025-01-23T23:00:00+00:00",
+      "choch_count": 2,
+      "halt_reason": null,
+      "comparison": [
+        {
+          "reference": "Jan23 POI origin",
+          "matches_before_halt": [
+            {
+              "event": "fractal_high_confirmed",
+              "known_at": "2025-01-23T14:00:00+00:00"
+            }
+          ]
+        },
+        {
+          "reference": "Jan29 POI origin",
+          "matches_before_halt": []
+        }
+      ],
+      "trace_file": "fractal_structure_1h_2025-01-23_BUY.json"
+    },
+    {
+      "frame": "1h",
+      "window": "2025-01-23",
+      "initial_direction_supplied": "SELL",
+      "initial_A_supplied": "2025-01-23T00:00:00+00:00",
+      "input_bars": 23,
+      "processed_bars": 23,
+      "complete": true,
+      "last_processed_candle": "2025-01-23T23:00:00+00:00",
+      "choch_count": 1,
+      "halt_reason": null,
+      "comparison": [
+        {
+          "reference": "Jan23 POI origin",
+          "matches_before_halt": [
+            {
+              "event": "fractal_high_confirmed",
+              "known_at": "2025-01-23T14:00:00+00:00"
+            }
+          ]
+        },
+        {
+          "reference": "Jan29 POI origin",
+          "matches_before_halt": []
+        }
+      ],
+      "trace_file": "fractal_structure_1h_2025-01-23_SELL.json"
+    },
+    {
+      "frame": "1h",
+      "window": "2025-01-29",
+      "initial_direction_supplied": "BUY",
+      "initial_A_supplied": "2025-01-29T00:00:00+00:00",
+      "input_bars": 23,
+      "processed_bars": 23,
+      "complete": true,
+      "last_processed_candle": "2025-01-29T23:00:00+00:00",
+      "choch_count": 0,
+      "halt_reason": null,
+      "comparison": [
+        {
+          "reference": "Jan23 POI origin",
+          "matches_before_halt": []
+        },
+        {
+          "reference": "Jan29 POI origin",
+          "matches_before_halt": []
+        }
+      ],
+      "trace_file": "fractal_structure_1h_2025-01-29_BUY.json"
+    },
+    {
+      "frame": "1h",
+      "window": "2025-01-29",
+      "initial_direction_supplied": "SELL",
+      "initial_A_supplied": "2025-01-29T00:00:00+00:00",
+      "input_bars": 23,
+      "processed_bars": 23,
+      "complete": true,
+      "last_processed_candle": "2025-01-29T23:00:00+00:00",
+      "choch_count": 1,
+      "halt_reason": null,
+      "comparison": [
+        {
+          "reference": "Jan23 POI origin",
+          "matches_before_halt": []
+        },
+        {
+          "reference": "Jan29 POI origin",
+          "matches_before_halt": [
+            {
+              "event": "fractal_high_confirmed",
+              "known_at": "2025-01-29T04:00:00+00:00"
+            }
+          ]
+        }
+      ],
+      "trace_file": "fractal_structure_1h_2025-01-29_SELL.json"
+    }
+  ],
+  "timeframe_correction": "User context-fractal structure is 1H/4H. Prior M15 context scans are not the separate M15 LC-1 fractal-CHoCH rule; mixed context/LC-1 validation is superseded.",
+  "superseded_as_context_strategy_validation": true
+}

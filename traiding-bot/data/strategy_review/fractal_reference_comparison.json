@@ -1,0 +1,39 @@
+{
+  "scope": "Candidate detection compared after the scan with four reference labels; no profitable-parameter selection or final hierarchy classification",
+  "matches": [
+    {
+      "reference": "Jan23 POI origin",
+      "source_candle_start": "2025-01-23T12:00:00+00:00",
+      "reference_price": 156.6,
+      "supporting_patterns": 2,
+      "first_candidate_available_at": "2025-01-23T14:00:00+00:00",
+      "first_candidate_quality": "wick_only"
+    },
+    {
+      "reference": "Jan23 liquidity",
+      "source_candle_start": "2025-01-23T13:15:00+00:00",
+      "reference_price": 156.3585,
+      "supporting_patterns": 1,
+      "first_candidate_available_at": "2025-01-23T13:45:00+00:00",
+      "first_candidate_quality": "close_confirmed"
+    },
+    {
+      "reference": "Jan29 POI origin",
+      "source_candle_start": "2025-01-29T01:00:00+00:00",
+      "reference_price": 155.79,
+      "supporting_patterns": 3,
+      "first_candidate_available_at": "2025-01-29T04:00:00+00:00",
+      "first_candidate_quality": "close_confirmed"
+    },
+    {
+      "reference": "Jan29 liquidity",
+      "source_candle_start": "2025-01-29T11:30:00+00:00",
+      "reference_price": 155.5225,
+      "supporting_patterns": 9,
+      "first_candidate_available_at": "2025-01-29T12:15:00+00:00",
+      "first_candidate_quality": "wick_only"
+    }
+  ],
+  "timeframe_correction": "User context-fractal structure is 1H/4H. Prior M15 context scans are not the separate M15 LC-1 fractal-CHoCH rule; mixed context/LC-1 validation is superseded.",
+  "superseded_as_context_strategy_validation": true
+}

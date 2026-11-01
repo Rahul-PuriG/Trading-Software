@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "coverage": {
+    "status": "passed",
+    "basis": "Minute slots within downloaded 15-minute MIDPOINT bars; not an independent exchange calendar",
+    "expected_minutes": 9975,
+    "actual_minutes": 9975,
+    "missing_minutes": 0,
+    "unexpected_minutes": 0,
+    "first_missing_minutes": [],
+    "first_unexpected_minutes": []
+  },
+  "minute_bars": 9975,
+  "context_bars": 6043,
+  "complete_15min_groups_reconstructed": 665,
+  "max_ohlc_difference": {
+    "open": 0.0,
+    "high": 0.0,
+    "low": 0.0,
+    "close": 0.0
+  },
+  "duplicate_minute_timestamps": 0,
+  "minute_file_sha256": "d4a52f8bed7840f7f79c2a39457532054d61b845756df672d076da73a3aaf108",
+  "status": "Cross-timeframe sample consistency passed; full automated strategy not implemented."
+}

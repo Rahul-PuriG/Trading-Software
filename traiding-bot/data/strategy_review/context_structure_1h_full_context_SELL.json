@@ -1,0 +1,340 @@
+{
+  "processed_bars": 66,
+  "complete": false,
+  "final_state": {
+    "status": "review_required",
+    "fractal_direction": "SELL",
+    "opposing_reference": {
+      "price": 152.249,
+      "break_direction": "BUY",
+      "known_at": "2024-11-05T18:00:00+00:00",
+      "origin_candle_starts": [
+        "2024-11-05T15:00:00+00:00"
+      ]
+    },
+    "active_A_start": "2024-11-05T19:00:00+00:00",
+    "halted_reason": "opposing_reference_and_new_leg_extreme_in_same_candle",
+    "events": [],
+    "context_timeframe_minutes": 60,
+    "scope": "1H/4H context only; supplied initial direction; provisional reversal linking; M15 LC-1 rules separate"
+  },
+  "fractal_events": [
+    {
+      "event": "fractal_high_confirmed",
+      "known_at": "2024-11-01T08:00:00+00:00",
+      "pattern": {
+        "kind": "fractal_high_confirmed",
+        "confirmation_direction": "SELL",
+        "anchor_start": "2024-11-01T03:00:00+00:00",
+        "anchor_break_level": 152.2465,
+        "first_failed_candle": "2024-11-01T04:00:00+00:00",
+        "failed_candles": 3,
+        "reference_price": 152.652,
+        "reference_candle_starts": [
+          "2024-11-01T05:00:00+00:00"
+        ],
+        "confirmation_candle_start": "2024-11-01T07:00:00+00:00",
+        "available_at": "2024-11-01T08:00:00+00:00",
+        "confirmation_candle_closed_beyond_A": false,
+        "confirmation_quality": "wick_only",
+        "reference_also_crossed_in_confirmation_candle": false,
+        "requires_ordering_review": false,
+        "spans_quote_gap": false,
+        "scope": "Directional sequence from supplied start; no automatic trend initialization, hierarchy or trade classification",
+        "sequence_selected": true,
+        "confirmed": true
+      }
+    },
+    {
+      "event": "fractal_choch",
+      "from_direction": "SELL",
+      "direction": "BUY",
+      "broken_level": 152.652,
+      "broken_reference_origins": [
+        "2024-11-01T05:00:00+00:00"
+      ],
+      "confirmation_quality": "wick_only",
+      "known_at": "2024-11-01T09:00:00+00:00",
+      "opposite_reference_price": 152.2035,
+      "opposite_reference_origins": [
+        "2024-11-01T07:00:00+00:00"
+      ],
+      "opposite_reference_known_at": "2024-11-01T09:00:00+00:00",
+      "new_A_start": "2024-11-01T08:00:00+00:00",
+      "spans_quote_gap": false,
+      "linking_convention_requires_chart_validation": true
+    },
+    {
+      "event": "fractal_choch",
+      "from_direction": "BUY",
+      "direction": "SELL",
+      "broken_level": 152.2035,
+      "broken_reference_origins": [
+        "2024-11-01T07:00:00+00:00"
+      ],
+      "confirmation_quality": "close_confirmed",
+      "known_at": "2024-11-01T13:00:00+00:00",
+      "opposite_reference_price": 152.849,
+      "opposite_reference_origins": [
+        "2024-11-01T10:00:00+00:00"
+      ],
+      "opposite_reference_known_at": "2024-11-01T13:00:00+00:00",
+      "new_A_start": "2024-11-01T12:00:00+00:00",
+      "spans_quote_gap": false,
+      "linking_convention_requires_chart_validation": true
+    },
+    {
+      "event": "fractal_choch",
+      "from_direction": "SELL",
+      "direction": "BUY",
+      "broken_level": 152.849,
+      "broken_reference_origins": [
+        "2024-11-01T10:00:00+00:00"
+      ],
+      "confirmation_quality": "close_confirmed",
+      "known_at": "2024-11-01T15:00:00+00:00",
+      "opposite_reference_price": 151.793,
+      "opposite_reference_origins": [
+        "2024-11-01T12:00:00+00:00"
+      ],
+      "opposite_reference_known_at": "2024-11-01T15:00:00+00:00",
+      "new_A_start": "2024-11-01T14:00:00+00:00",
+      "spans_quote_gap": false,
+      "linking_convention_requires_chart_validation": true
+    },
+    {
+      "event": "fractal_low_confirmed",
+      "known_at": "2024-11-01T21:00:00+00:00",
+      "pattern": {
+        "kind": "fractal_low_confirmed",
+        "confirmation_direction": "BUY",
+        "anchor_start": "2024-11-01T15:00:00+00:00",
+        "anchor_break_level": 153.069,
+        "first_failed_candle": "2024-11-01T16:00:00+00:00",
+        "failed_candles": 4,
+        "reference_price": 152.831,
+        "reference_candle_starts": [
+          "2024-11-01T16:00:00+00:00"
+        ],
+        "confirmation_candle_start": "2024-11-01T20:00:00+00:00",
+        "available_at": "2024-11-01T21:00:00+00:00",
+        "confirmation_candle_closed_beyond_A": false,
+        "confirmation_quality": "wick_only",
+        "reference_also_crossed_in_confirmation_candle": false,
+        "requires_ordering_review": false,
+        "spans_quote_gap": false,
+        "scope": "Directional sequence from supplied start; no automatic trend initialization, hierarchy or trade classification",
+        "sequence_selected": true,
+        "confirmed": true
+      }
+    },
+    {
+      "event": "fractal_choch",
+      "from_direction": "BUY",
+      "direction": "SELL",
+      "broken_level": 152.831,
+      "broken_reference_origins": [
+        "2024-11-01T16:00:00+00:00"
+      ],
+      "confirmation_quality": "close_confirmed",
+      "known_at": "2024-11-04T00:00:00+00:00",
+      "opposite_reference_price": 153.0955,
+      "opposite_reference_origins": [
+        "2024-11-01T20:00:00+00:00"
+      ],
+      "opposite_reference_known_at": "2024-11-04T00:00:00+00:00",
+      "new_A_start": "2024-11-03T23:00:00+00:00",
+      "spans_quote_gap": true,
+      "linking_convention_requires_chart_validation": true
+    },
+    {
+      "event": "fractal_high_confirmed",
+      "known_at": "2024-11-04T04:00:00+00:00",
+      "pattern": {
+        "kind": "fractal_high_confirmed",
+        "confirmation_direction": "SELL",
+        "anchor_start": "2024-11-04T01:00:00+00:00",
+        "anchor_break_level": 151.707,
+        "first_failed_candle": "2024-11-04T02:00:00+00:00",
+        "failed_candles": 1,
+        "reference_price": 151.9695,
+        "reference_candle_starts": [
+          "2024-11-04T02:00:00+00:00"
+        ],
+        "confirmation_candle_start": "2024-11-04T03:00:00+00:00",
+        "available_at": "2024-11-04T04:00:00+00:00",
+        "confirmation_candle_closed_beyond_A": false,
+        "confirmation_quality": "wick_only",
+        "reference_also_crossed_in_confirmation_candle": false,
+        "requires_ordering_review": false,
+        "spans_quote_gap": false,
+        "scope": "Directional sequence from supplied start; no automatic trend initialization, hierarchy or trade classification",
+        "sequence_selected": true,
+        "confirmed": true
+      }
+    },
+    {
+      "event": "fractal_choch",
+      "from_direction": "SELL",
+      "direction": "BUY",
+      "broken_level": 151.9695,
+      "broken_reference_origins": [
+        "2024-11-04T02:00:00+00:00"
+      ],
+      "confirmation_quality": "close_confirmed",
+      "known_at": "2024-11-04T07:00:00+00:00",
+      "opposite_reference_price": 151.6,
+      "opposite_reference_origins": [
+        "2024-11-04T03:00:00+00:00"
+      ],
+      "opposite_reference_known_at": "2024-11-04T07:00:00+00:00",
+      "new_A_start": "2024-11-04T06:00:00+00:00",
+      "spans_quote_gap": false,
+      "linking_convention_requires_chart_validation": true
+    },
+    {
+      "event": "fractal_choch",
+      "from_direction": "BUY",
+      "direction": "SELL",
+      "broken_level": 151.6,
+      "broken_reference_origins": [
+        "2024-11-04T03:00:00+00:00"
+      ],
+      "confirmation_quality": "close_confirmed",
+      "known_at": "2024-11-04T12:00:00+00:00",
+      "opposite_reference_price": 152.278,
+      "opposite_reference_origins": [
+        "2024-11-04T07:00:00+00:00"
+      ],
+      "opposite_reference_known_at": "2024-11-04T12:00:00+00:00",
+      "new_A_start": "2024-11-04T11:00:00+00:00",
+      "spans_quote_gap": false,
+      "linking_convention_requires_chart_validation": true
+    },
+    {
+      "event": "fractal_choch",
+      "from_direction": "SELL",
+      "direction": "BUY",
+      "broken_level": 152.278,
+      "broken_reference_origins": [
+        "2024-11-04T07:00:00+00:00"
+      ],
+      "confirmation_quality": "close_confirmed",
+      "known_at": "2024-11-05T00:00:00+00:00",
+      "opposite_reference_price": 151.536,
+      "opposite_reference_origins": [
+        "2024-11-04T11:00:00+00:00"
+      ],
+      "opposite_reference_known_at": "2024-11-05T00:00:00+00:00",
+      "new_A_start": "2024-11-04T23:00:00+00:00",
+      "spans_quote_gap": true,
+      "linking_convention_requires_chart_validation": true
+    },
+    {
+      "event": "fractal_low_confirmed",
+      "known_at": "2024-11-05T05:00:00+00:00",
+      "pattern": {
+        "kind": "fractal_low_confirmed",
+        "confirmation_direction": "BUY",
+        "anchor_start": "2024-11-05T01:00:00+00:00",
+        "anchor_break_level": 152.447,
+        "first_failed_candle": "2024-11-05T02:00:00+00:00",
+        "failed_candles": 2,
+        "reference_price": 152.167,
+        "reference_candle_starts": [
+          "2024-11-05T02:00:00+00:00"
+        ],
+        "confirmation_candle_start": "2024-11-05T04:00:00+00:00",
+        "available_at": "2024-11-05T05:00:00+00:00",
+        "confirmation_candle_closed_beyond_A": true,
+        "confirmation_quality": "close_confirmed",
+        "reference_also_crossed_in_confirmation_candle": false,
+        "requires_ordering_review": false,
+        "spans_quote_gap": false,
+        "scope": "Directional sequence from supplied start; no automatic trend initialization, hierarchy or trade classification",
+        "sequence_selected": true,
+        "confirmed": true
+      }
+    },
+    {
+      "event": "fractal_choch",
+      "from_direction": "BUY",
+      "direction": "SELL",
+      "broken_level": 152.167,
+      "broken_reference_origins": [
+        "2024-11-05T02:00:00+00:00"
+      ],
+      "confirmation_quality": "wick_only",
+      "known_at": "2024-11-05T10:00:00+00:00",
+      "opposite_reference_price": 152.5465,
+      "opposite_reference_origins": [
+        "2024-11-05T05:00:00+00:00"
+      ],
+      "opposite_reference_known_at": "2024-11-05T10:00:00+00:00",
+      "new_A_start": "2024-11-05T09:00:00+00:00",
+      "spans_quote_gap": false,
+      "linking_convention_requires_chart_validation": true
+    },
+    {
+      "event": "fractal_high_confirmed",
+      "known_at": "2024-11-05T14:00:00+00:00",
+      "pattern": {
+        "kind": "fractal_high_confirmed",
+        "confirmation_direction": "SELL",
+        "anchor_start": "2024-11-05T09:00:00+00:00",
+        "anchor_break_level": 152.087,
+        "first_failed_candle": "2024-11-05T10:00:00+00:00",
+        "failed_candles": 3,
+        "reference_price": 152.341,
+        "reference_candle_starts": [
+          "2024-11-05T12:00:00+00:00"
+        ],
+        "confirmation_candle_start": "2024-11-05T13:00:00+00:00",
+        "available_at": "2024-11-05T14:00:00+00:00",
+        "confirmation_candle_closed_beyond_A": true,
+        "confirmation_quality": "close_confirmed",
+        "reference_also_crossed_in_confirmation_candle": false,
+        "requires_ordering_review": false,
+        "spans_quote_gap": false,
+        "scope": "Directional sequence from supplied start; no automatic trend initialization, hierarchy or trade classification",
+        "sequence_selected": true,
+        "confirmed": true
+      }
+    },
+    {
+      "event": "fractal_high_confirmed",
+      "known_at": "2024-11-05T18:00:00+00:00",
+      "pattern": {
+        "kind": "fractal_high_confirmed",
+        "confirmation_direction": "SELL",
+        "anchor_start": "2024-11-05T14:00:00+00:00",
+        "anchor_break_level": 151.774,
+        "first_failed_candle": "2024-11-05T15:00:00+00:00",
+        "failed_candles": 2,
+        "reference_price": 152.249,
+        "reference_candle_starts": [
+          "2024-11-05T15:00:00+00:00"
+        ],
+        "confirmation_candle_start": "2024-11-05T17:00:00+00:00",
+        "available_at": "2024-11-05T18:00:00+00:00",
+        "confirmation_candle_closed_beyond_A": true,
+        "confirmation_quality": "close_confirmed",
+        "reference_also_crossed_in_confirmation_candle": false,
+        "requires_ordering_review": false,
+        "spans_quote_gap": false,
+        "scope": "Directional sequence from supplied start; no automatic trend initialization, hierarchy or trade classification",
+        "sequence_selected": true,
+        "confirmed": true
+      }
+    },
+    {
+      "event": "fractal_ordering_review_required",
+      "reason": "opposing_reference_and_new_leg_extreme_in_same_candle",
+      "known_at": "2024-11-06T01:00:00+00:00",
+      "broken_level": 152.249,
+      "prior_leg_extreme": 151.334
+    }
+  ],
+  "internal_events": [],
+  "scope": "Conditional 1H/4H context trace; M15 LC-1 qualification excluded; not a strategy backtest"
+}

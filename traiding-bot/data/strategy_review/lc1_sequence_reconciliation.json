@@ -1,0 +1,339 @@
+{
+  "scope": "Two conditional reference reconciliations, NOT a full strategy or out-of-sample backtest",
+  "limitations": [
+    "Phase/context approval and originating structure/POI/liquidity references are manual inputs",
+    "Inducement is M15 only: opposite-level wick break qualifies, close adds quality. Origin/prior selection remains annotated; proximity is quality only, with no distance, left-leg-only or no-PBID admission filter",
+    "Additional broken-level anchors test causality; they are candidate interpretations, not a confirmed general structure detector",
+    "Late mitigation, replacement outside POI and ambiguous sequencing require review",
+    "No automatic LC-2A/2B; gross-margin model, one-USD-unit sizing; no financing or broker liquidation"
+  ],
+  "cases": [
+    {
+      "annotated_inputs": {
+        "id": "round3_row3_2025_01_23",
+        "origin": "2025-01-23T12:00:00+00:00",
+        "poi_broken_level_bar": "2025-01-23T09:00:00+00:00",
+        "liquidity_bar": "2025-01-23T13:15:00+00:00",
+        "liquidity_broken_level_timeframe": "15min",
+        "liquidity_broken_level_bar": "2025-01-23T13:00:00+00:00"
+      },
+      "zone": {
+        "side": "SELL",
+        "low": 156.372,
+        "high": 156.6,
+        "available_at": "2025-01-23 14:00:00+00:00"
+      },
+      "liquidity": {
+        "level": 156.3585,
+        "available_at": "2025-01-23 13:45:00+00:00",
+        "source_timeframe_minutes": 15
+      },
+      "inducement_qualification": {
+        "side": "SELL",
+        "origin": "2025-01-23T13:15:00+00:00",
+        "inducement_level": 156.3585,
+        "prior_reference": "2025-01-23T13:00:00+00:00",
+        "prior_reference_available_at": "2025-01-23T13:15:00+00:00",
+        "broken_level": 156.252,
+        "liquidity": {
+          "level": 156.3585,
+          "available_at": "2025-01-23 13:45:00+00:00",
+          "source_timeframe_minutes": 15
+        },
+        "scope": "Selected M15 origin/prior only; no proximity, left-leg-only or no-PBID admission filter",
+        "status": "qualified",
+        "break_bar_start": "2025-01-23T13:30:00+00:00",
+        "available_at": "2025-01-23T13:45:00+00:00",
+        "spans_quote_gap": false,
+        "confirmation_quality": "close_confirmed"
+      },
+      "scope": "Origin candle, reference structure levels and context approval are annotated inputs; not automatically selected",
+      "detection": {
+        "zone_valid": true,
+        "setup_early_invalidated": false,
+        "status": "signal_found",
+        "events": [
+          {
+            "event": "poi_mitigated",
+            "minute": "2025-01-23T14:29:00+00:00",
+            "known_at": "2025-01-23T14:30:00+00:00"
+          },
+          {
+            "event": "liquidity_swept",
+            "minute": "2025-01-23T14:29:00+00:00",
+            "known_at": "2025-01-23T14:30:00+00:00"
+          },
+          {
+            "event": "pending_entry_eligible",
+            "known_at": "2025-01-23T14:30:00+00:00"
+          }
+        ],
+        "signals": [
+          {
+            "side": "SELL",
+            "signal_bar_start": "2025-01-23T14:15:00+00:00",
+            "available_at": "2025-01-23T14:30:00+00:00",
+            "entry_level": 156.243,
+            "stop_level": 156.378,
+            "inducement_timeframe_minutes": 15,
+            "inducement_distance_to_poi_pips": 1.35,
+            "proximity_is_entry_filter": false,
+            "scope": "Annotated context/zone/liquidity inputs; initial LC-1 sequence only"
+          }
+        ]
+      },
+      "pending": {
+        "status": "filled",
+        "fill_minute": "2025-01-23T14:51:00+00:00",
+        "fill_price": 156.321,
+        "events": [
+          {
+            "event": "pending_entry_and_stop_amended",
+            "known_at": "2025-01-23T14:45:00+00:00",
+            "entry_level": 156.322,
+            "stop_level": 156.405,
+            "risk_recalculation_required": true
+          },
+          {
+            "event": "entry_triggered",
+            "minute": "2025-01-23T14:51:00+00:00",
+            "fill_price": 156.321
+          }
+        ],
+        "last_signal": {
+          "side": "SELL",
+          "signal_bar_start": "2025-01-23T14:30:00+00:00",
+          "available_at": "2025-01-23T14:45:00+00:00",
+          "entry_level": 156.322,
+          "stop_level": 156.405,
+          "inducement_timeframe_minutes": 15,
+          "inducement_distance_to_poi_pips": 1.35,
+          "proximity_is_entry_filter": false,
+          "scope": "Annotated context/zone/liquidity inputs; initial LC-1 sequence only"
+        }
+      },
+      "risk_plans": [
+        {
+          "at": "2025-01-23T14:30:00+00:00",
+          "side": "SELL",
+          "units": 109161,
+          "entry_level": 156.243,
+          "stop_level": 156.378,
+          "expected_entry": 156.242,
+          "expected_stop_fill": 156.379,
+          "risk_budget": 100.0,
+          "planned_stop_risk": 99.99984985682254,
+          "available_at_plan": 10000.0,
+          "reward_r": 2.0,
+          "margin": 2183.22
+        },
+        {
+          "at": "2025-01-23T14:45:00+00:00",
+          "side": "SELL",
+          "units": 171392,
+          "entry_level": 156.322,
+          "stop_level": 156.405,
+          "expected_entry": 156.321,
+          "expected_stop_fill": 156.406,
+          "risk_budget": 100.0,
+          "planned_stop_risk": 99.99993277803515,
+          "available_at_plan": 10000.0,
+          "reward_r": 2.0,
+          "margin": 3427.84
+        }
+      ],
+      "execution": {
+        "side": "SELL",
+        "signal_bar_start_utc": "2025-01-23T14:30:00+00:00",
+        "entry_active_from_utc": "2025-01-23T14:45:00+00:00",
+        "entry_level": 156.322,
+        "stop_level": 156.405,
+        "spread_pips": 1.0,
+        "slippage_pips": 0.1,
+        "reward_r": 2.0,
+        "scope": "One initial pending-entry window only; no LC/phase/POI detection or amendments",
+        "status": "closed",
+        "entry_price": 156.321,
+        "target_level": 156.153,
+        "entry_minute_utc": "2025-01-23T14:51:00+00:00",
+        "entry_minute_halifax": "2025-01-23T10:51:00-04:00",
+        "exit_reason": "stop",
+        "exit_price": 156.406,
+        "exit_minute_utc": "2025-01-23T15:23:00+00:00",
+        "exit_minute_halifax": "2025-01-23T11:23:00-04:00",
+        "price_r_before_commission": -1.0119047619048183,
+        "ambiguous_stop_target_bar": false,
+        "entry_exit_same_minute": false
+      },
+      "accounting": {
+        "trade_id": "round3_row3_2025_01_23",
+        "side": "SELL",
+        "units": 171392,
+        "entry_price": 156.321,
+        "exit_price": 156.406,
+        "exit_reason": "stop",
+        "gross_pnl_usd": -93.14425277803514,
+        "commission_usd": 6.85568,
+        "net_pnl_usd": -99.99993277803515,
+        "risk_budget_usd": 100.0,
+        "planned_stop_risk_usd": 99.99993277803515,
+        "risk_at_fill_usd": 99.99993277803515,
+        "risk_budget_exceeded_at_fill": false,
+        "released_margin_usd": 3427.84
+      }
+    },
+    {
+      "annotated_inputs": {
+        "id": "round3_row4_2025_01_29",
+        "origin": "2025-01-29T01:00:00+00:00",
+        "poi_broken_level_bar": "2025-01-28T14:00:00+00:00",
+        "liquidity_bar": "2025-01-29T11:30:00+00:00",
+        "liquidity_broken_level_timeframe": "15min",
+        "liquidity_broken_level_bar": "2025-01-29T09:00:00+00:00"
+      },
+      "zone": {
+        "side": "SELL",
+        "low": 155.592,
+        "high": 155.79,
+        "available_at": "2025-01-29 06:00:00+00:00"
+      },
+      "liquidity": {
+        "level": 155.5225,
+        "available_at": "2025-01-29 15:30:00+00:00",
+        "source_timeframe_minutes": 15
+      },
+      "inducement_qualification": {
+        "side": "SELL",
+        "origin": "2025-01-29T11:30:00+00:00",
+        "inducement_level": 155.5225,
+        "prior_reference": "2025-01-29T09:00:00+00:00",
+        "prior_reference_available_at": "2025-01-29T09:15:00+00:00",
+        "broken_level": 155.0905,
+        "liquidity": {
+          "level": 155.5225,
+          "available_at": "2025-01-29 15:30:00+00:00",
+          "source_timeframe_minutes": 15
+        },
+        "scope": "Selected M15 origin/prior only; no proximity, left-leg-only or no-PBID admission filter",
+        "status": "qualified",
+        "break_bar_start": "2025-01-29T15:15:00+00:00",
+        "available_at": "2025-01-29T15:30:00+00:00",
+        "spans_quote_gap": false,
+        "confirmation_quality": "wick_only"
+      },
+      "scope": "Origin candle, reference structure levels and context approval are annotated inputs; not automatically selected",
+      "detection": {
+        "zone_valid": true,
+        "setup_early_invalidated": false,
+        "status": "signal_found",
+        "events": [
+          {
+            "event": "liquidity_swept",
+            "minute": "2025-01-29T19:35:00+00:00",
+            "known_at": "2025-01-29T19:36:00+00:00"
+          },
+          {
+            "event": "poi_mitigated",
+            "minute": "2025-01-29T19:36:00+00:00",
+            "known_at": "2025-01-29T19:37:00+00:00"
+          },
+          {
+            "event": "pending_entry_eligible",
+            "known_at": "2025-01-29T19:45:00+00:00"
+          }
+        ],
+        "signals": [
+          {
+            "side": "SELL",
+            "signal_bar_start": "2025-01-29T19:30:00+00:00",
+            "available_at": "2025-01-29T19:45:00+00:00",
+            "entry_level": 155.209,
+            "stop_level": 155.612,
+            "inducement_timeframe_minutes": 15,
+            "inducement_distance_to_poi_pips": 6.95,
+            "proximity_is_entry_filter": false,
+            "scope": "Annotated context/zone/liquidity inputs; initial LC-1 sequence only"
+          }
+        ]
+      },
+      "pending": {
+        "status": "filled",
+        "fill_minute": "2025-01-29T19:51:00+00:00",
+        "fill_price": 155.208,
+        "events": [
+          {
+            "event": "entry_triggered",
+            "minute": "2025-01-29T19:51:00+00:00",
+            "fill_price": 155.208
+          }
+        ],
+        "last_signal": {
+          "side": "SELL",
+          "signal_bar_start": "2025-01-29T19:30:00+00:00",
+          "available_at": "2025-01-29T19:45:00+00:00",
+          "entry_level": 155.209,
+          "stop_level": 155.612,
+          "inducement_timeframe_minutes": 15,
+          "inducement_distance_to_poi_pips": 6.95,
+          "proximity_is_entry_filter": false,
+          "scope": "Annotated context/zone/liquidity inputs; initial LC-1 sequence only"
+        }
+      },
+      "risk_plans": [
+        {
+          "at": "2025-01-29T19:45:00+00:00",
+          "side": "SELL",
+          "units": 36501,
+          "entry_level": 155.209,
+          "stop_level": 155.612,
+          "expected_entry": 155.208,
+          "expected_stop_fill": 155.613,
+          "risk_budget": 99.00000067221966,
+          "planned_stop_risk": 98.99787935455291,
+          "available_at_plan": 9900.000067221965,
+          "reward_r": 2.0,
+          "margin": 730.02
+        }
+      ],
+      "execution": {
+        "side": "SELL",
+        "signal_bar_start_utc": "2025-01-29T19:30:00+00:00",
+        "entry_active_from_utc": "2025-01-29T19:45:00+00:00",
+        "entry_level": 155.209,
+        "stop_level": 155.612,
+        "spread_pips": 1.0,
+        "slippage_pips": 0.1,
+        "reward_r": 2.0,
+        "scope": "One initial pending-entry window only; no LC/phase/POI detection or amendments",
+        "status": "closed",
+        "entry_price": 155.208,
+        "target_level": 154.4,
+        "entry_minute_utc": "2025-01-29T19:51:00+00:00",
+        "entry_minute_halifax": "2025-01-29T15:51:00-04:00",
+        "exit_reason": "target",
+        "exit_price": 154.4,
+        "exit_minute_utc": "2025-01-30T02:17:00+00:00",
+        "exit_minute_halifax": "2025-01-29T22:17:00-04:00",
+        "price_r_before_commission": 2.0,
+        "ambiguous_stop_target_bar": false,
+        "entry_exit_same_minute": false
+      },
+      "accounting": {
+        "trade_id": "round3_row4_2025_01_29",
+        "side": "SELL",
+        "units": 36501,
+        "entry_price": 155.208,
+        "exit_price": 154.4,
+        "exit_reason": "target",
+        "gross_pnl_usd": 191.01559585492055,
+        "commission_usd": 4.0,
+        "net_pnl_usd": 187.01559585492055,
+        "risk_budget_usd": 99.00000067221966,
+        "planned_stop_risk_usd": 98.99787935455291,
+        "risk_at_fill_usd": 98.99787935455291,
+        "risk_budget_exceeded_at_fill": false,
+        "released_margin_usd": 730.02
+      }
+    }
+  ]
+}

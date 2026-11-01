@@ -201,6 +201,10 @@ def scan_lc1(zone, liquidity, minutes, quarters, context_approved):
             if any(abs(a-b)>1e-8 for a,b in zip(actual,(candle.open,candle.high,candle.low,candle.close))):
                 raise ValueError("Minute/quarter OHLC mismatch")
             if touched is not None and not setup_invalid:
+                if not(candle.low<=zone.high and candle.high>=zone.low):
+                    events.append({'event':'liquidation_candle_outside_poi_requires_review',
+                                   'known_at':observed_at.isoformat()})
+                    break
                 signals.append({"side":zone.side,"signal_bar_start":candidate.isoformat(),
                     "available_at":observed_at.isoformat(),
                     "entry_level":candle.high if zone.side=="BUY" else candle.low,
@@ -276,3 +280,75 @@ def trace_pending_entry(signal, zone, minutes, quarters, spread_pips=1.0, slippa
                        'entry_level':current['entry_level'],'stop_level':current['stop_level'],
                        'risk_recalculation_required':True})
     return {'status':'pending_at_data_end','events':events,'last_signal':current}
+
+
+def scan_lc1_candidates(zone, candidates, minutes, quarters, context_approved):
+    """Connect M15 candidate discovery to a supplied zone/context, not orders.
+
+    Retain multiple points, deduplicate their qualifying reference pairs, and
+    merge identical closed-candle signals. A level already taken before this
+    setup's execution window cannot be silently reused as a fresh inducement.
+    No distance, age, formation-type or PBID admission threshold is applied.
+    """
+    if not context_approved:
+        return {'status':'context_not_approved','signals':[],'excluded':[],'reviews':[]}
+    if not minutes:
+        raise ValueError('Minute execution data required')
+    for previous,current in zip(minutes,minutes[1:]):
+        if current.timestamp<=previous.timestamp:
+            raise ValueError('Minute data must be chronological and unique')
+    start=max(zone.available_at,minutes[0].timestamp)
+    end=minutes[-1].timestamp+timedelta(minutes=1)
+    points={};excluded=[];reviews=[];signals={}
+    for event in candidates:
+        if event['status']!='qualified' or event['side']!=zone.side:continue
+        if int(event.get('source_timeframe_minutes',0))!=15:
+            raise ValueError('Only M15 entry-timeframe inducement candidates allowed')
+        available=datetime.fromisoformat(event['available_at'])
+        origin=datetime.fromisoformat(event['origin'])
+        if available.tzinfo is None or origin.tzinfo is None or available<=origin:
+            raise ValueError('Causal timezone-aware candidate times required')
+        price=float(event['inducement_level'])
+        if not math.isfinite(price) or price<=0:raise ValueError('Invalid inducement level')
+        if available>=end:continue
+        key=(event['origin'],price)
+        if key not in points or available<points[key]['available']:
+            points[key]={'origin':event['origin'],'level':price,'available':available,
+                         'prior_reference':event['prior_reference']}
+    for point in points.values():
+        available=point['available'];price=point['level'];consumed=None;partial=False
+        for bar in quarters:
+            if bar.timestamp<available:continue
+            if bar.timestamp>=start:break
+            crossed=bar.high>price if zone.side=='SELL' else bar.low<price
+            if crossed:
+                if bar.timestamp+timedelta(minutes=15)>start:partial=True
+                else:consumed=bar.timestamp
+                break
+        summary={**point,'available':available.isoformat()}
+        if consumed is not None:
+            excluded.append({**summary,'reason':'inducement_already_taken_before_setup_window',
+                             'source_candle_start':consumed.isoformat()})
+            continue
+        if partial:
+            reviews.append({**summary,'reason':'pre_window_sweep_order_requires_review'})
+            continue
+        result=scan_lc1(zone,LiquidityReference(price,available),minutes,quarters,True)
+        if not result['signals']:
+            unresolved=[e for e in result['events'] if 'review' in e['event']
+                        or 'ambiguous' in e['event'] or 'incomplete' in e['event']]
+            if unresolved:reviews.append({**summary,'events':unresolved})
+            continue
+        for signal in result['signals']:
+            key=(signal['side'],signal['signal_bar_start'],signal['entry_level'],signal['stop_level'])
+            if key not in signals:
+                signals[key]={k:v for k,v in signal.items() if k!='inducement_distance_to_poi_pips'}
+                signals[key]['scope']='Supplied POI/context; automatically discovered inducement; not a full strategy backtest'
+                signals[key]['supporting_inducements']=[]
+            signals[key]['supporting_inducements'].append({**summary,
+                'distance_to_poi_pips':signal['inducement_distance_to_poi_pips']})
+    return {'status':'signals_found' if signals else 'no_signal_or_review_required',
+            'distinct_qualified_points':len(points),
+            'signals':sorted(signals.values(),key=lambda s:s['available_at']),
+            'excluded':excluded,'reviews':reviews,
+            'scope':'Automatic inducement-to-LC-1 connection, with supplied zone/context; lifecycle after signals and full trade accounting not inferred'}

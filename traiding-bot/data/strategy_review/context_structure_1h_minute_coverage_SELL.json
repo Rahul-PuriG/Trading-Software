@@ -1,0 +1,60 @@
+{
+  "processed_bars": 5,
+  "complete": false,
+  "final_state": {
+    "status": "review_required",
+    "fractal_direction": "BUY",
+    "opposing_reference": {
+      "price": 155.683,
+      "break_direction": "SELL",
+      "known_at": "2025-01-22T07:00:00+00:00",
+      "origin_candle_starts": [
+        "2025-01-22T06:00:00+00:00"
+      ]
+    },
+    "active_A_start": "2025-01-22T07:00:00+00:00",
+    "halted_reason": "opposing_reference_and_new_leg_extreme_in_same_candle",
+    "events": [],
+    "context_timeframe_minutes": 60,
+    "scope": "1H/4H context only; supplied initial direction; provisional reversal linking; M15 LC-1 rules separate"
+  },
+  "fractal_events": [
+    {
+      "event": "fractal_choch",
+      "from_direction": "SELL",
+      "direction": "BUY",
+      "broken_level": 155.956,
+      "broken_reference_origins": [
+        "2025-01-22T05:00:00+00:00"
+      ],
+      "confirmation_quality": "wick_only",
+      "known_at": "2025-01-22T07:00:00+00:00",
+      "opposite_reference_price": 155.683,
+      "opposite_reference_origins": [
+        "2025-01-22T06:00:00+00:00"
+      ],
+      "opposite_reference_known_at": "2025-01-22T07:00:00+00:00",
+      "new_A_start": "2025-01-22T06:00:00+00:00",
+      "spans_quote_gap": false,
+      "linking_convention_requires_chart_validation": true,
+      "new_point_confirmed_then_broken_within_source_candle": true,
+      "minute_evidence": {
+        "resolved": true,
+        "directional_break_minute": "2025-01-22T06:05:00+00:00",
+        "proposed_reference_break_minute": "2025-01-22T06:40:00+00:00",
+        "order": "directional_break_first",
+        "policy_result": "fractal_choch",
+        "turning_price": 155.683
+      }
+    },
+    {
+      "event": "fractal_ordering_review_required",
+      "reason": "opposing_reference_and_new_leg_extreme_in_same_candle",
+      "known_at": "2025-01-22T09:00:00+00:00",
+      "broken_level": 155.683,
+      "prior_leg_extreme": 156.075
+    }
+  ],
+  "internal_events": [],
+  "scope": "Conditional 1H/4H context trace; M15 LC-1 qualification excluded; not a strategy backtest"
+}

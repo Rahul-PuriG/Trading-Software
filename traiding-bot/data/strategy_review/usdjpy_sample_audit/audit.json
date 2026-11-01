@@ -1,0 +1,80 @@
+{
+  "integrity": {
+    "USDJPY_context_15min.csv": {
+      "rows": 6043,
+      "chronological": true,
+      "duplicate_timestamps": 0,
+      "ohlc_valid": true,
+      "sha256": "266bfaca2ed663edcd8fbe7239e98b216c76762c3a1dc796e9a66b994dc9c140"
+    },
+    "USDJPY_execution_1min.csv": {
+      "rows": 3495,
+      "chronological": true,
+      "duplicate_timestamps": 0,
+      "ohlc_valid": true,
+      "sha256": "726fee5b09e7bcc482e7ee2e44f34749bd23c3f838c4757b016250790abe8540"
+    }
+  },
+  "execution_coverage": {
+    "status": "failed",
+    "basis": "Minute slots within downloaded 15-minute MIDPOINT bars; not an independent exchange calendar",
+    "expected_minutes": 9975,
+    "actual_minutes": 3495,
+    "missing_minutes": 6480,
+    "unexpected_minutes": 0,
+    "first_missing_minutes": [
+      "2025-01-22T04:00:00+00:00",
+      "2025-01-22T04:01:00+00:00",
+      "2025-01-22T04:02:00+00:00",
+      "2025-01-22T04:03:00+00:00",
+      "2025-01-22T04:04:00+00:00",
+      "2025-01-22T04:05:00+00:00",
+      "2025-01-22T04:06:00+00:00",
+      "2025-01-22T04:07:00+00:00",
+      "2025-01-22T04:08:00+00:00",
+      "2025-01-22T04:09:00+00:00",
+      "2025-01-22T04:10:00+00:00",
+      "2025-01-22T04:11:00+00:00",
+      "2025-01-22T04:12:00+00:00",
+      "2025-01-22T04:13:00+00:00",
+      "2025-01-22T04:14:00+00:00",
+      "2025-01-22T04:15:00+00:00",
+      "2025-01-22T04:16:00+00:00",
+      "2025-01-22T04:17:00+00:00",
+      "2025-01-22T04:18:00+00:00",
+      "2025-01-22T04:19:00+00:00"
+    ],
+    "first_unexpected_minutes": []
+  },
+  "candidate_signal_candles": [
+    {
+      "journal": "Round 3 row 3, January 23",
+      "candidate_bar_utc": "2025-01-23T14:30:00+00:00",
+      "ibkr_ohlc": {
+        "timestamp": "2025-01-23T14:30:00+00:00",
+        "open": "156.365",
+        "high": "156.405",
+        "low": "156.322",
+        "close": "156.352"
+      },
+      "chart_label_high": 156.405,
+      "chart_label_low": 156.322,
+      "comment": "Illustrated high/low matches this 15-minute candidate. This is reference matching, not automated LC detection."
+    },
+    {
+      "journal": "Round 3 row 4, January 29",
+      "candidate_bar_utc": "2025-01-29T19:30:00+00:00",
+      "ibkr_ohlc": {
+        "timestamp": "2025-01-29T19:30:00+00:00",
+        "open": "155.387",
+        "high": "155.612",
+        "low": "155.209",
+        "close": "155.2475"
+      },
+      "chart_label_high": 155.613,
+      "chart_label_low": 155.208,
+      "comment": "IBKR candidate high/low differs by about 0.1 pip from chart labels. Candidate begins at journal 15:30 Halifax time; entry cannot be placed until its 15:45 close. Distinguish signal-candle timestamp from actual fill time."
+    }
+  ],
+  "status": "Execution reconciliation blocked by incomplete one-minute coverage; no new strategy results."
+}

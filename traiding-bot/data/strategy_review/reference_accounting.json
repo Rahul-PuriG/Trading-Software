@@ -1,0 +1,79 @@
+{
+  "scope": "Accounting check on two manually chosen reference trades, NOT a strategy backtest",
+  "assumptions": [
+    "USD 10000, 50:1 fixed gross margin; no broker netting",
+    "1% of equity minus gross initial margin at order planning",
+    "One USD base-unit size increment is a simulation assumption, not broker minimum-size validation",
+    "Commission max(USD2, USD units * 0.00002) per fill; no financing/conversion fee",
+    "Quote-side entry/exit prices taken from the existing assumed-spread reference replay"
+  ],
+  "trades": [
+    {
+      "reference": "round3_row3_2025_01_23",
+      "plan": {
+        "side": "SELL",
+        "units": 171392,
+        "entry_level": 156.322,
+        "stop_level": 156.405,
+        "expected_entry": 156.321,
+        "expected_stop_fill": 156.406,
+        "risk_budget": 100.0,
+        "planned_stop_risk": 99.99993277803515,
+        "available_at_plan": 10000.0,
+        "reward_r": 2.0,
+        "margin": 3427.84
+      },
+      "result": {
+        "trade_id": "round3_row3_2025_01_23",
+        "side": "SELL",
+        "units": 171392,
+        "entry_price": 156.321,
+        "exit_price": 156.406,
+        "exit_reason": "stop",
+        "gross_pnl_usd": -93.14425277803514,
+        "commission_usd": 6.85568,
+        "net_pnl_usd": -99.99993277803515,
+        "risk_budget_usd": 100.0,
+        "planned_stop_risk_usd": 99.99993277803515,
+        "risk_at_fill_usd": 99.99993277803515,
+        "risk_budget_exceeded_at_fill": false,
+        "released_margin_usd": 3427.84
+      },
+      "balance_after_close": 9900.000067221965
+    },
+    {
+      "reference": "round3_row4_2025_01_29",
+      "plan": {
+        "side": "SELL",
+        "units": 36501,
+        "entry_level": 155.209,
+        "stop_level": 155.612,
+        "expected_entry": 155.208,
+        "expected_stop_fill": 155.613,
+        "risk_budget": 99.00000067221966,
+        "planned_stop_risk": 98.99787935455291,
+        "available_at_plan": 9900.000067221965,
+        "reward_r": 2.0,
+        "margin": 730.02
+      },
+      "result": {
+        "trade_id": "round3_row4_2025_01_29",
+        "side": "SELL",
+        "units": 36501,
+        "entry_price": 155.208,
+        "exit_price": 154.4,
+        "exit_reason": "target",
+        "gross_pnl_usd": 191.01559585492055,
+        "commission_usd": 4.0,
+        "net_pnl_usd": 187.01559585492055,
+        "risk_budget_usd": 99.00000067221966,
+        "planned_stop_risk_usd": 98.99787935455291,
+        "risk_at_fill_usd": 98.99787935455291,
+        "risk_budget_exceeded_at_fill": false,
+        "released_margin_usd": 730.02
+      },
+      "balance_after_close": 10087.015663076885
+    }
+  ],
+  "status": "Two sequential accounting reference checks passed; overlapping positions covered by synthetic unit tests only."
+}

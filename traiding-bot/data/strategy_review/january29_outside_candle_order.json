@@ -1,0 +1,14 @@
+{
+  "scope": "Observed crossing order, not an approved outside-candle strategy rule",
+  "source": "IBKR MIDPOINT",
+  "source_candle_start_utc": "2025-01-29T19:30:00+00:00",
+  "A_high": 155.4925,
+  "B_low": 155.281,
+  "first_A_high_crossing_1min_start_utc": "2025-01-29T19:30:00+00:00",
+  "first_B_low_crossing_1min_start_utc": "2025-01-29T19:40:00+00:00",
+  "crossing_order_resolved_at_1min": true,
+  "M1_aggregate_matches_source_M15": true,
+  "chart": "data/strategy_review/january29_outside_candle_question.png",
+  "timeframe_correction": "User context-fractal structure is 1H/4H. Prior M15 context scans are not the separate M15 LC-1 fractal-CHoCH rule; mixed context/LC-1 validation is superseded.",
+  "superseded_as_context_strategy_validation": true
+}

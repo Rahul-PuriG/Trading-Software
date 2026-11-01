@@ -1,0 +1,71 @@
+{
+  "ALL (not independent validation)": {
+    "records": 109,
+    "wins": 66,
+    "losses": 43,
+    "win_rate_pct": 60.550458715596335,
+    "sum_recorded_fixed_r": 89.0,
+    "profit_factor_recorded_r": 3.0697674418604652
+  },
+  "Swing USDJPY Round 1.xlsx": {
+    "records": 57,
+    "wins": 31,
+    "losses": 26,
+    "win_rate_pct": 54.385964912280706,
+    "sum_recorded_fixed_r": 36.0,
+    "profit_factor_recorded_r": 2.3846153846153846
+  },
+  "Swing USDJPY Round 2.xlsx": {
+    "records": 15,
+    "wins": 12,
+    "losses": 3,
+    "win_rate_pct": 80.0,
+    "sum_recorded_fixed_r": 21.0,
+    "profit_factor_recorded_r": 8.0
+  },
+  "Swing USDJPY Round 3.xlsx": {
+    "records": 37,
+    "wins": 23,
+    "losses": 14,
+    "win_rate_pct": 62.16216216216216,
+    "sum_recorded_fixed_r": 32.0,
+    "profit_factor_recorded_r": 3.2857142857142856
+  },
+  "duplicate_date_time_pair_setup_keys": [],
+  "data_issues": [
+    {
+      "workbook": "Swing USDJPY Round 2.xlsx",
+      "row": 13,
+      "issue": "Year outside predominant 2024 round; verify without auto-correction",
+      "original": "2025-08-11",
+      "status": "User-confirmed correction/interpretation recorded; originals preserved"
+    },
+    {
+      "workbook": "Swing USDJPY Round 3.xlsx",
+      "row": 18,
+      "issue": "Text date parsed provisionally as DD/MM/YY",
+      "original": "01/06/25",
+      "status": "User-confirmed correction/interpretation recorded; originals preserved"
+    }
+  ],
+  "limitation": "Recorded manual outcomes only; no automated USDJPY price backtest, costs, financing, concurrent margin sizing, or independent validation reproduced.",
+  "confirmed_date_corrections": [
+    {
+      "workbook": "Swing USDJPY Round 2.xlsx",
+      "sheet_row": 13,
+      "original_date": "2025-08-11",
+      "confirmed_date": "2024-08-11",
+      "source": "User confirmed corrected date and 10:15 PM Antigonish local time",
+      "original_time": "10:15:00",
+      "confirmed_time": "22:15:00",
+      "timezone": "America/Halifax"
+    },
+    {
+      "workbook": "Swing USDJPY Round 3.xlsx",
+      "sheet_row": 18,
+      "original_date": "01/06/25",
+      "confirmed_date": "2025-06-01",
+      "source": "User confirmed DD/MM/YY interpretation"
+    }
+  ]
+}
