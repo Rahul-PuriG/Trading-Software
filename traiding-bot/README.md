@@ -1,5 +1,52 @@
 # IBKR paper trading — local Windows execution
 
+## Six-month SPY backtest
+
+`backtest.py` tests the 5/20 SMA crossover on 5-minute SPY TRADES bars during
+regular market hours. Buy one share after an upward crossover; exit after a
+downward crossover. No shorting or additional entries while long. Signals use
+completed candles, with fills modelled at the next available candle's open
+(including next-session opens). Averages and positions carry across sessions.
+The final open position is liquidated at the final close for reporting.
+
+Run in this folder with TWS paper trading connected (Read-Only API may stay on):
+
+```powershell
+.\.venv\Scripts\python.exe backtest.py download --start 2026-05-01 --end 2026-11-01
+.\.venv\Scripts\python.exe backtest.py run --start 2026-05-01 --end 2026-11-01
+```
+
+The end date is exclusive: these commands cover May 1 through October 31, 2026.
+The download also requests earlier warmup bars. No orders are sent by either
+command. Historical data requires appropriate IBKR permissions/subscriptions;
+paper account access alone does not guarantee data entitlement. Downloading
+takes multiple weekly requests. Successful weeks are cached locally and reused
+if you rerun the command. Delete only a specific cached `week_*.json` file to
+refresh that week. IBKR errors or empty weeks stop the download rather than
+producing a shorter test. Use a separate `--data` directory for a different dataset.
+
+The run validates 5-minute bar coverage against IBKR's exchange session schedule,
+including holidays and early closes, before reporting performance. It writes:
+
+- `reports/sma_5_20/summary.json`: net P&L, trade count, win rate, drawdown,
+  profit factor and a one-share buy-and-hold comparison.
+- `reports/sma_5_20/trades.csv`: entries, exits and net trade results.
+- `reports/sma_5_20/equity.csv`: marked-to-market account equity by candle.
+
+Defaults: $10,000 starting cash, one share, $1 commission per order and 1 basis
+point (0.01%) slippage per side. Change costs with `--commission`,
+`--slippage-bps`, and `--capital` on the `run` command. The costs are modelling
+assumptions, not a statement of your actual IBKR fees. This is a cash account
+simulation with no leverage, dividends, taxes, interest or partial fills.
+Historical adjustments follow IBKR's TRADES data. Profit factor is null when
+there are no losing trades; win rate is null when there are no trades.
+Dollar P&L and one-share benchmark help interpret the account return because
+most of the $10,000 remains uninvested. No parameter optimization is performed.
+
+Data and reports are ignored by Git. Actual six-month performance has not been
+verified until real data is downloaded and the `run` command succeeds.
+Synthetic unit tests validate execution timing and accounting, not profitability.
+
 This first version connects to TWS on your Windows computer. It reads account
 information and open orders, previews stock limit orders, and can explicitly
 submit or cancel paper orders. Strategies are not included.
